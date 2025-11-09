@@ -1,0 +1,1 @@
+#exportál egy függvényt, amit a main.py hív meg
