@@ -1,0 +1,24 @@
+﻿{
+    "author":  "Team Tajti",
+    "description":  "AI-based cryptocurrency investment advisor using sentiment analysis and forecasting models.",
+    "dependencies":  [
+                         "pandas\u003e=2.2",
+                         "numpy\u003e=1.26",
+                         "tensorflow\u003e=2.15",
+                         "scikit-learn\u003e=1.5",
+                         "yfinance\u003e=0.2",
+                         "requests\u003e=2.32",
+                         "beautifulsoup4\u003e=4.12",
+                         "flask\u003e=3.0"
+                     ],
+    "python_version":  "\u003e=3.10",
+    "modules":  [
+                    "modules/data_collector.py",
+                    "modules/sentiment_analyzer.py",
+                    "modules/forecast_model.py",
+                    "modules/advisor.py",
+                    "app/dashboard.py",
+                    "main.py"
+                ],
+    "project_name":  "Crypto AI Advisor"
+}
