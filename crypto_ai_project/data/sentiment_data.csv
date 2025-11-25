@@ -1,5 +1,5 @@
 datetime,symbol,title,sentiment_score,sentiment_label
-2025-11-09T10:00:00Z,BTC,"Bitcoin rises above $65,000 as investors bet on ETF approval",0.85,positive
-2025-11-09T09:45:00Z,ETH,"Ethereum network fees drop to yearly low",0.35,positive
-2025-11-08T20:10:00Z,SOL,"Solana sees 12% increase in daily transactions",0.70,positive
-2025-11-08T18:30:00Z,MULTI,"Crypto market stabilizes after volatile week",-0.20,neutral
+2025-11-09T10:00:00Z,BTC,"Bitcoin rises above $65,000 as investors bet on ETF approval",0.4767,positive
+2025-11-09T09:45:00Z,ETH,Ethereum network fees drop to yearly low,-0.4939,negative
+2025-11-08T20:10:00Z,SOL,Solana sees 12% increase in daily transactions,0.3182,positive
+2025-11-08T18:30:00Z,MULTI,Crypto market stabilizes after volatile week,0.0,neutral
