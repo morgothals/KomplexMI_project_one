@@ -1,5 +1,1841 @@
 datetime,symbol,title,sentiment_score,sentiment_label
-2025-11-09T10:00:00Z,BTC,"Bitcoin rises above $65,000 as investors bet on ETF approval",0.4767,positive
-2025-11-09T09:45:00Z,ETH,Ethereum network fees drop to yearly low,-0.4939,negative
-2025-11-08T20:10:00Z,SOL,Solana sees 12% increase in daily transactions,0.3182,positive
-2025-11-08T18:30:00Z,MULTI,Crypto market stabilizes after volatile week,0.0,neutral
+2025-07-28T11:15:33.265163Z,AAVE,Investors show strong confidence in AAVE,0.765,positive
+2025-08-16T07:52:33.265223Z,AAVE,AAVE gains traction in global markets,0.34,positive
+2025-09-07T10:03:33.265251Z,AAVE,AAVE receives strong community support,0.7184,positive
+2025-08-22T18:03:33.265266Z,AAVE,Whales reduce exposure to AAVE,0.0,neutral
+2025-07-16T14:42:33.265278Z,AAVE,Whales accumulate large amounts of AAVE,0.0,neutral
+2025-10-08T14:35:33.265290Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-07-14T04:48:33.265301Z,AAVE,AAVE sees major spike in transaction activity,0.0,neutral
+2025-09-03T16:39:33.265311Z,AAVE,AAVE experiences unusual volatility spike,0.0,neutral
+2025-10-28T03:25:33.265323Z,AAVE,Investors show strong confidence in AAVE,0.765,positive
+2025-10-19T04:02:33.265334Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-09-07T21:36:33.265344Z,AAVE,Investors show strong confidence in AAVE,0.765,positive
+2025-08-06T18:42:33.265355Z,AAVE,AAVE sees declining trading activity,0.0,neutral
+2025-10-13T07:40:33.265365Z,AAVE,AAVE sees major spike in transaction activity,0.0,neutral
+2025-09-30T02:07:33.265376Z,AAVE,AAVE ecosystem expands with new partnerships,0.1027,positive
+2025-11-18T10:46:33.265386Z,AAVE,Analysts predict upward movement for AAVE,0.0,neutral
+2025-08-13T02:10:33.265401Z,AAVE,AAVE underperforms compared to competitors,0.0,neutral
+2025-09-16T13:17:33.265411Z,AAVE,Negative sentiment grows around AAVE,-0.5719,negative
+2025-09-09T06:43:33.265422Z,AAVE,AAVE underperforms compared to competitors,0.0,neutral
+2025-11-18T06:52:33.265433Z,AAVE,Regulatory pressure negatively impacts AAVE,-0.296,negative
+2025-11-16T04:37:33.265445Z,AAVE,AAVE gains traction in global markets,0.34,positive
+2025-08-13T20:10:33.265456Z,AAVE,Regulatory pressure negatively impacts AAVE,-0.296,negative
+2025-08-19T18:26:33.265466Z,AAVE,AAVE adoption rises sharply as institutions enter,0.0,neutral
+2025-10-30T05:18:33.265475Z,AAVE,Market uncertainty pushes AAVE downward,-0.34,negative
+2025-11-12T05:36:33.265485Z,AAVE,AAVE surges amid renewed market optimism,0.5423,positive
+2025-09-02T14:08:33.265495Z,AAVE,AAVE drops after heavy selling pressure,-0.296,negative
+2025-10-16T16:03:33.265505Z,AAVE,AAVE sees major spike in transaction activity,0.0,neutral
+2025-09-20T10:35:33.265515Z,AAVE,AAVE underperforms compared to competitors,0.0,neutral
+2025-07-24T20:29:33.265525Z,AAVE,AAVE receives strong community support,0.7184,positive
+2025-07-18T21:00:33.265535Z,AAVE,AAVE experiences unusual volatility spike,0.0,neutral
+2025-10-06T10:24:33.265545Z,AAVE,Whales reduce exposure to AAVE,0.0,neutral
+2025-09-29T00:18:33.265556Z,AAVE,Market uncertainty pushes AAVE downward,-0.34,negative
+2025-11-04T00:49:33.265565Z,AAVE,Negative sentiment grows around AAVE,-0.5719,negative
+2025-09-27T01:04:33.265575Z,AAVE,Whales reduce exposure to AAVE,0.0,neutral
+2025-07-11T16:51:33.265585Z,AAVE,AAVE experiences unusual volatility spike,0.0,neutral
+2025-07-15T14:46:33.265595Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-08-20T20:46:33.265605Z,AAVE,AAVE gains traction in global markets,0.34,positive
+2025-07-31T16:40:33.265615Z,AAVE,Regulatory pressure negatively impacts AAVE,-0.296,negative
+2025-09-23T14:47:33.265624Z,AAVE,Negative sentiment grows around AAVE,-0.5719,negative
+2025-08-14T06:00:33.265636Z,AAVE,AAVE experiences strong bullish momentum,0.5106,positive
+2025-08-05T21:14:33.265646Z,AAVE,Investors pull liquidity from AAVE markets,0.0,neutral
+2025-08-17T15:52:33.265656Z,AAVE,AAVE sees major spike in transaction activity,0.0,neutral
+2025-09-19T13:29:33.265666Z,AAVE,AAVE drops after heavy selling pressure,-0.296,negative
+2025-10-04T00:45:33.265675Z,AAVE,AAVE experiences strong bullish momentum,0.5106,positive
+2025-08-16T14:41:33.265685Z,AAVE,AAVE underperforms compared to competitors,0.0,neutral
+2025-11-10T07:24:33.265695Z,AAVE,AAVE surges amid renewed market optimism,0.5423,positive
+2025-10-09T09:17:33.265704Z,AAVE,Investors show strong confidence in AAVE,0.765,positive
+2025-08-31T23:35:33.265714Z,AAVE,AAVE gains traction in global markets,0.34,positive
+2025-10-30T13:35:33.265727Z,AAVE,AAVE experiences unusual volatility spike,0.0,neutral
+2025-08-16T02:27:33.265738Z,AAVE,AAVE experiences strong bullish momentum,0.5106,positive
+2025-08-26T14:09:33.265748Z,AAVE,AAVE adoption rises sharply as institutions enter,0.0,neutral
+2025-10-08T11:11:33.265758Z,AAVE,AAVE surges amid renewed market optimism,0.5423,positive
+2025-11-22T09:42:33.265767Z,AAVE,Analysts predict upward movement for AAVE,0.0,neutral
+2025-10-15T10:38:33.265777Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-09-06T17:19:33.265787Z,AAVE,Investors pull liquidity from AAVE markets,0.0,neutral
+2025-10-25T12:35:33.265797Z,AAVE,Regulatory pressure negatively impacts AAVE,-0.296,negative
+2025-10-22T20:35:33.265806Z,AAVE,AAVE shows a strong recovery after recent dip,0.5106,positive
+2025-07-21T16:52:33.265816Z,AAVE,AAVE ecosystem expands with new partnerships,0.1027,positive
+2025-07-20T22:17:33.265825Z,AAVE,Whales accumulate large amounts of AAVE,0.0,neutral
+2025-10-07T16:52:33.265835Z,AAVE,Technical indicators show weakness for AAVE,-0.4215,negative
+2025-11-20T00:48:33.265845Z,AAVE,AAVE gains traction in global markets,0.34,positive
+2025-08-12T09:32:33.265855Z,AAVE,Market uncertainty pushes AAVE downward,-0.34,negative
+2025-10-11T11:56:33.265864Z,AAVE,AAVE experiences a calm trading session,0.3182,positive
+2025-11-20T18:44:33.265872Z,AAVE,Investors show strong confidence in AAVE,0.765,positive
+2025-10-30T12:14:33.265880Z,AAVE,New upgrade boosts performance of AAVE,0.3182,positive
+2025-11-16T01:49:33.265887Z,AAVE,AAVE experiences strong bullish momentum,0.5106,positive
+2025-11-15T22:10:33.265897Z,AAVE,AAVE sees declining trading activity,0.0,neutral
+2025-09-04T12:04:33.265905Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-07-13T16:06:33.265912Z,AAVE,AAVE experiences strong bullish momentum,0.5106,positive
+2025-10-10T08:55:33.265920Z,AAVE,Technical indicators show weakness for AAVE,-0.4215,negative
+2025-09-21T07:25:33.265928Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-10-21T10:08:33.265936Z,AAVE,AAVE ecosystem expands with new partnerships,0.1027,positive
+2025-07-19T20:14:33.265944Z,AAVE,AAVE receives strong community support,0.7184,positive
+2025-08-01T09:15:33.265952Z,AAVE,AAVE shows a strong recovery after recent dip,0.5106,positive
+2025-09-21T05:51:33.265960Z,AAVE,Market uncertainty pushes AAVE downward,-0.34,negative
+2025-07-20T21:45:33.265968Z,AAVE,Liquidity for AAVE increases significantly,0.0,neutral
+2025-08-11T09:07:33.265977Z,AAVE,AAVE faces short-term bearish correction,0.0,neutral
+2025-09-28T07:49:33.265984Z,AAVE,Investors pull liquidity from AAVE markets,0.0,neutral
+2025-07-28T03:04:33.265994Z,AAVE,AAVE sees major spike in transaction activity,0.0,neutral
+2025-08-16T02:00:33.266004Z,AAVE,Regulatory pressure negatively impacts AAVE,-0.296,negative
+2025-08-09T14:11:33.266011Z,AAVE,New upgrade boosts performance of AAVE,0.3182,positive
+2025-08-29T00:52:33.266022Z,BINANCECOIN,BINANCECOIN receives strong community support,0.7184,positive
+2025-11-04T16:03:33.266031Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-08-20T20:34:33.266039Z,BINANCECOIN,BINANCECOIN sees declining trading activity,0.0,neutral
+2025-08-13T20:04:33.266047Z,BINANCECOIN,Investors pull liquidity from BINANCECOIN markets,0.0,neutral
+2025-07-25T17:01:33.266056Z,BINANCECOIN,Market uncertainty pushes BINANCECOIN downward,-0.34,negative
+2025-11-19T01:33:33.266064Z,BINANCECOIN,BINANCECOIN faces short-term bearish correction,0.0,neutral
+2025-08-01T13:11:33.266072Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-08-17T22:27:33.266080Z,BINANCECOIN,BINANCECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-09-09T16:00:33.266087Z,BINANCECOIN,Regulatory pressure negatively impacts BINANCECOIN,-0.296,negative
+2025-07-23T10:21:33.266095Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-08-20T12:06:33.266103Z,BINANCECOIN,BINANCECOIN drops after heavy selling pressure,-0.296,negative
+2025-08-31T16:32:33.266110Z,BINANCECOIN,Whales reduce exposure to BINANCECOIN,0.0,neutral
+2025-09-22T03:29:33.266118Z,BINANCECOIN,Analysts predict upward movement for BINANCECOIN,0.0,neutral
+2025-10-18T10:05:33.266126Z,BINANCECOIN,Technical indicators show weakness for BINANCECOIN,-0.4215,negative
+2025-07-16T17:38:33.266134Z,BINANCECOIN,BINANCECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-10-22T19:06:33.266143Z,BINANCECOIN,BINANCECOIN surges amid renewed market optimism,0.5423,positive
+2025-11-03T02:50:33.266151Z,BINANCECOIN,BINANCECOIN drops after heavy selling pressure,-0.296,negative
+2025-08-01T04:47:33.266158Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-10-05T19:50:33.266166Z,BINANCECOIN,BINANCECOIN sees major spike in transaction activity,0.0,neutral
+2025-08-30T18:14:33.266174Z,BINANCECOIN,BINANCECOIN faces short-term bearish correction,0.0,neutral
+2025-10-08T07:19:33.266183Z,BINANCECOIN,BINANCECOIN experiences strong bullish momentum,0.5106,positive
+2025-10-01T15:47:33.266190Z,BINANCECOIN,BINANCECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-09-02T17:29:33.266198Z,BINANCECOIN,BINANCECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-03T04:55:33.266206Z,BINANCECOIN,Market uncertainty pushes BINANCECOIN downward,-0.34,negative
+2025-10-01T12:00:33.266215Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-08-09T10:27:33.266222Z,BINANCECOIN,Analysts predict upward movement for BINANCECOIN,0.0,neutral
+2025-09-16T16:26:33.266230Z,BINANCECOIN,BINANCECOIN sees major spike in transaction activity,0.0,neutral
+2025-08-16T20:45:33.266241Z,BINANCECOIN,Market uncertainty pushes BINANCECOIN downward,-0.34,negative
+2025-08-26T19:37:33.266255Z,BINANCECOIN,Regulatory pressure negatively impacts BINANCECOIN,-0.296,negative
+2025-11-18T17:28:33.266283Z,BINANCECOIN,BINANCECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-20T08:00:33.266294Z,BINANCECOIN,BINANCECOIN experiences strong bullish momentum,0.5106,positive
+2025-10-24T22:09:33.266302Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-10-07T04:30:33.266312Z,BINANCECOIN,BINANCECOIN drops after heavy selling pressure,-0.296,negative
+2025-08-14T05:53:33.266320Z,BINANCECOIN,Regulatory pressure negatively impacts BINANCECOIN,-0.296,negative
+2025-07-24T22:54:33.266328Z,BINANCECOIN,Liquidity for BINANCECOIN increases significantly,0.0,neutral
+2025-09-13T04:02:33.266336Z,BINANCECOIN,Analysts predict upward movement for BINANCECOIN,0.0,neutral
+2025-10-24T08:13:33.266343Z,BINANCECOIN,BINANCECOIN sees declining trading activity,0.0,neutral
+2025-08-21T10:34:33.266351Z,BINANCECOIN,BINANCECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-26T08:31:33.266359Z,BINANCECOIN,Analysts predict upward movement for BINANCECOIN,0.0,neutral
+2025-10-07T06:15:33.266367Z,BINANCECOIN,BINANCECOIN gains traction in global markets,0.34,positive
+2025-08-27T17:23:33.266375Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-09-23T08:37:33.266383Z,BINANCECOIN,BINANCECOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-08-06T15:18:33.266391Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-10-16T07:25:33.266399Z,BINANCECOIN,Market uncertainty pushes BINANCECOIN downward,-0.34,negative
+2025-09-02T10:31:33.266406Z,BINANCECOIN,Technical indicators show weakness for BINANCECOIN,-0.4215,negative
+2025-09-25T08:01:33.266414Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-11-15T13:49:33.266422Z,BINANCECOIN,Whales reduce exposure to BINANCECOIN,0.0,neutral
+2025-08-24T15:41:33.266429Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-11-14T02:28:33.266437Z,BINANCECOIN,Technical indicators show weakness for BINANCECOIN,-0.4215,negative
+2025-11-15T16:38:33.266447Z,BINANCECOIN,BINANCECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-08-30T23:08:33.266455Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-11-25T20:32:33.266463Z,BINANCECOIN,BINANCECOIN surges amid renewed market optimism,0.5423,positive
+2025-07-13T14:14:33.266470Z,BINANCECOIN,Regulatory pressure negatively impacts BINANCECOIN,-0.296,negative
+2025-09-17T00:44:33.266478Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-10-22T00:06:33.266488Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-07-17T07:35:33.266496Z,BINANCECOIN,BINANCECOIN experiences strong bullish momentum,0.5106,positive
+2025-07-31T14:02:33.266504Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-09-18T03:35:33.266512Z,BINANCECOIN,BINANCECOIN drops after heavy selling pressure,-0.296,negative
+2025-11-18T04:49:33.266520Z,BINANCECOIN,BINANCECOIN sees major spike in transaction activity,0.0,neutral
+2025-07-24T11:08:33.266527Z,BINANCECOIN,BINANCECOIN shows no major price movement today,-0.296,negative
+2025-09-23T15:37:33.266535Z,BINANCECOIN,BINANCECOIN surges amid renewed market optimism,0.5423,positive
+2025-10-31T16:53:33.266543Z,BINANCECOIN,BINANCECOIN gains traction in global markets,0.34,positive
+2025-10-07T03:31:33.266552Z,BINANCECOIN,BINANCECOIN faces short-term bearish correction,0.0,neutral
+2025-09-11T20:11:33.266559Z,BINANCECOIN,BINANCECOIN experiences strong bullish momentum,0.5106,positive
+2025-08-24T09:01:33.266567Z,BINANCECOIN,BINANCECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-30T18:01:33.266575Z,BINANCECOIN,Market uncertainty pushes BINANCECOIN downward,-0.34,negative
+2025-08-03T17:25:33.266584Z,BINANCECOIN,Investors show strong confidence in BINANCECOIN,0.765,positive
+2025-08-13T07:32:33.266591Z,BINANCECOIN,Analysts predict upward movement for BINANCECOIN,0.0,neutral
+2025-09-29T10:32:33.266599Z,BINANCECOIN,BINANCECOIN experiences unusual volatility spike,0.0,neutral
+2025-10-10T14:41:33.266608Z,BINANCECOIN,BINANCECOIN sees declining trading activity,0.0,neutral
+2025-11-22T10:42:33.266615Z,BINANCECOIN,BINANCECOIN gains traction in global markets,0.34,positive
+2025-10-10T18:37:33.266624Z,BINANCECOIN,Negative sentiment grows around BINANCECOIN,-0.5719,negative
+2025-10-03T00:16:33.266631Z,BINANCECOIN,Investors show strong confidence in BINANCECOIN,0.765,positive
+2025-10-21T02:48:33.266639Z,BINANCECOIN,New upgrade boosts performance of BINANCECOIN,0.3182,positive
+2025-10-27T16:31:33.266647Z,BINANCECOIN,BINANCECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-07-12T01:11:33.266654Z,BINANCECOIN,BINANCECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-10-28T15:58:33.266663Z,BINANCECOIN,BINANCECOIN underperforms compared to competitors,0.0,neutral
+2025-10-27T05:28:33.266671Z,BINANCECOIN,Investors pull liquidity from BINANCECOIN markets,0.0,neutral
+2025-09-02T23:10:33.266678Z,BINANCECOIN,Regulatory pressure negatively impacts BINANCECOIN,-0.296,negative
+2025-11-13T13:30:33.266686Z,BINANCECOIN,Whales accumulate large amounts of BINANCECOIN,0.0,neutral
+2025-08-26T14:16:33.266695Z,BITCOIN,BITCOIN faces short-term bearish correction,0.0,neutral
+2025-10-20T01:49:33.266703Z,BITCOIN,Negative sentiment grows around BITCOIN,-0.5719,negative
+2025-11-06T08:24:33.266712Z,BITCOIN,Whales accumulate large amounts of BITCOIN,0.0,neutral
+2025-10-07T14:29:33.266721Z,BITCOIN,BITCOIN shows no major price movement today,-0.296,negative
+2025-08-16T11:09:33.266729Z,BITCOIN,BITCOIN faces short-term bearish correction,0.0,neutral
+2025-10-28T09:11:33.266737Z,BITCOIN,BITCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-04T05:21:33.266744Z,BITCOIN,BITCOIN sees declining trading activity,0.0,neutral
+2025-09-30T04:10:33.266752Z,BITCOIN,BITCOIN gains traction in global markets,0.34,positive
+2025-09-11T13:11:33.266759Z,BITCOIN,BITCOIN sees major spike in transaction activity,0.0,neutral
+2025-08-12T07:24:33.266767Z,BITCOIN,BITCOIN experiences unusual volatility spike,0.0,neutral
+2025-08-09T02:00:33.266775Z,BITCOIN,BITCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-16T02:51:33.266784Z,BITCOIN,Analysts predict upward movement for BITCOIN,0.0,neutral
+2025-09-06T15:30:33.266792Z,BITCOIN,BITCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-02T17:35:33.266800Z,BITCOIN,BITCOIN receives strong community support,0.7184,positive
+2025-10-22T11:11:33.266810Z,BITCOIN,BITCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-18T23:40:33.266817Z,BITCOIN,Investors show strong confidence in BITCOIN,0.765,positive
+2025-10-21T17:40:33.266825Z,BITCOIN,BITCOIN receives strong community support,0.7184,positive
+2025-08-09T22:37:33.266833Z,BITCOIN,Whales accumulate large amounts of BITCOIN,0.0,neutral
+2025-11-10T12:53:33.266840Z,BITCOIN,Market uncertainty pushes BITCOIN downward,-0.34,negative
+2025-09-24T23:26:33.266848Z,BITCOIN,BITCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-10-05T18:32:33.266855Z,BITCOIN,Analysts predict upward movement for BITCOIN,0.0,neutral
+2025-09-10T19:15:33.266863Z,BITCOIN,Analysts predict upward movement for BITCOIN,0.0,neutral
+2025-09-13T01:01:33.266873Z,BITCOIN,Analysts predict upward movement for BITCOIN,0.0,neutral
+2025-11-22T14:22:33.266881Z,BITCOIN,BITCOIN sees declining trading activity,0.0,neutral
+2025-10-31T17:00:33.266888Z,BITCOIN,Liquidity for BITCOIN increases significantly,0.0,neutral
+2025-11-13T09:47:33.266906Z,BITCOIN,Regulatory pressure negatively impacts BITCOIN,-0.296,negative
+2025-07-12T00:58:33.266914Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-10-10T02:45:33.266922Z,BITCOIN,BITCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-08-01T21:32:33.266929Z,BITCOIN,BITCOIN gains traction in global markets,0.34,positive
+2025-11-22T02:38:33.266937Z,BITCOIN,BITCOIN experiences strong bullish momentum,0.5106,positive
+2025-11-16T11:16:33.266945Z,BITCOIN,BITCOIN gains traction in global markets,0.34,positive
+2025-08-01T14:55:33.266952Z,BITCOIN,Investors show strong confidence in BITCOIN,0.765,positive
+2025-08-26T20:16:33.266960Z,BITCOIN,BITCOIN drops after heavy selling pressure,-0.296,negative
+2025-07-19T07:36:33.266970Z,BITCOIN,BITCOIN drops after heavy selling pressure,-0.296,negative
+2025-09-08T07:23:33.266977Z,BITCOIN,BITCOIN experiences unusual volatility spike,0.0,neutral
+2025-10-06T10:41:33.266985Z,BITCOIN,BITCOIN drops after heavy selling pressure,-0.296,negative
+2025-11-10T07:05:33.266994Z,BITCOIN,BITCOIN receives strong community support,0.7184,positive
+2025-11-05T00:31:33.267001Z,BITCOIN,BITCOIN experiences unusual volatility spike,0.0,neutral
+2025-08-04T13:19:33.267009Z,BITCOIN,Analysts predict upward movement for BITCOIN,0.0,neutral
+2025-11-23T04:24:33.267016Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-09-24T22:44:33.267024Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-11-16T13:11:33.267032Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-09-27T04:11:33.267040Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-11-23T15:52:33.267048Z,BITCOIN,Investors show strong confidence in BITCOIN,0.765,positive
+2025-11-14T22:44:33.267055Z,BITCOIN,Market uncertainty pushes BITCOIN downward,-0.34,negative
+2025-09-18T01:52:33.267064Z,BITCOIN,Market uncertainty pushes BITCOIN downward,-0.34,negative
+2025-10-02T20:16:33.267072Z,BITCOIN,BITCOIN gains traction in global markets,0.34,positive
+2025-09-07T07:34:33.267080Z,BITCOIN,BITCOIN sees declining trading activity,0.0,neutral
+2025-07-20T00:24:33.267087Z,BITCOIN,BITCOIN experiences strong bullish momentum,0.5106,positive
+2025-09-02T22:50:33.267095Z,BITCOIN,Investors show strong confidence in BITCOIN,0.765,positive
+2025-09-17T18:10:33.267103Z,BITCOIN,Whales reduce exposure to BITCOIN,0.0,neutral
+2025-09-18T22:59:33.267111Z,BITCOIN,New upgrade boosts performance of BITCOIN,0.3182,positive
+2025-11-26T18:47:33.267118Z,BITCOIN,Whales accumulate large amounts of BITCOIN,0.0,neutral
+2025-11-03T20:52:33.267127Z,BITCOIN,BITCOIN underperforms compared to competitors,0.0,neutral
+2025-11-16T05:14:33.267134Z,BITCOIN,BITCOIN receives strong community support,0.7184,positive
+2025-07-24T02:54:33.267142Z,BITCOIN,BITCOIN shows no major price movement today,-0.296,negative
+2025-08-04T10:37:33.267150Z,BITCOIN,Whales accumulate large amounts of BITCOIN,0.0,neutral
+2025-08-22T09:13:33.267159Z,BITCOIN,Liquidity for BITCOIN increases significantly,0.0,neutral
+2025-08-08T09:55:33.267167Z,BITCOIN,Whales reduce exposure to BITCOIN,0.0,neutral
+2025-11-07T03:03:33.267174Z,BITCOIN,BITCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-08T20:04:33.267183Z,BITCOIN,BITCOIN trades sideways with minimal volatility,0.0,neutral
+2025-08-11T04:34:33.267191Z,BITCOIN,BITCOIN experiences unusual volatility spike,0.0,neutral
+2025-10-27T01:03:33.267199Z,BITCOIN,BITCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-10-23T01:50:33.267207Z,BITCOIN,Whales accumulate large amounts of BITCOIN,0.0,neutral
+2025-07-27T11:52:33.267214Z,BITCOIN,Technical indicators show weakness for BITCOIN,-0.4215,negative
+2025-11-17T11:51:33.267222Z,BITCOIN,BITCOIN receives strong community support,0.7184,positive
+2025-07-12T06:17:33.267230Z,BITCOIN,BITCOIN faces short-term bearish correction,0.0,neutral
+2025-09-27T16:40:33.267240Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-09-11T04:40:33.267254Z,BITCOIN,BITCOIN experiences unusual volatility spike,0.0,neutral
+2025-08-28T20:22:33.267262Z,BITCOIN,Technical indicators show weakness for BITCOIN,-0.4215,negative
+2025-11-12T13:13:33.267269Z,BITCOIN,BITCOIN surges amid renewed market optimism,0.5423,positive
+2025-09-11T03:09:33.267277Z,BITCOIN,BITCOIN receives strong community support,0.7184,positive
+2025-09-10T13:10:33.267284Z,BITCOIN,Investors pull liquidity from BITCOIN markets,0.0,neutral
+2025-10-12T15:35:33.267293Z,BITCOIN,BITCOIN drops after heavy selling pressure,-0.296,negative
+2025-11-16T01:21:33.267300Z,BITCOIN,Whales reduce exposure to BITCOIN,0.0,neutral
+2025-11-23T00:09:33.267308Z,BITCOIN,BITCOIN drops after heavy selling pressure,-0.296,negative
+2025-11-20T19:19:33.267316Z,BITCOIN,BITCOIN underperforms compared to competitors,0.0,neutral
+2025-07-11T03:42:33.267325Z,BITCOIN,Market activity around BITCOIN remains stable,0.296,positive
+2025-11-07T23:13:33.267333Z,BITCOIN,BITCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-04T03:51:33.267340Z,BITCOIN,BITCOIN sees major spike in transaction activity,0.0,neutral
+2025-10-04T19:43:33.267349Z,CARDANO,Technical indicators show weakness for CARDANO,-0.4215,negative
+2025-10-31T00:19:33.267356Z,CARDANO,Market uncertainty pushes CARDANO downward,-0.34,negative
+2025-11-26T15:55:33.267364Z,CARDANO,Liquidity for CARDANO increases significantly,0.0,neutral
+2025-08-02T13:24:33.267372Z,CARDANO,CARDANO sees declining trading activity,0.0,neutral
+2025-08-10T02:34:33.267380Z,CARDANO,Whales accumulate large amounts of CARDANO,0.0,neutral
+2025-08-11T14:31:33.267389Z,CARDANO,CARDANO shows a strong recovery after recent dip,0.5106,positive
+2025-07-18T23:17:33.267398Z,CARDANO,CARDANO sees major spike in transaction activity,0.0,neutral
+2025-09-18T00:27:33.267406Z,CARDANO,New upgrade boosts performance of CARDANO,0.3182,positive
+2025-11-23T22:04:33.267414Z,CARDANO,Investors show strong confidence in CARDANO,0.765,positive
+2025-09-25T21:50:33.267422Z,CARDANO,CARDANO surges amid renewed market optimism,0.5423,positive
+2025-10-14T03:16:33.267429Z,CARDANO,Investors show strong confidence in CARDANO,0.765,positive
+2025-09-11T14:32:33.267437Z,CARDANO,CARDANO gains traction in global markets,0.34,positive
+2025-08-05T04:23:33.267445Z,CARDANO,Technical indicators show weakness for CARDANO,-0.4215,negative
+2025-11-03T11:45:33.267453Z,CARDANO,CARDANO sees major spike in transaction activity,0.0,neutral
+2025-10-20T22:23:33.267460Z,CARDANO,New upgrade boosts performance of CARDANO,0.3182,positive
+2025-08-27T02:20:33.267468Z,CARDANO,Analysts predict upward movement for CARDANO,0.0,neutral
+2025-09-04T12:22:33.267475Z,CARDANO,CARDANO adoption rises sharply as institutions enter,0.0,neutral
+2025-10-03T15:19:33.267483Z,CARDANO,CARDANO underperforms compared to competitors,0.0,neutral
+2025-09-26T10:31:33.267491Z,CARDANO,CARDANO ecosystem expands with new partnerships,0.1027,positive
+2025-08-25T08:44:33.267498Z,CARDANO,CARDANO experiences strong bullish momentum,0.5106,positive
+2025-09-26T00:29:33.267506Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-10-17T03:44:33.267514Z,CARDANO,Negative sentiment grows around CARDANO,-0.5719,negative
+2025-08-05T03:07:33.267522Z,CARDANO,CARDANO shows a strong recovery after recent dip,0.5106,positive
+2025-10-17T17:37:33.267530Z,CARDANO,CARDANO drops after heavy selling pressure,-0.296,negative
+2025-08-10T22:16:33.267538Z,CARDANO,Analysts predict upward movement for CARDANO,0.0,neutral
+2025-10-06T23:06:33.267545Z,CARDANO,Regulatory pressure negatively impacts CARDANO,-0.296,negative
+2025-09-24T22:07:33.267553Z,CARDANO,Whales accumulate large amounts of CARDANO,0.0,neutral
+2025-10-31T23:05:33.267561Z,CARDANO,CARDANO shows a strong recovery after recent dip,0.5106,positive
+2025-09-01T20:11:33.267568Z,CARDANO,New upgrade boosts performance of CARDANO,0.3182,positive
+2025-09-05T23:48:33.267578Z,CARDANO,CARDANO experiences unusual volatility spike,0.0,neutral
+2025-11-09T08:42:33.267587Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-11-04T22:06:33.267595Z,CARDANO,Whales accumulate large amounts of CARDANO,0.0,neutral
+2025-09-24T20:29:33.267603Z,CARDANO,CARDANO receives strong community support,0.7184,positive
+2025-11-16T14:46:33.267611Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-09-21T22:17:33.267619Z,CARDANO,Investors show strong confidence in CARDANO,0.765,positive
+2025-09-18T23:59:33.267628Z,CARDANO,Market activity around CARDANO remains stable,0.296,positive
+2025-11-18T10:50:33.267635Z,CARDANO,Whales reduce exposure to CARDANO,0.0,neutral
+2025-07-14T22:43:33.267644Z,CARDANO,New upgrade boosts performance of CARDANO,0.3182,positive
+2025-09-07T18:50:33.267652Z,CARDANO,CARDANO experiences unusual volatility spike,0.0,neutral
+2025-11-01T05:27:33.267659Z,CARDANO,CARDANO experiences unusual volatility spike,0.0,neutral
+2025-11-04T15:28:33.267667Z,CARDANO,CARDANO receives strong community support,0.7184,positive
+2025-09-26T07:35:33.267675Z,CARDANO,CARDANO shows no major price movement today,-0.296,negative
+2025-11-01T19:26:33.267683Z,CARDANO,Negative sentiment grows around CARDANO,-0.5719,negative
+2025-07-21T20:41:33.267690Z,CARDANO,Investors show strong confidence in CARDANO,0.765,positive
+2025-10-31T06:32:33.267698Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-10-12T04:29:33.267705Z,CARDANO,Negative sentiment grows around CARDANO,-0.5719,negative
+2025-07-12T02:11:33.267713Z,CARDANO,CARDANO sees declining trading activity,0.0,neutral
+2025-10-10T02:48:33.267721Z,CARDANO,CARDANO adoption rises sharply as institutions enter,0.0,neutral
+2025-11-03T10:40:33.267729Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-07-29T07:10:33.267736Z,CARDANO,CARDANO sees declining trading activity,0.0,neutral
+2025-11-20T14:47:33.267744Z,CARDANO,CARDANO receives strong community support,0.7184,positive
+2025-10-31T18:46:33.267752Z,CARDANO,Liquidity for CARDANO increases significantly,0.0,neutral
+2025-10-18T09:32:33.267759Z,CARDANO,CARDANO drops after heavy selling pressure,-0.296,negative
+2025-08-28T18:04:33.267768Z,CARDANO,CARDANO drops after heavy selling pressure,-0.296,negative
+2025-08-25T19:05:33.267776Z,CARDANO,New upgrade boosts performance of CARDANO,0.3182,positive
+2025-11-22T12:07:33.267784Z,CARDANO,CARDANO experiences unusual volatility spike,0.0,neutral
+2025-11-05T02:44:33.267791Z,CARDANO,Whales accumulate large amounts of CARDANO,0.0,neutral
+2025-11-08T12:06:33.267800Z,CARDANO,Analysts predict upward movement for CARDANO,0.0,neutral
+2025-11-10T13:51:33.267807Z,CARDANO,CARDANO receives strong community support,0.7184,positive
+2025-09-26T08:53:33.267815Z,CARDANO,Liquidity for CARDANO increases significantly,0.0,neutral
+2025-10-15T18:37:33.267822Z,CARDANO,Whales accumulate large amounts of CARDANO,0.0,neutral
+2025-11-07T10:40:33.267830Z,CARDANO,CARDANO experiences unusual volatility spike,0.0,neutral
+2025-08-01T12:22:33.267840Z,CARDANO,CARDANO underperforms compared to competitors,0.0,neutral
+2025-07-22T07:10:33.267848Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-08-18T15:17:33.267856Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-11-10T18:02:33.267864Z,CARDANO,Whales reduce exposure to CARDANO,0.0,neutral
+2025-07-28T22:41:33.267872Z,CARDANO,CARDANO shows a strong recovery after recent dip,0.5106,positive
+2025-07-20T11:24:33.267881Z,CARDANO,CARDANO receives strong community support,0.7184,positive
+2025-08-17T21:45:33.267888Z,CARDANO,CARDANO faces short-term bearish correction,0.0,neutral
+2025-10-16T17:44:33.267897Z,CARDANO,Analysts predict upward movement for CARDANO,0.0,neutral
+2025-11-07T19:36:33.267905Z,CARDANO,CARDANO sees major spike in transaction activity,0.0,neutral
+2025-08-09T09:26:33.267913Z,CARDANO,New upgrade boosts performance of CARDANO,0.3182,positive
+2025-09-07T11:01:33.267921Z,CARDANO,Investors pull liquidity from CARDANO markets,0.0,neutral
+2025-11-01T13:18:33.267928Z,CARDANO,CARDANO receives strong community support,0.7184,positive
+2025-09-24T08:56:33.267936Z,CARDANO,CARDANO sees declining trading activity,0.0,neutral
+2025-09-20T19:00:33.267943Z,CARDANO,Liquidity for CARDANO increases significantly,0.0,neutral
+2025-09-23T06:52:33.267951Z,CARDANO,CARDANO shows a strong recovery after recent dip,0.5106,positive
+2025-11-14T03:17:33.267960Z,CARDANO,Technical indicators show weakness for CARDANO,-0.4215,negative
+2025-07-18T12:38:33.267968Z,CARDANO,CARDANO drops after heavy selling pressure,-0.296,negative
+2025-10-26T02:33:33.267975Z,CARDANO,CARDANO gains traction in global markets,0.34,positive
+2025-08-05T15:29:33.267984Z,CHAINLINK,Technical indicators show weakness for CHAINLINK,-0.4215,negative
+2025-10-03T13:42:33.267991Z,CHAINLINK,CHAINLINK adoption rises sharply as institutions enter,0.0,neutral
+2025-08-30T10:49:33.267999Z,CHAINLINK,CHAINLINK shows a strong recovery after recent dip,0.5106,positive
+2025-09-03T04:54:33.268007Z,CHAINLINK,CHAINLINK experiences a calm trading session,0.3182,positive
+2025-09-15T21:08:33.268015Z,CHAINLINK,Whales accumulate large amounts of CHAINLINK,0.0,neutral
+2025-08-20T20:31:33.268022Z,CHAINLINK,New upgrade boosts performance of CHAINLINK,0.3182,positive
+2025-11-22T14:25:33.268030Z,CHAINLINK,CHAINLINK adoption rises sharply as institutions enter,0.0,neutral
+2025-07-19T08:44:33.268037Z,CHAINLINK,CHAINLINK ecosystem expands with new partnerships,0.1027,positive
+2025-10-30T01:41:33.268045Z,CHAINLINK,Market uncertainty pushes CHAINLINK downward,-0.34,negative
+2025-09-26T20:23:33.268054Z,CHAINLINK,CHAINLINK ecosystem expands with new partnerships,0.1027,positive
+2025-09-06T11:07:33.268062Z,CHAINLINK,New upgrade boosts performance of CHAINLINK,0.3182,positive
+2025-08-08T05:47:33.268070Z,CHAINLINK,Negative sentiment grows around CHAINLINK,-0.5719,negative
+2025-11-21T13:45:33.268079Z,CHAINLINK,CHAINLINK faces short-term bearish correction,0.0,neutral
+2025-10-24T03:13:33.268086Z,CHAINLINK,Whales accumulate large amounts of CHAINLINK,0.0,neutral
+2025-10-31T06:22:33.268094Z,CHAINLINK,Analysts predict upward movement for CHAINLINK,0.0,neutral
+2025-11-17T13:58:33.268102Z,CHAINLINK,Investors show strong confidence in CHAINLINK,0.765,positive
+2025-10-20T15:36:33.268109Z,CHAINLINK,Whales reduce exposure to CHAINLINK,0.0,neutral
+2025-08-17T19:40:33.268117Z,CHAINLINK,Technical indicators show weakness for CHAINLINK,-0.4215,negative
+2025-11-18T21:30:33.268124Z,CHAINLINK,New upgrade boosts performance of CHAINLINK,0.3182,positive
+2025-10-28T09:02:33.268132Z,CHAINLINK,CHAINLINK underperforms compared to competitors,0.0,neutral
+2025-10-08T17:47:33.268140Z,CHAINLINK,CHAINLINK receives strong community support,0.7184,positive
+2025-07-11T09:50:33.268147Z,CHAINLINK,Technical indicators show weakness for CHAINLINK,-0.4215,negative
+2025-10-27T07:12:33.268155Z,CHAINLINK,Negative sentiment grows around CHAINLINK,-0.5719,negative
+2025-09-24T09:56:33.268162Z,CHAINLINK,CHAINLINK sees major spike in transaction activity,0.0,neutral
+2025-08-05T03:30:33.268170Z,CHAINLINK,CHAINLINK shows a strong recovery after recent dip,0.5106,positive
+2025-08-30T12:34:33.268178Z,CHAINLINK,CHAINLINK experiences strong bullish momentum,0.5106,positive
+2025-09-05T11:32:33.268185Z,CHAINLINK,Regulatory pressure negatively impacts CHAINLINK,-0.296,negative
+2025-08-13T02:24:33.268194Z,CHAINLINK,CHAINLINK experiences unusual volatility spike,0.0,neutral
+2025-11-07T14:34:33.268202Z,CHAINLINK,CHAINLINK underperforms compared to competitors,0.0,neutral
+2025-09-16T06:40:33.268209Z,CHAINLINK,CHAINLINK shows a strong recovery after recent dip,0.5106,positive
+2025-07-16T04:55:33.268218Z,CHAINLINK,Investors pull liquidity from CHAINLINK markets,0.0,neutral
+2025-08-22T14:57:33.268226Z,CHAINLINK,CHAINLINK receives strong community support,0.7184,positive
+2025-07-31T16:37:33.268234Z,CHAINLINK,Technical indicators show weakness for CHAINLINK,-0.4215,negative
+2025-07-18T19:16:33.268249Z,CHAINLINK,CHAINLINK ecosystem expands with new partnerships,0.1027,positive
+2025-09-09T15:06:33.268257Z,CHAINLINK,Whales reduce exposure to CHAINLINK,0.0,neutral
+2025-09-27T02:23:33.268265Z,CHAINLINK,Market uncertainty pushes CHAINLINK downward,-0.34,negative
+2025-10-29T07:51:33.268273Z,CHAINLINK,New upgrade boosts performance of CHAINLINK,0.3182,positive
+2025-07-24T05:41:33.268280Z,CHAINLINK,Market activity around CHAINLINK remains stable,0.296,positive
+2025-11-18T05:39:33.268288Z,CHAINLINK,CHAINLINK sees declining trading activity,0.0,neutral
+2025-07-21T05:14:33.268295Z,CHAINLINK,Whales reduce exposure to CHAINLINK,0.0,neutral
+2025-07-27T16:53:33.268303Z,CHAINLINK,CHAINLINK sees major spike in transaction activity,0.0,neutral
+2025-11-05T21:32:33.268310Z,CHAINLINK,CHAINLINK drops after heavy selling pressure,-0.296,negative
+2025-11-19T16:38:33.268318Z,CHAINLINK,CHAINLINK sees declining trading activity,0.0,neutral
+2025-07-14T04:56:33.268328Z,CHAINLINK,CHAINLINK experiences unusual volatility spike,0.0,neutral
+2025-07-31T06:41:33.268339Z,CHAINLINK,Analysts predict upward movement for CHAINLINK,0.0,neutral
+2025-08-31T21:17:33.268347Z,CHAINLINK,CHAINLINK drops after heavy selling pressure,-0.296,negative
+2025-11-10T07:35:33.268355Z,CHAINLINK,Liquidity for CHAINLINK increases significantly,0.0,neutral
+2025-09-08T09:13:33.268363Z,CHAINLINK,CHAINLINK experiences strong bullish momentum,0.5106,positive
+2025-11-16T14:35:33.268371Z,CHAINLINK,Regulatory pressure negatively impacts CHAINLINK,-0.296,negative
+2025-08-03T07:49:33.268379Z,CHAINLINK,Whales reduce exposure to CHAINLINK,0.0,neutral
+2025-08-12T20:06:33.268387Z,CHAINLINK,CHAINLINK receives strong community support,0.7184,positive
+2025-08-01T17:15:33.268395Z,CHAINLINK,CHAINLINK experiences unusual volatility spike,0.0,neutral
+2025-10-13T06:19:33.268402Z,CHAINLINK,CHAINLINK sees major spike in transaction activity,0.0,neutral
+2025-11-13T12:18:33.268410Z,CHAINLINK,CHAINLINK sees major spike in transaction activity,0.0,neutral
+2025-10-03T18:11:33.268418Z,CHAINLINK,Whales reduce exposure to CHAINLINK,0.0,neutral
+2025-08-28T10:51:33.268425Z,CHAINLINK,CHAINLINK faces short-term bearish correction,0.0,neutral
+2025-11-08T22:20:33.268433Z,CHAINLINK,CHAINLINK experiences strong bullish momentum,0.5106,positive
+2025-09-30T01:31:33.268441Z,CHAINLINK,Market activity around CHAINLINK remains stable,0.296,positive
+2025-07-14T17:12:33.268449Z,CHAINLINK,CHAINLINK shows a strong recovery after recent dip,0.5106,positive
+2025-10-02T12:36:33.268456Z,CHAINLINK,Technical indicators show weakness for CHAINLINK,-0.4215,negative
+2025-10-23T14:19:33.268464Z,CHAINLINK,Whales accumulate large amounts of CHAINLINK,0.0,neutral
+2025-09-03T16:25:33.268472Z,CHAINLINK,CHAINLINK surges amid renewed market optimism,0.5423,positive
+2025-10-28T04:35:33.268482Z,CHAINLINK,CHAINLINK gains traction in global markets,0.34,positive
+2025-08-12T18:51:33.268490Z,CHAINLINK,Negative sentiment grows around CHAINLINK,-0.5719,negative
+2025-09-27T06:44:33.268498Z,CHAINLINK,New upgrade boosts performance of CHAINLINK,0.3182,positive
+2025-09-04T04:41:33.268505Z,CHAINLINK,CHAINLINK experiences strong bullish momentum,0.5106,positive
+2025-09-15T19:45:33.268513Z,CHAINLINK,Liquidity for CHAINLINK increases significantly,0.0,neutral
+2025-08-01T04:07:33.268521Z,CHAINLINK,Technical indicators show weakness for CHAINLINK,-0.4215,negative
+2025-07-18T11:49:33.268528Z,CHAINLINK,Analysts predict upward movement for CHAINLINK,0.0,neutral
+2025-10-05T00:18:33.268536Z,CHAINLINK,CHAINLINK sees declining trading activity,0.0,neutral
+2025-09-08T06:34:33.268544Z,CHAINLINK,New upgrade boosts performance of CHAINLINK,0.3182,positive
+2025-08-21T11:56:33.268551Z,CHAINLINK,CHAINLINK faces short-term bearish correction,0.0,neutral
+2025-11-06T16:01:33.268559Z,CHAINLINK,Whales accumulate large amounts of CHAINLINK,0.0,neutral
+2025-08-26T12:10:33.268567Z,CHAINLINK,Analysts predict upward movement for CHAINLINK,0.0,neutral
+2025-09-01T04:45:33.268574Z,CHAINLINK,Analysts predict upward movement for CHAINLINK,0.0,neutral
+2025-08-18T00:41:33.268582Z,CHAINLINK,CHAINLINK underperforms compared to competitors,0.0,neutral
+2025-07-22T11:14:33.268591Z,CHAINLINK,Liquidity for CHAINLINK increases significantly,0.0,neutral
+2025-08-26T17:49:33.268599Z,CHAINLINK,Whales accumulate large amounts of CHAINLINK,0.0,neutral
+2025-10-18T05:03:33.268607Z,CHAINLINK,CHAINLINK sees declining trading activity,0.0,neutral
+2025-11-13T03:20:33.268616Z,CHAINLINK,CHAINLINK ecosystem expands with new partnerships,0.1027,positive
+2025-08-07T07:21:33.268624Z,COSMOS,COSMOS experiences unusual volatility spike,0.0,neutral
+2025-09-27T11:22:33.268633Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-11-23T00:21:33.268641Z,COSMOS,Regulatory pressure negatively impacts COSMOS,-0.296,negative
+2025-11-16T01:29:33.268648Z,COSMOS,COSMOS receives strong community support,0.7184,positive
+2025-09-03T12:13:33.268656Z,COSMOS,COSMOS underperforms compared to competitors,0.0,neutral
+2025-09-30T07:22:33.268664Z,COSMOS,COSMOS receives strong community support,0.7184,positive
+2025-11-18T18:03:33.268673Z,COSMOS,COSMOS shows a strong recovery after recent dip,0.5106,positive
+2025-08-11T10:53:33.268681Z,COSMOS,Investors show strong confidence in COSMOS,0.765,positive
+2025-07-18T18:33:33.268688Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-08-27T16:17:33.268696Z,COSMOS,Whales accumulate large amounts of COSMOS,0.0,neutral
+2025-09-07T19:22:33.268704Z,COSMOS,COSMOS drops after heavy selling pressure,-0.296,negative
+2025-11-21T01:32:33.268711Z,COSMOS,Analysts predict upward movement for COSMOS,0.0,neutral
+2025-07-17T08:08:33.268719Z,COSMOS,Negative sentiment grows around COSMOS,-0.5719,negative
+2025-10-19T00:22:33.268727Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-11-12T03:56:33.268734Z,COSMOS,COSMOS drops after heavy selling pressure,-0.296,negative
+2025-11-07T06:27:33.268742Z,COSMOS,Regulatory pressure negatively impacts COSMOS,-0.296,negative
+2025-08-13T15:54:33.268749Z,COSMOS,COSMOS experiences unusual volatility spike,0.0,neutral
+2025-11-07T20:49:33.268757Z,COSMOS,COSMOS underperforms compared to competitors,0.0,neutral
+2025-09-19T03:52:33.268765Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-07-18T13:25:33.268772Z,COSMOS,Investors pull liquidity from COSMOS markets,0.0,neutral
+2025-11-08T12:14:33.268780Z,COSMOS,Market uncertainty pushes COSMOS downward,-0.34,negative
+2025-10-04T17:42:33.268788Z,COSMOS,Whales accumulate large amounts of COSMOS,0.0,neutral
+2025-11-07T03:43:33.268795Z,COSMOS,Investors show strong confidence in COSMOS,0.765,positive
+2025-10-05T09:31:33.268803Z,COSMOS,Investors show strong confidence in COSMOS,0.765,positive
+2025-10-24T16:51:33.268812Z,COSMOS,COSMOS experiences unusual volatility spike,0.0,neutral
+2025-08-26T07:03:33.268820Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-11-25T06:21:33.268827Z,COSMOS,COSMOS receives strong community support,0.7184,positive
+2025-08-20T04:49:33.268835Z,COSMOS,Negative sentiment grows around COSMOS,-0.5719,negative
+2025-11-05T19:45:33.268844Z,COSMOS,COSMOS faces short-term bearish correction,0.0,neutral
+2025-07-13T03:43:33.268856Z,COSMOS,Whales reduce exposure to COSMOS,0.0,neutral
+2025-07-20T15:40:33.268864Z,COSMOS,Analysts predict upward movement for COSMOS,0.0,neutral
+2025-07-24T00:59:33.268872Z,COSMOS,COSMOS ecosystem expands with new partnerships,0.1027,positive
+2025-11-19T17:22:33.268879Z,COSMOS,COSMOS gains traction in global markets,0.34,positive
+2025-09-27T00:03:33.268887Z,COSMOS,COSMOS gains traction in global markets,0.34,positive
+2025-10-04T10:42:33.268895Z,COSMOS,COSMOS surges amid renewed market optimism,0.5423,positive
+2025-11-10T17:11:33.268909Z,COSMOS,Investors show strong confidence in COSMOS,0.765,positive
+2025-11-23T22:49:33.268916Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-07-25T21:46:33.268926Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-10-10T10:20:33.268933Z,COSMOS,COSMOS sees declining trading activity,0.0,neutral
+2025-07-29T09:48:33.268941Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-08-27T16:46:33.268948Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-09-20T06:58:33.268956Z,COSMOS,New upgrade boosts performance of COSMOS,0.3182,positive
+2025-10-08T09:52:33.268964Z,COSMOS,COSMOS experiences unusual volatility spike,0.0,neutral
+2025-08-16T06:16:33.268972Z,COSMOS,COSMOS shows a strong recovery after recent dip,0.5106,positive
+2025-08-02T01:09:33.268979Z,COSMOS,COSMOS sees declining trading activity,0.0,neutral
+2025-09-05T21:16:33.268987Z,COSMOS,Market uncertainty pushes COSMOS downward,-0.34,negative
+2025-11-08T14:40:33.268995Z,COSMOS,COSMOS drops after heavy selling pressure,-0.296,negative
+2025-11-24T21:09:33.269002Z,COSMOS,COSMOS adoption rises sharply as institutions enter,0.0,neutral
+2025-08-16T21:37:33.269010Z,COSMOS,Regulatory pressure negatively impacts COSMOS,-0.296,negative
+2025-09-30T00:49:33.269018Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-08-26T01:59:33.269027Z,COSMOS,Liquidity for COSMOS increases significantly,0.0,neutral
+2025-10-29T19:35:33.269034Z,COSMOS,Liquidity for COSMOS increases significantly,0.0,neutral
+2025-07-22T23:07:33.269042Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-11-24T20:58:33.269049Z,COSMOS,New upgrade boosts performance of COSMOS,0.3182,positive
+2025-10-29T02:56:33.269057Z,COSMOS,Market activity around COSMOS remains stable,0.296,positive
+2025-11-23T13:52:33.269065Z,COSMOS,Analysts predict upward movement for COSMOS,0.0,neutral
+2025-10-17T10:51:33.269074Z,COSMOS,Investors show strong confidence in COSMOS,0.765,positive
+2025-10-24T21:36:33.269083Z,COSMOS,COSMOS sees major spike in transaction activity,0.0,neutral
+2025-08-13T17:56:33.269091Z,COSMOS,COSMOS underperforms compared to competitors,0.0,neutral
+2025-11-15T06:54:33.269099Z,COSMOS,COSMOS experiences strong bullish momentum,0.5106,positive
+2025-07-27T14:01:33.269108Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-08-05T02:14:33.269116Z,COSMOS,Whales reduce exposure to COSMOS,0.0,neutral
+2025-09-23T13:05:33.269123Z,COSMOS,COSMOS receives strong community support,0.7184,positive
+2025-10-09T22:39:33.269131Z,COSMOS,COSMOS drops after heavy selling pressure,-0.296,negative
+2025-07-30T09:28:33.269139Z,COSMOS,Negative sentiment grows around COSMOS,-0.5719,negative
+2025-11-24T08:06:33.269146Z,COSMOS,COSMOS surges amid renewed market optimism,0.5423,positive
+2025-10-31T19:31:33.269154Z,COSMOS,Whales reduce exposure to COSMOS,0.0,neutral
+2025-08-06T03:19:33.269162Z,COSMOS,COSMOS ecosystem expands with new partnerships,0.1027,positive
+2025-10-14T10:38:33.269170Z,COSMOS,COSMOS surges amid renewed market optimism,0.5423,positive
+2025-08-13T09:01:33.269177Z,COSMOS,Liquidity for COSMOS increases significantly,0.0,neutral
+2025-10-21T14:13:33.269185Z,COSMOS,New upgrade boosts performance of COSMOS,0.3182,positive
+2025-09-28T22:16:33.269193Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-10-16T02:08:33.269200Z,COSMOS,COSMOS ecosystem expands with new partnerships,0.1027,positive
+2025-10-13T21:19:33.269208Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-07-19T20:29:33.269217Z,COSMOS,COSMOS adoption rises sharply as institutions enter,0.0,neutral
+2025-09-18T14:24:33.269225Z,COSMOS,Technical indicators show weakness for COSMOS,-0.4215,negative
+2025-11-16T15:00:33.269233Z,COSMOS,Analysts predict upward movement for COSMOS,0.0,neutral
+2025-10-20T16:30:33.269249Z,COSMOS,Analysts predict upward movement for COSMOS,0.0,neutral
+2025-10-19T11:35:33.269258Z,COSMOS,Whales reduce exposure to COSMOS,0.0,neutral
+2025-08-25T02:27:33.269266Z,COSMOS,Analysts predict upward movement for COSMOS,0.0,neutral
+2025-11-03T20:12:33.269274Z,CRYPTOCOMCOIN,Regulatory pressure negatively impacts CRYPTOCOMCOIN,-0.296,negative
+2025-09-03T22:27:33.269282Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN experiences unusual volatility spike,0.0,neutral
+2025-08-05T14:08:33.269290Z,CRYPTOCOMCOIN,Whales accumulate large amounts of CRYPTOCOMCOIN,0.0,neutral
+2025-08-20T16:11:33.269299Z,CRYPTOCOMCOIN,Regulatory pressure negatively impacts CRYPTOCOMCOIN,-0.296,negative
+2025-11-03T20:09:33.269307Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN drops after heavy selling pressure,-0.296,negative
+2025-11-16T20:42:33.269315Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN underperforms compared to competitors,0.0,neutral
+2025-09-08T21:02:33.269322Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-08-12T11:04:33.269330Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-10-12T20:10:33.269338Z,CRYPTOCOMCOIN,New upgrade boosts performance of CRYPTOCOMCOIN,0.3182,positive
+2025-07-27T22:04:33.269346Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN receives strong community support,0.7184,positive
+2025-11-22T19:24:33.269353Z,CRYPTOCOMCOIN,Investors show strong confidence in CRYPTOCOMCOIN,0.765,positive
+2025-07-26T11:38:33.269362Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN receives strong community support,0.7184,positive
+2025-11-05T03:26:33.269371Z,CRYPTOCOMCOIN,Investors pull liquidity from CRYPTOCOMCOIN markets,0.0,neutral
+2025-11-08T19:04:33.269379Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN experiences a calm trading session,0.3182,positive
+2025-08-02T23:05:33.269387Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-09-07T06:08:33.269394Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-09-17T05:40:33.269402Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-09-21T00:05:33.269409Z,CRYPTOCOMCOIN,Market uncertainty pushes CRYPTOCOMCOIN downward,-0.34,negative
+2025-11-08T00:13:33.269417Z,CRYPTOCOMCOIN,Negative sentiment grows around CRYPTOCOMCOIN,-0.5719,negative
+2025-11-10T10:04:33.269425Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-11-06T06:55:33.269433Z,CRYPTOCOMCOIN,Market activity around CRYPTOCOMCOIN remains stable,0.296,positive
+2025-08-24T20:54:33.269441Z,CRYPTOCOMCOIN,Technical indicators show weakness for CRYPTOCOMCOIN,-0.4215,negative
+2025-11-15T02:15:33.269450Z,CRYPTOCOMCOIN,Regulatory pressure negatively impacts CRYPTOCOMCOIN,-0.296,negative
+2025-07-11T05:18:33.269457Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-07-22T23:31:33.269465Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-10-31T20:07:33.269473Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-13T21:05:33.269480Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-27T05:28:33.269488Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-07-20T03:20:33.269496Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN faces short-term bearish correction,0.0,neutral
+2025-11-19T00:05:33.269503Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN sees major spike in transaction activity,0.0,neutral
+2025-08-30T07:31:33.269511Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN underperforms compared to competitors,0.0,neutral
+2025-11-18T22:57:33.269519Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN underperforms compared to competitors,0.0,neutral
+2025-10-27T12:05:33.269526Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN underperforms compared to competitors,0.0,neutral
+2025-08-27T13:17:33.269534Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN sees declining trading activity,0.0,neutral
+2025-10-03T08:09:33.269542Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN shows no major price movement today,-0.296,negative
+2025-09-25T23:58:33.269550Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN trades sideways with minimal volatility,0.0,neutral
+2025-08-15T22:39:33.269559Z,CRYPTOCOMCOIN,New upgrade boosts performance of CRYPTOCOMCOIN,0.3182,positive
+2025-09-19T10:18:33.269567Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN trades sideways with minimal volatility,0.0,neutral
+2025-07-11T21:49:33.269575Z,CRYPTOCOMCOIN,Investors show strong confidence in CRYPTOCOMCOIN,0.765,positive
+2025-11-09T07:33:33.269583Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN drops after heavy selling pressure,-0.296,negative
+2025-09-20T17:28:33.269591Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-07-21T00:27:33.269603Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN underperforms compared to competitors,0.0,neutral
+2025-09-02T13:34:33.269611Z,CRYPTOCOMCOIN,Analysts predict upward movement for CRYPTOCOMCOIN,0.0,neutral
+2025-07-15T23:46:33.269620Z,CRYPTOCOMCOIN,Investors show strong confidence in CRYPTOCOMCOIN,0.765,positive
+2025-11-16T07:38:33.269628Z,CRYPTOCOMCOIN,Regulatory pressure negatively impacts CRYPTOCOMCOIN,-0.296,negative
+2025-09-28T01:30:33.269635Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-08-02T10:37:33.269643Z,CRYPTOCOMCOIN,Whales accumulate large amounts of CRYPTOCOMCOIN,0.0,neutral
+2025-11-08T22:20:33.269651Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN faces short-term bearish correction,0.0,neutral
+2025-08-20T18:20:33.269659Z,CRYPTOCOMCOIN,Analysts predict upward movement for CRYPTOCOMCOIN,0.0,neutral
+2025-08-08T21:44:33.269666Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN receives strong community support,0.7184,positive
+2025-10-29T16:12:33.269674Z,CRYPTOCOMCOIN,Whales accumulate large amounts of CRYPTOCOMCOIN,0.0,neutral
+2025-08-01T14:09:33.269682Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-08-13T04:56:33.269689Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-09-18T07:54:33.269697Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN drops after heavy selling pressure,-0.296,negative
+2025-07-16T17:28:33.269706Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-07-14T09:28:33.269713Z,CRYPTOCOMCOIN,Whales reduce exposure to CRYPTOCOMCOIN,0.0,neutral
+2025-07-11T16:56:33.269721Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN experiences a calm trading session,0.3182,positive
+2025-11-23T04:20:33.269728Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN faces short-term bearish correction,0.0,neutral
+2025-11-12T15:47:33.269736Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-11-25T14:22:33.269746Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN receives strong community support,0.7184,positive
+2025-08-07T19:30:33.269754Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-07-17T23:28:33.269761Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-09-27T17:34:33.269769Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-11-07T03:20:33.269777Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-15T06:45:33.269784Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-10-23T21:56:33.269792Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN faces short-term bearish correction,0.0,neutral
+2025-10-25T04:05:33.269799Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-08-21T17:10:33.269807Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN surges amid renewed market optimism,0.5423,positive
+2025-08-21T19:20:33.269815Z,CRYPTOCOMCOIN,Investors pull liquidity from CRYPTOCOMCOIN markets,0.0,neutral
+2025-08-29T01:40:33.269823Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-04T20:12:33.269830Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN sees major spike in transaction activity,0.0,neutral
+2025-11-19T08:05:33.269838Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN experiences strong bullish momentum,0.5106,positive
+2025-10-11T03:02:33.269846Z,CRYPTOCOMCOIN,Investors pull liquidity from CRYPTOCOMCOIN markets,0.0,neutral
+2025-08-26T15:40:33.269853Z,CRYPTOCOMCOIN,Liquidity for CRYPTOCOMCOIN increases significantly,0.0,neutral
+2025-08-16T08:41:33.269861Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN receives strong community support,0.7184,positive
+2025-09-21T23:11:33.269869Z,CRYPTOCOMCOIN,Analysts predict upward movement for CRYPTOCOMCOIN,0.0,neutral
+2025-09-23T22:11:33.269878Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN gains traction in global markets,0.34,positive
+2025-10-06T05:58:33.269886Z,CRYPTOCOMCOIN,Analysts predict upward movement for CRYPTOCOMCOIN,0.0,neutral
+2025-09-11T00:06:33.269894Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-08-10T15:20:33.269902Z,CRYPTOCOMCOIN,CRYPTOCOMCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-10-04T03:27:33.269911Z,DOGECOIN,Whales reduce exposure to DOGECOIN,0.0,neutral
+2025-09-08T11:21:33.269920Z,DOGECOIN,DOGECOIN drops after heavy selling pressure,-0.296,negative
+2025-11-26T11:41:33.269927Z,DOGECOIN,Market uncertainty pushes DOGECOIN downward,-0.34,negative
+2025-11-26T11:27:33.269936Z,DOGECOIN,New upgrade boosts performance of DOGECOIN,0.3182,positive
+2025-07-14T11:44:33.269944Z,DOGECOIN,DOGECOIN underperforms compared to competitors,0.0,neutral
+2025-09-12T04:31:33.269952Z,DOGECOIN,Investors pull liquidity from DOGECOIN markets,0.0,neutral
+2025-09-14T05:17:33.269959Z,DOGECOIN,Whales reduce exposure to DOGECOIN,0.0,neutral
+2025-08-14T13:36:33.269967Z,DOGECOIN,DOGECOIN trades sideways with minimal volatility,0.0,neutral
+2025-09-02T13:13:33.269974Z,DOGECOIN,DOGECOIN faces short-term bearish correction,0.0,neutral
+2025-08-27T18:25:33.269982Z,DOGECOIN,DOGECOIN underperforms compared to competitors,0.0,neutral
+2025-11-16T02:02:33.269991Z,DOGECOIN,Whales accumulate large amounts of DOGECOIN,0.0,neutral
+2025-07-24T03:47:33.269999Z,DOGECOIN,DOGECOIN faces short-term bearish correction,0.0,neutral
+2025-10-05T11:16:33.270007Z,DOGECOIN,DOGECOIN underperforms compared to competitors,0.0,neutral
+2025-10-13T06:01:33.270014Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-08-14T16:02:33.270022Z,DOGECOIN,Negative sentiment grows around DOGECOIN,-0.5719,negative
+2025-08-30T19:15:33.270029Z,DOGECOIN,Regulatory pressure negatively impacts DOGECOIN,-0.296,negative
+2025-10-18T17:47:33.270037Z,DOGECOIN,DOGECOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-10-02T08:42:33.270045Z,DOGECOIN,DOGECOIN experiences unusual volatility spike,0.0,neutral
+2025-08-13T01:52:33.270052Z,DOGECOIN,DOGECOIN shows no major price movement today,-0.296,negative
+2025-09-25T07:02:33.270061Z,DOGECOIN,DOGECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-11-21T09:57:33.270068Z,DOGECOIN,DOGECOIN shows no major price movement today,-0.296,negative
+2025-10-17T17:49:33.270076Z,DOGECOIN,DOGECOIN receives strong community support,0.7184,positive
+2025-09-15T16:32:33.270084Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-07-21T15:22:33.270091Z,DOGECOIN,DOGECOIN experiences a calm trading session,0.3182,positive
+2025-09-04T23:53:33.270099Z,DOGECOIN,DOGECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-09-02T11:38:33.270106Z,DOGECOIN,Technical indicators show weakness for DOGECOIN,-0.4215,negative
+2025-10-07T09:38:33.270117Z,DOGECOIN,Whales accumulate large amounts of DOGECOIN,0.0,neutral
+2025-07-29T10:11:33.270124Z,DOGECOIN,Analysts predict upward movement for DOGECOIN,0.0,neutral
+2025-07-29T06:57:33.270133Z,DOGECOIN,Market activity around DOGECOIN remains stable,0.296,positive
+2025-07-31T20:01:33.270141Z,DOGECOIN,Liquidity for DOGECOIN increases significantly,0.0,neutral
+2025-09-02T09:19:33.270148Z,DOGECOIN,Investors show strong confidence in DOGECOIN,0.765,positive
+2025-10-22T10:44:33.270156Z,DOGECOIN,DOGECOIN sees major spike in transaction activity,0.0,neutral
+2025-08-03T01:53:33.270164Z,DOGECOIN,Whales reduce exposure to DOGECOIN,0.0,neutral
+2025-10-12T17:34:33.270173Z,DOGECOIN,DOGECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-10-21T12:45:33.270180Z,DOGECOIN,Liquidity for DOGECOIN increases significantly,0.0,neutral
+2025-08-23T07:07:33.270188Z,DOGECOIN,Negative sentiment grows around DOGECOIN,-0.5719,negative
+2025-08-23T01:14:33.270196Z,DOGECOIN,DOGECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-25T02:29:33.270203Z,DOGECOIN,DOGECOIN underperforms compared to competitors,0.0,neutral
+2025-10-28T07:14:33.270211Z,DOGECOIN,DOGECOIN receives strong community support,0.7184,positive
+2025-11-24T16:41:33.270218Z,DOGECOIN,DOGECOIN experiences unusual volatility spike,0.0,neutral
+2025-09-04T01:58:33.270226Z,DOGECOIN,Negative sentiment grows around DOGECOIN,-0.5719,negative
+2025-07-19T19:59:33.270233Z,DOGECOIN,DOGECOIN trades sideways with minimal volatility,0.0,neutral
+2025-09-26T05:45:33.270247Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-11-19T01:17:33.270256Z,DOGECOIN,DOGECOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-08-14T18:52:33.270264Z,DOGECOIN,Whales reduce exposure to DOGECOIN,0.0,neutral
+2025-09-22T21:45:33.270274Z,DOGECOIN,DOGECOIN sees major spike in transaction activity,0.0,neutral
+2025-11-12T22:26:33.270281Z,DOGECOIN,New upgrade boosts performance of DOGECOIN,0.3182,positive
+2025-10-12T03:38:33.270289Z,DOGECOIN,Regulatory pressure negatively impacts DOGECOIN,-0.296,negative
+2025-09-12T14:52:33.270297Z,DOGECOIN,DOGECOIN receives strong community support,0.7184,positive
+2025-11-24T06:29:33.270304Z,DOGECOIN,Investors show strong confidence in DOGECOIN,0.765,positive
+2025-11-06T21:36:33.270312Z,DOGECOIN,DOGECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-30T09:36:33.270319Z,DOGECOIN,DOGECOIN faces short-term bearish correction,0.0,neutral
+2025-11-03T19:20:33.270327Z,DOGECOIN,Analysts predict upward movement for DOGECOIN,0.0,neutral
+2025-10-04T07:39:33.270381Z,DOGECOIN,DOGECOIN experiences unusual volatility spike,0.0,neutral
+2025-07-29T07:40:33.270389Z,DOGECOIN,DOGECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-16T07:51:33.270399Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-10-21T05:47:33.270407Z,DOGECOIN,DOGECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-05T06:59:33.270414Z,DOGECOIN,Investors pull liquidity from DOGECOIN markets,0.0,neutral
+2025-10-07T02:57:33.270423Z,DOGECOIN,Negative sentiment grows around DOGECOIN,-0.5719,negative
+2025-09-14T00:03:33.270431Z,DOGECOIN,Whales reduce exposure to DOGECOIN,0.0,neutral
+2025-08-20T22:52:33.270439Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-11-01T19:33:33.270447Z,DOGECOIN,Negative sentiment grows around DOGECOIN,-0.5719,negative
+2025-10-07T15:33:33.270454Z,DOGECOIN,DOGECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-08T21:08:33.270462Z,DOGECOIN,Investors pull liquidity from DOGECOIN markets,0.0,neutral
+2025-07-24T15:57:33.270470Z,DOGECOIN,New upgrade boosts performance of DOGECOIN,0.3182,positive
+2025-09-19T02:56:33.270477Z,DOGECOIN,DOGECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-11T17:53:33.270485Z,DOGECOIN,DOGECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-04T18:20:33.270493Z,DOGECOIN,DOGECOIN experiences a calm trading session,0.3182,positive
+2025-07-11T23:37:33.270500Z,DOGECOIN,Analysts predict upward movement for DOGECOIN,0.0,neutral
+2025-09-21T08:56:33.270508Z,DOGECOIN,DOGECOIN experiences unusual volatility spike,0.0,neutral
+2025-08-08T04:30:33.270515Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-11-20T21:47:33.270523Z,DOGECOIN,DOGECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-11-03T17:14:33.270530Z,DOGECOIN,DOGECOIN receives strong community support,0.7184,positive
+2025-09-14T13:24:33.270538Z,DOGECOIN,DOGECOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-11-08T02:36:33.270546Z,DOGECOIN,DOGECOIN experiences strong bullish momentum,0.5106,positive
+2025-10-04T09:10:33.270553Z,DOGECOIN,DOGECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-10-05T04:39:33.270561Z,DOGECOIN,Whales reduce exposure to DOGECOIN,0.0,neutral
+2025-08-25T14:51:33.270570Z,DOGECOIN,DOGECOIN drops after heavy selling pressure,-0.296,negative
+2025-11-15T21:52:33.270577Z,DOGECOIN,DOGECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-11-21T08:04:33.270585Z,DOGECOIN,Market uncertainty pushes DOGECOIN downward,-0.34,negative
+2025-09-20T19:36:33.270594Z,EOS,EOS gains traction in global markets,0.34,positive
+2025-08-22T22:10:33.270601Z,EOS,Liquidity for EOS increases significantly,0.0,neutral
+2025-11-23T05:09:33.270609Z,EOS,Investors show strong confidence in EOS,0.765,positive
+2025-08-05T13:06:33.270617Z,EOS,Technical indicators show weakness for EOS,-0.4215,negative
+2025-10-17T20:56:33.270626Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-10-27T08:39:33.270634Z,EOS,EOS surges amid renewed market optimism,0.5423,positive
+2025-07-19T15:08:33.270641Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-11-06T19:32:33.270649Z,EOS,EOS receives strong community support,0.7184,positive
+2025-09-26T03:56:33.270656Z,EOS,Technical indicators show weakness for EOS,-0.4215,negative
+2025-07-14T10:49:33.270664Z,EOS,Whales accumulate large amounts of EOS,0.0,neutral
+2025-07-17T12:11:33.270673Z,EOS,Technical indicators show weakness for EOS,-0.4215,negative
+2025-11-22T10:15:33.270681Z,EOS,EOS underperforms compared to competitors,0.0,neutral
+2025-09-30T18:35:33.270688Z,EOS,EOS drops after heavy selling pressure,-0.296,negative
+2025-07-14T12:36:33.270697Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-07-17T18:10:33.270704Z,EOS,Whales accumulate large amounts of EOS,0.0,neutral
+2025-07-14T05:16:33.270712Z,EOS,EOS adoption rises sharply as institutions enter,0.0,neutral
+2025-10-26T08:03:33.270719Z,EOS,Whales accumulate large amounts of EOS,0.0,neutral
+2025-07-24T21:55:33.270728Z,EOS,EOS experiences unusual volatility spike,0.0,neutral
+2025-08-24T04:08:33.270736Z,EOS,Whales reduce exposure to EOS,0.0,neutral
+2025-09-09T03:20:33.270744Z,EOS,Liquidity for EOS increases significantly,0.0,neutral
+2025-09-27T23:19:33.270751Z,EOS,EOS underperforms compared to competitors,0.0,neutral
+2025-10-03T23:07:33.270759Z,EOS,EOS sees major spike in transaction activity,0.0,neutral
+2025-09-05T10:52:33.270766Z,EOS,New upgrade boosts performance of EOS,0.3182,positive
+2025-08-04T21:17:33.270774Z,EOS,Negative sentiment grows around EOS,-0.5719,negative
+2025-07-16T03:03:33.270782Z,EOS,EOS sees declining trading activity,0.0,neutral
+2025-10-10T03:58:33.270791Z,EOS,EOS sees major spike in transaction activity,0.0,neutral
+2025-09-02T07:58:33.270798Z,EOS,Regulatory pressure negatively impacts EOS,-0.296,negative
+2025-10-20T01:11:33.270806Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-10-12T09:27:33.270813Z,EOS,Regulatory pressure negatively impacts EOS,-0.296,negative
+2025-11-20T18:07:33.270821Z,EOS,EOS adoption rises sharply as institutions enter,0.0,neutral
+2025-08-22T08:10:33.270829Z,EOS,Whales accumulate large amounts of EOS,0.0,neutral
+2025-10-05T13:37:33.270836Z,EOS,EOS sees declining trading activity,0.0,neutral
+2025-10-14T14:38:33.270844Z,EOS,EOS sees declining trading activity,0.0,neutral
+2025-10-21T04:19:33.270852Z,EOS,Regulatory pressure negatively impacts EOS,-0.296,negative
+2025-11-10T02:53:33.270860Z,EOS,Liquidity for EOS increases significantly,0.0,neutral
+2025-07-23T11:00:33.270868Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-10-15T06:27:33.270875Z,EOS,EOS experiences strong bullish momentum,0.5106,positive
+2025-09-26T21:57:33.270883Z,EOS,Negative sentiment grows around EOS,-0.5719,negative
+2025-09-13T04:01:33.270892Z,EOS,EOS faces short-term bearish correction,0.0,neutral
+2025-07-12T09:45:33.270900Z,EOS,EOS drops after heavy selling pressure,-0.296,negative
+2025-07-15T02:24:33.270915Z,EOS,EOS underperforms compared to competitors,0.0,neutral
+2025-10-26T19:53:33.270922Z,EOS,EOS gains traction in global markets,0.34,positive
+2025-11-22T03:08:33.270930Z,EOS,EOS faces short-term bearish correction,0.0,neutral
+2025-08-30T15:27:33.270940Z,EOS,Investors pull liquidity from EOS markets,0.0,neutral
+2025-07-21T10:03:33.270947Z,EOS,EOS sees declining trading activity,0.0,neutral
+2025-08-13T20:28:33.270955Z,EOS,EOS gains traction in global markets,0.34,positive
+2025-08-28T07:03:33.270963Z,EOS,EOS trades sideways with minimal volatility,0.0,neutral
+2025-09-27T12:17:33.270970Z,EOS,Whales reduce exposure to EOS,0.0,neutral
+2025-10-14T18:04:33.270979Z,EOS,EOS experiences strong bullish momentum,0.5106,positive
+2025-09-30T19:50:33.270986Z,EOS,EOS drops after heavy selling pressure,-0.296,negative
+2025-10-24T07:08:33.270994Z,EOS,EOS experiences unusual volatility spike,0.0,neutral
+2025-09-20T17:13:33.271001Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-11-12T17:30:33.271009Z,EOS,EOS ecosystem expands with new partnerships,0.1027,positive
+2025-09-23T02:24:33.271016Z,EOS,EOS experiences strong bullish momentum,0.5106,positive
+2025-11-25T12:29:33.271024Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-09-09T06:07:33.271031Z,EOS,Whales accumulate large amounts of EOS,0.0,neutral
+2025-10-10T06:05:33.271039Z,EOS,Technical indicators show weakness for EOS,-0.4215,negative
+2025-09-05T12:19:33.271047Z,EOS,EOS underperforms compared to competitors,0.0,neutral
+2025-09-12T21:58:33.271056Z,EOS,Liquidity for EOS increases significantly,0.0,neutral
+2025-08-23T02:41:33.271064Z,EOS,Technical indicators show weakness for EOS,-0.4215,negative
+2025-10-15T04:10:33.271071Z,EOS,EOS shows a strong recovery after recent dip,0.5106,positive
+2025-10-17T02:52:33.271079Z,EOS,Analysts predict upward movement for EOS,0.0,neutral
+2025-08-10T06:34:33.271087Z,EOS,Investors pull liquidity from EOS markets,0.0,neutral
+2025-09-14T16:08:33.271094Z,EOS,EOS experiences unusual volatility spike,0.0,neutral
+2025-09-23T13:04:33.271102Z,EOS,EOS experiences unusual volatility spike,0.0,neutral
+2025-11-07T07:05:33.271109Z,EOS,Market activity around EOS remains stable,0.296,positive
+2025-10-13T00:39:33.271117Z,EOS,EOS sees major spike in transaction activity,0.0,neutral
+2025-08-16T02:14:33.271125Z,EOS,EOS sees declining trading activity,0.0,neutral
+2025-11-13T05:47:33.271132Z,EOS,EOS adoption rises sharply as institutions enter,0.0,neutral
+2025-10-07T20:14:33.271141Z,EOS,EOS shows a strong recovery after recent dip,0.5106,positive
+2025-08-02T16:04:33.271149Z,EOS,Investors pull liquidity from EOS markets,0.0,neutral
+2025-10-02T05:42:33.271157Z,EOS,New upgrade boosts performance of EOS,0.3182,positive
+2025-11-11T00:49:33.271164Z,EOS,Investors pull liquidity from EOS markets,0.0,neutral
+2025-10-17T12:07:33.271172Z,EOS,EOS sees declining trading activity,0.0,neutral
+2025-11-16T00:04:33.271181Z,EOS,EOS receives strong community support,0.7184,positive
+2025-08-19T02:23:33.271189Z,EOS,Technical indicators show weakness for EOS,-0.4215,negative
+2025-10-13T09:55:33.271196Z,EOS,Investors pull liquidity from EOS markets,0.0,neutral
+2025-10-28T10:37:33.271204Z,EOS,EOS shows no major price movement today,-0.296,negative
+2025-11-17T03:18:33.271212Z,EOS,Market activity around EOS remains stable,0.296,positive
+2025-10-11T12:16:33.271219Z,EOS,EOS adoption rises sharply as institutions enter,0.0,neutral
+2025-07-12T12:00:33.271230Z,ETHEREUM,ETHEREUM surges amid renewed market optimism,0.5423,positive
+2025-11-09T08:40:33.271243Z,ETHEREUM,Whales accumulate large amounts of ETHEREUM,0.0,neutral
+2025-11-22T20:48:33.271254Z,ETHEREUM,Market uncertainty pushes ETHEREUM downward,-0.34,negative
+2025-11-10T07:00:33.271262Z,ETHEREUM,Regulatory pressure negatively impacts ETHEREUM,-0.296,negative
+2025-09-19T18:57:33.271270Z,ETHEREUM,Negative sentiment grows around ETHEREUM,-0.5719,negative
+2025-10-07T05:07:33.271278Z,ETHEREUM,Whales accumulate large amounts of ETHEREUM,0.0,neutral
+2025-09-28T12:19:33.271285Z,ETHEREUM,ETHEREUM experiences strong bullish momentum,0.5106,positive
+2025-08-17T05:52:33.271293Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-10-13T02:52:33.271300Z,ETHEREUM,ETHEREUM receives strong community support,0.7184,positive
+2025-09-21T03:02:33.271308Z,ETHEREUM,Negative sentiment grows around ETHEREUM,-0.5719,negative
+2025-11-15T08:43:33.271316Z,ETHEREUM,ETHEREUM surges amid renewed market optimism,0.5423,positive
+2025-09-12T14:15:33.271324Z,ETHEREUM,New upgrade boosts performance of ETHEREUM,0.3182,positive
+2025-09-02T23:56:33.271331Z,ETHEREUM,New upgrade boosts performance of ETHEREUM,0.3182,positive
+2025-09-24T17:09:33.271339Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-10-06T06:41:33.271347Z,ETHEREUM,Investors show strong confidence in ETHEREUM,0.765,positive
+2025-10-17T19:14:33.271356Z,ETHEREUM,Negative sentiment grows around ETHEREUM,-0.5719,negative
+2025-08-15T15:44:33.271363Z,ETHEREUM,Whales accumulate large amounts of ETHEREUM,0.0,neutral
+2025-07-25T15:50:33.271371Z,ETHEREUM,ETHEREUM ecosystem expands with new partnerships,0.1027,positive
+2025-09-21T12:04:33.271379Z,ETHEREUM,Liquidity for ETHEREUM increases significantly,0.0,neutral
+2025-09-16T17:30:33.271388Z,ETHEREUM,Liquidity for ETHEREUM increases significantly,0.0,neutral
+2025-08-10T17:14:33.271396Z,ETHEREUM,Market uncertainty pushes ETHEREUM downward,-0.34,negative
+2025-10-16T02:18:33.271404Z,ETHEREUM,ETHEREUM experiences strong bullish momentum,0.5106,positive
+2025-10-24T06:43:33.271411Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-09-08T21:10:33.271419Z,ETHEREUM,ETHEREUM drops after heavy selling pressure,-0.296,negative
+2025-07-21T07:22:33.271427Z,ETHEREUM,ETHEREUM experiences a calm trading session,0.3182,positive
+2025-09-28T01:52:33.271437Z,ETHEREUM,Investors show strong confidence in ETHEREUM,0.765,positive
+2025-08-25T15:24:33.271445Z,ETHEREUM,Investors pull liquidity from ETHEREUM markets,0.0,neutral
+2025-07-24T22:48:33.271452Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-10-27T15:35:33.271460Z,ETHEREUM,Whales reduce exposure to ETHEREUM,0.0,neutral
+2025-09-03T08:39:33.271467Z,ETHEREUM,Investors show strong confidence in ETHEREUM,0.765,positive
+2025-08-04T12:32:33.271475Z,ETHEREUM,New upgrade boosts performance of ETHEREUM,0.3182,positive
+2025-09-30T04:45:33.271482Z,ETHEREUM,Analysts predict upward movement for ETHEREUM,0.0,neutral
+2025-10-11T12:02:33.271490Z,ETHEREUM,ETHEREUM drops after heavy selling pressure,-0.296,negative
+2025-10-31T20:25:33.271498Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-11-01T16:10:33.271505Z,ETHEREUM,Investors show strong confidence in ETHEREUM,0.765,positive
+2025-10-11T18:33:33.271513Z,ETHEREUM,Whales reduce exposure to ETHEREUM,0.0,neutral
+2025-11-26T16:27:33.271520Z,ETHEREUM,Negative sentiment grows around ETHEREUM,-0.5719,negative
+2025-09-26T22:31:33.271528Z,ETHEREUM,ETHEREUM sees major spike in transaction activity,0.0,neutral
+2025-11-07T14:07:33.271536Z,ETHEREUM,Negative sentiment grows around ETHEREUM,-0.5719,negative
+2025-08-12T04:42:33.271543Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-11-12T05:14:33.271551Z,ETHEREUM,ETHEREUM drops after heavy selling pressure,-0.296,negative
+2025-08-22T16:58:33.271559Z,ETHEREUM,ETHEREUM underperforms compared to competitors,0.0,neutral
+2025-08-14T01:27:33.271567Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-09-19T04:28:33.271574Z,ETHEREUM,ETHEREUM drops after heavy selling pressure,-0.296,negative
+2025-10-22T07:16:33.271582Z,ETHEREUM,ETHEREUM adoption rises sharply as institutions enter,0.0,neutral
+2025-07-27T13:40:33.271591Z,ETHEREUM,ETHEREUM surges amid renewed market optimism,0.5423,positive
+2025-08-19T09:42:33.271599Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-07-25T09:03:33.271607Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-10-26T10:13:33.271614Z,ETHEREUM,ETHEREUM experiences unusual volatility spike,0.0,neutral
+2025-11-06T18:06:33.271622Z,ETHEREUM,Regulatory pressure negatively impacts ETHEREUM,-0.296,negative
+2025-10-04T12:45:33.271631Z,ETHEREUM,ETHEREUM ecosystem expands with new partnerships,0.1027,positive
+2025-08-25T09:52:33.271639Z,ETHEREUM,Whales reduce exposure to ETHEREUM,0.0,neutral
+2025-10-27T12:38:33.271647Z,ETHEREUM,Technical indicators show weakness for ETHEREUM,-0.4215,negative
+2025-10-29T23:25:33.271654Z,ETHEREUM,ETHEREUM experiences unusual volatility spike,0.0,neutral
+2025-10-11T08:19:33.271662Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-08-13T15:45:33.271669Z,ETHEREUM,ETHEREUM underperforms compared to competitors,0.0,neutral
+2025-11-03T05:48:33.271677Z,ETHEREUM,ETHEREUM sees major spike in transaction activity,0.0,neutral
+2025-09-02T10:34:33.271686Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-10-04T10:32:33.271694Z,ETHEREUM,ETHEREUM surges amid renewed market optimism,0.5423,positive
+2025-11-22T11:37:33.271701Z,ETHEREUM,Technical indicators show weakness for ETHEREUM,-0.4215,negative
+2025-07-30T12:29:33.271709Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-09-25T08:34:33.271718Z,ETHEREUM,ETHEREUM ecosystem expands with new partnerships,0.1027,positive
+2025-08-27T17:11:33.271725Z,ETHEREUM,ETHEREUM shows a strong recovery after recent dip,0.5106,positive
+2025-07-27T20:13:33.271733Z,ETHEREUM,Technical indicators show weakness for ETHEREUM,-0.4215,negative
+2025-08-23T12:31:33.271740Z,ETHEREUM,ETHEREUM experiences strong bullish momentum,0.5106,positive
+2025-10-04T04:10:33.271748Z,ETHEREUM,Analysts predict upward movement for ETHEREUM,0.0,neutral
+2025-10-02T17:15:33.271756Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-09-25T02:37:33.271763Z,ETHEREUM,Liquidity for ETHEREUM increases significantly,0.0,neutral
+2025-11-23T12:44:33.271771Z,ETHEREUM,Market uncertainty pushes ETHEREUM downward,-0.34,negative
+2025-10-21T07:58:33.271778Z,ETHEREUM,ETHEREUM sees major spike in transaction activity,0.0,neutral
+2025-09-29T02:14:33.271786Z,ETHEREUM,ETHEREUM sees major spike in transaction activity,0.0,neutral
+2025-07-22T04:39:33.271794Z,ETHEREUM,Market uncertainty pushes ETHEREUM downward,-0.34,negative
+2025-09-12T20:35:33.271802Z,ETHEREUM,ETHEREUM sees declining trading activity,0.0,neutral
+2025-07-30T11:14:33.271809Z,ETHEREUM,Analysts predict upward movement for ETHEREUM,0.0,neutral
+2025-10-02T17:47:33.271819Z,ETHEREUM,Market uncertainty pushes ETHEREUM downward,-0.34,negative
+2025-09-28T13:56:33.271828Z,ETHEREUM,ETHEREUM ecosystem expands with new partnerships,0.1027,positive
+2025-10-15T19:09:33.271836Z,ETHEREUM,Whales accumulate large amounts of ETHEREUM,0.0,neutral
+2025-10-22T21:20:33.271844Z,ETHEREUM,Regulatory pressure negatively impacts ETHEREUM,-0.296,negative
+2025-08-07T04:32:33.271852Z,ETHEREUM,Technical indicators show weakness for ETHEREUM,-0.4215,negative
+2025-08-20T22:23:33.271859Z,ETHEREUM,Investors show strong confidence in ETHEREUM,0.765,positive
+2025-07-30T05:52:33.271867Z,LOTA,LOTA drops after heavy selling pressure,-0.296,negative
+2025-10-13T10:56:33.271875Z,LOTA,LOTA adoption rises sharply as institutions enter,0.0,neutral
+2025-08-18T19:32:33.271883Z,LOTA,LOTA ecosystem expands with new partnerships,0.1027,positive
+2025-09-30T20:43:33.271890Z,LOTA,Market uncertainty pushes LOTA downward,-0.34,negative
+2025-08-12T12:34:33.271898Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-11-08T05:26:33.271906Z,LOTA,LOTA sees declining trading activity,0.0,neutral
+2025-11-20T17:49:33.271913Z,LOTA,Market uncertainty pushes LOTA downward,-0.34,negative
+2025-09-09T05:31:33.271921Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-09-15T05:04:33.271928Z,LOTA,LOTA drops after heavy selling pressure,-0.296,negative
+2025-09-03T06:33:33.271936Z,LOTA,Investors pull liquidity from LOTA markets,0.0,neutral
+2025-10-11T15:25:33.271953Z,LOTA,New upgrade boosts performance of LOTA,0.3182,positive
+2025-08-17T02:20:33.271962Z,LOTA,LOTA faces short-term bearish correction,0.0,neutral
+2025-08-15T18:21:33.271969Z,LOTA,Whales reduce exposure to LOTA,0.0,neutral
+2025-09-19T11:55:33.271977Z,LOTA,Negative sentiment grows around LOTA,-0.5719,negative
+2025-09-27T15:26:33.271984Z,LOTA,Whales accumulate large amounts of LOTA,0.0,neutral
+2025-08-02T17:49:33.271993Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-11-03T04:26:33.272001Z,LOTA,LOTA experiences a calm trading session,0.3182,positive
+2025-08-20T19:00:33.272009Z,LOTA,LOTA ecosystem expands with new partnerships,0.1027,positive
+2025-09-17T06:55:33.272017Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-09-27T23:21:33.272024Z,LOTA,LOTA experiences unusual volatility spike,0.0,neutral
+2025-09-06T04:07:33.272032Z,LOTA,Investors pull liquidity from LOTA markets,0.0,neutral
+2025-09-17T23:23:33.272040Z,LOTA,Market uncertainty pushes LOTA downward,-0.34,negative
+2025-10-12T15:40:33.272047Z,LOTA,LOTA faces short-term bearish correction,0.0,neutral
+2025-09-24T18:47:33.272055Z,LOTA,Analysts predict upward movement for LOTA,0.0,neutral
+2025-10-11T15:51:33.272062Z,LOTA,Technical indicators show weakness for LOTA,-0.4215,negative
+2025-09-13T05:14:33.272070Z,LOTA,Whales reduce exposure to LOTA,0.0,neutral
+2025-11-02T20:26:33.272078Z,LOTA,Technical indicators show weakness for LOTA,-0.4215,negative
+2025-10-10T20:11:33.272086Z,LOTA,LOTA sees declining trading activity,0.0,neutral
+2025-11-02T23:00:33.272094Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-10-31T03:05:33.272101Z,LOTA,Market activity around LOTA remains stable,0.296,positive
+2025-09-07T02:05:33.272109Z,LOTA,LOTA underperforms compared to competitors,0.0,neutral
+2025-07-18T14:24:33.272116Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-09-06T21:10:33.272124Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-08-25T00:35:33.272132Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-09-05T06:36:33.272139Z,LOTA,LOTA experiences strong bullish momentum,0.5106,positive
+2025-09-17T14:46:33.272148Z,LOTA,New upgrade boosts performance of LOTA,0.3182,positive
+2025-10-14T13:22:33.272156Z,LOTA,LOTA sees major spike in transaction activity,0.0,neutral
+2025-08-30T12:05:33.272163Z,LOTA,LOTA ecosystem expands with new partnerships,0.1027,positive
+2025-09-11T15:28:33.272171Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-07-14T04:01:33.272179Z,LOTA,LOTA underperforms compared to competitors,0.0,neutral
+2025-07-30T15:32:33.272186Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-11-01T10:19:33.272196Z,LOTA,Liquidity for LOTA increases significantly,0.0,neutral
+2025-09-18T06:52:33.272203Z,LOTA,New upgrade boosts performance of LOTA,0.3182,positive
+2025-10-13T09:25:33.272211Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-09-24T03:34:33.272218Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-07-13T17:51:33.272227Z,LOTA,LOTA experiences unusual volatility spike,0.0,neutral
+2025-11-18T14:22:33.272234Z,LOTA,Technical indicators show weakness for LOTA,-0.4215,negative
+2025-11-04T02:33:33.272242Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-11-18T14:45:33.272249Z,LOTA,LOTA underperforms compared to competitors,0.0,neutral
+2025-09-22T03:45:33.272257Z,LOTA,Investors pull liquidity from LOTA markets,0.0,neutral
+2025-07-20T04:20:33.272265Z,LOTA,Investors pull liquidity from LOTA markets,0.0,neutral
+2025-07-21T20:26:33.272272Z,LOTA,LOTA faces short-term bearish correction,0.0,neutral
+2025-11-04T19:00:33.272280Z,LOTA,Investors pull liquidity from LOTA markets,0.0,neutral
+2025-11-16T07:53:33.272287Z,LOTA,LOTA faces short-term bearish correction,0.0,neutral
+2025-07-14T17:20:33.272295Z,LOTA,LOTA receives strong community support,0.7184,positive
+2025-07-11T07:04:33.272302Z,LOTA,Whales accumulate large amounts of LOTA,0.0,neutral
+2025-11-21T21:25:33.272310Z,LOTA,LOTA receives strong community support,0.7184,positive
+2025-09-06T11:13:33.272320Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-08-02T00:30:33.272328Z,LOTA,LOTA experiences unusual volatility spike,0.0,neutral
+2025-09-21T02:57:33.272335Z,LOTA,LOTA drops after heavy selling pressure,-0.296,negative
+2025-08-01T14:37:33.272343Z,LOTA,Market uncertainty pushes LOTA downward,-0.34,negative
+2025-07-11T16:27:33.272351Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-08-21T12:54:33.272359Z,LOTA,LOTA experiences strong bullish momentum,0.5106,positive
+2025-08-21T11:09:33.272367Z,LOTA,Technical indicators show weakness for LOTA,-0.4215,negative
+2025-11-19T19:59:33.272375Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-11-25T13:01:33.272382Z,LOTA,New upgrade boosts performance of LOTA,0.3182,positive
+2025-09-16T19:16:33.272390Z,LOTA,Negative sentiment grows around LOTA,-0.5719,negative
+2025-09-09T22:20:33.272398Z,LOTA,LOTA surges amid renewed market optimism,0.5423,positive
+2025-08-26T13:10:33.272405Z,LOTA,LOTA surges amid renewed market optimism,0.5423,positive
+2025-08-25T14:01:33.272413Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-07-12T17:45:33.272420Z,LOTA,LOTA receives strong community support,0.7184,positive
+2025-08-26T11:37:33.272428Z,LOTA,LOTA drops after heavy selling pressure,-0.296,negative
+2025-10-28T03:16:33.272435Z,LOTA,LOTA shows a strong recovery after recent dip,0.5106,positive
+2025-11-26T03:35:33.272445Z,LOTA,Investors pull liquidity from LOTA markets,0.0,neutral
+2025-11-02T13:05:33.272452Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-10-15T11:25:33.272460Z,LOTA,Investors show strong confidence in LOTA,0.765,positive
+2025-09-05T16:22:33.272468Z,LOTA,Whales reduce exposure to LOTA,0.0,neutral
+2025-10-30T16:58:33.272476Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-10-15T12:34:33.272487Z,LOTA,LOTA gains traction in global markets,0.34,positive
+2025-10-06T14:13:33.272504Z,LOTA,Regulatory pressure negatively impacts LOTA,-0.296,negative
+2025-11-08T11:15:33.272519Z,LITECOIN,LITECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-09-04T18:44:33.272533Z,LITECOIN,LITECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-10-09T05:09:33.272545Z,LITECOIN,LITECOIN sees declining trading activity,0.0,neutral
+2025-07-27T00:10:33.272560Z,LITECOIN,LITECOIN faces short-term bearish correction,0.0,neutral
+2025-11-10T22:43:33.272576Z,LITECOIN,LITECOIN underperforms compared to competitors,0.0,neutral
+2025-08-06T19:27:33.272593Z,LITECOIN,LITECOIN faces short-term bearish correction,0.0,neutral
+2025-10-03T22:56:33.272609Z,LITECOIN,LITECOIN experiences strong bullish momentum,0.5106,positive
+2025-09-14T03:24:33.272618Z,LITECOIN,New upgrade boosts performance of LITECOIN,0.3182,positive
+2025-08-20T20:37:33.272625Z,LITECOIN,LITECOIN receives strong community support,0.7184,positive
+2025-10-24T12:31:33.272636Z,LITECOIN,LITECOIN sees major spike in transaction activity,0.0,neutral
+2025-10-16T19:28:33.272644Z,LITECOIN,LITECOIN surges amid renewed market optimism,0.5423,positive
+2025-08-17T09:38:33.272652Z,LITECOIN,LITECOIN gains traction in global markets,0.34,positive
+2025-11-19T22:27:33.272659Z,LITECOIN,Whales accumulate large amounts of LITECOIN,0.0,neutral
+2025-10-20T09:55:33.272667Z,LITECOIN,New upgrade boosts performance of LITECOIN,0.3182,positive
+2025-10-03T16:35:33.272674Z,LITECOIN,Market uncertainty pushes LITECOIN downward,-0.34,negative
+2025-09-26T00:27:33.272682Z,LITECOIN,Market uncertainty pushes LITECOIN downward,-0.34,negative
+2025-09-29T08:26:33.272690Z,LITECOIN,LITECOIN experiences unusual volatility spike,0.0,neutral
+2025-10-15T15:46:33.272699Z,LITECOIN,LITECOIN experiences strong bullish momentum,0.5106,positive
+2025-11-09T01:24:33.272706Z,LITECOIN,Technical indicators show weakness for LITECOIN,-0.4215,negative
+2025-10-23T09:43:33.272714Z,LITECOIN,LITECOIN faces short-term bearish correction,0.0,neutral
+2025-10-27T17:22:33.272722Z,LITECOIN,LITECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-24T07:54:33.272730Z,LITECOIN,LITECOIN sees declining trading activity,0.0,neutral
+2025-09-15T08:58:33.272738Z,LITECOIN,Liquidity for LITECOIN increases significantly,0.0,neutral
+2025-09-23T09:01:33.272753Z,LITECOIN,LITECOIN drops after heavy selling pressure,-0.296,negative
+2025-08-26T23:55:33.272769Z,LITECOIN,Investors pull liquidity from LITECOIN markets,0.0,neutral
+2025-09-06T22:25:33.272784Z,LITECOIN,Negative sentiment grows around LITECOIN,-0.5719,negative
+2025-11-02T13:49:33.272794Z,LITECOIN,LITECOIN experiences strong bullish momentum,0.5106,positive
+2025-11-16T11:21:33.272802Z,LITECOIN,Technical indicators show weakness for LITECOIN,-0.4215,negative
+2025-09-06T12:11:33.272810Z,LITECOIN,LITECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-17T18:37:33.272817Z,LITECOIN,LITECOIN experiences strong bullish momentum,0.5106,positive
+2025-10-28T08:03:33.272825Z,LITECOIN,LITECOIN sees major spike in transaction activity,0.0,neutral
+2025-07-26T02:39:33.272833Z,LITECOIN,Whales accumulate large amounts of LITECOIN,0.0,neutral
+2025-11-14T05:38:33.272841Z,LITECOIN,LITECOIN drops after heavy selling pressure,-0.296,negative
+2025-09-28T09:29:33.272848Z,LITECOIN,LITECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-22T23:58:33.272856Z,LITECOIN,Technical indicators show weakness for LITECOIN,-0.4215,negative
+2025-08-14T18:42:33.272864Z,LITECOIN,LITECOIN surges amid renewed market optimism,0.5423,positive
+2025-10-04T14:28:33.272871Z,LITECOIN,Liquidity for LITECOIN increases significantly,0.0,neutral
+2025-10-17T00:15:33.272879Z,LITECOIN,Market uncertainty pushes LITECOIN downward,-0.34,negative
+2025-09-21T03:46:33.272889Z,LITECOIN,LITECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-07-11T16:59:33.272897Z,LITECOIN,LITECOIN gains traction in global markets,0.34,positive
+2025-08-29T07:38:33.272911Z,LITECOIN,LITECOIN experiences unusual volatility spike,0.0,neutral
+2025-10-05T09:26:33.272919Z,LITECOIN,Liquidity for LITECOIN increases significantly,0.0,neutral
+2025-10-28T10:55:33.272926Z,LITECOIN,LITECOIN ecosystem expands with new partnerships,0.1027,positive
+2025-07-18T17:17:33.272934Z,LITECOIN,LITECOIN experiences unusual volatility spike,0.0,neutral
+2025-11-07T02:12:33.272942Z,LITECOIN,LITECOIN sees declining trading activity,0.0,neutral
+2025-10-18T14:12:33.272949Z,LITECOIN,Regulatory pressure negatively impacts LITECOIN,-0.296,negative
+2025-08-29T02:07:33.272957Z,LITECOIN,Investors show strong confidence in LITECOIN,0.765,positive
+2025-07-21T22:05:33.272964Z,LITECOIN,Market activity around LITECOIN remains stable,0.296,positive
+2025-07-29T20:05:33.272974Z,LITECOIN,Investors show strong confidence in LITECOIN,0.765,positive
+2025-10-12T03:56:33.272982Z,LITECOIN,New upgrade boosts performance of LITECOIN,0.3182,positive
+2025-08-17T06:56:33.272989Z,LITECOIN,Analysts predict upward movement for LITECOIN,0.0,neutral
+2025-10-01T10:59:33.272997Z,LITECOIN,New upgrade boosts performance of LITECOIN,0.3182,positive
+2025-07-28T05:36:33.273005Z,LITECOIN,LITECOIN shows a strong recovery after recent dip,0.5106,positive
+2025-09-01T04:49:33.273013Z,LITECOIN,Liquidity for LITECOIN increases significantly,0.0,neutral
+2025-10-22T16:17:33.273020Z,LITECOIN,Technical indicators show weakness for LITECOIN,-0.4215,negative
+2025-09-29T07:14:33.273027Z,LITECOIN,Negative sentiment grows around LITECOIN,-0.5719,negative
+2025-08-21T14:16:33.273035Z,LITECOIN,Market uncertainty pushes LITECOIN downward,-0.34,negative
+2025-10-19T22:40:33.273045Z,LITECOIN,Regulatory pressure negatively impacts LITECOIN,-0.296,negative
+2025-09-15T06:24:33.273053Z,LITECOIN,Investors pull liquidity from LITECOIN markets,0.0,neutral
+2025-10-12T09:46:33.273060Z,LITECOIN,Negative sentiment grows around LITECOIN,-0.5719,negative
+2025-07-28T12:55:33.273068Z,LITECOIN,LITECOIN drops after heavy selling pressure,-0.296,negative
+2025-08-15T14:48:33.273076Z,LITECOIN,LITECOIN gains traction in global markets,0.34,positive
+2025-10-30T12:59:33.273084Z,LITECOIN,Whales reduce exposure to LITECOIN,0.0,neutral
+2025-10-22T06:24:33.273091Z,LITECOIN,LITECOIN faces short-term bearish correction,0.0,neutral
+2025-11-09T00:38:33.273099Z,LITECOIN,LITECOIN underperforms compared to competitors,0.0,neutral
+2025-07-14T14:48:33.273107Z,LITECOIN,Analysts predict upward movement for LITECOIN,0.0,neutral
+2025-07-30T08:47:33.273116Z,LITECOIN,LITECOIN experiences strong bullish momentum,0.5106,positive
+2025-08-31T01:58:33.273123Z,LITECOIN,Technical indicators show weakness for LITECOIN,-0.4215,negative
+2025-11-24T16:38:33.273131Z,LITECOIN,Market activity around LITECOIN remains stable,0.296,positive
+2025-10-04T10:04:33.273139Z,LITECOIN,LITECOIN underperforms compared to competitors,0.0,neutral
+2025-08-19T01:17:33.273146Z,LITECOIN,LITECOIN gains traction in global markets,0.34,positive
+2025-10-28T00:14:33.273154Z,LITECOIN,LITECOIN underperforms compared to competitors,0.0,neutral
+2025-08-15T07:40:33.273161Z,LITECOIN,LITECOIN surges amid renewed market optimism,0.5423,positive
+2025-08-17T13:37:33.273170Z,LITECOIN,Negative sentiment grows around LITECOIN,-0.5719,negative
+2025-09-25T01:13:33.273178Z,LITECOIN,Technical indicators show weakness for LITECOIN,-0.4215,negative
+2025-11-22T03:58:33.273185Z,LITECOIN,Analysts predict upward movement for LITECOIN,0.0,neutral
+2025-09-23T15:10:33.273193Z,LITECOIN,Investors pull liquidity from LITECOIN markets,0.0,neutral
+2025-10-30T13:35:33.273200Z,LITECOIN,LITECOIN gains traction in global markets,0.34,positive
+2025-11-12T03:09:33.273208Z,LITECOIN,Investors pull liquidity from LITECOIN markets,0.0,neutral
+2025-08-22T02:57:33.273216Z,LITECOIN,LITECOIN surges amid renewed market optimism,0.5423,positive
+2025-11-18T02:12:33.273225Z,MONERO,MONERO shows a strong recovery after recent dip,0.5106,positive
+2025-08-18T16:47:33.273233Z,MONERO,MONERO receives strong community support,0.7184,positive
+2025-09-16T08:15:33.273240Z,MONERO,MONERO faces short-term bearish correction,0.0,neutral
+2025-09-18T16:11:33.273248Z,MONERO,Analysts predict upward movement for MONERO,0.0,neutral
+2025-10-06T03:17:33.273256Z,MONERO,Whales reduce exposure to MONERO,0.0,neutral
+2025-07-14T03:40:33.273264Z,MONERO,Technical indicators show weakness for MONERO,-0.4215,negative
+2025-09-21T11:08:33.273271Z,MONERO,MONERO sees major spike in transaction activity,0.0,neutral
+2025-08-22T00:43:33.273279Z,MONERO,MONERO receives strong community support,0.7184,positive
+2025-09-18T02:10:33.273289Z,MONERO,MONERO receives strong community support,0.7184,positive
+2025-08-03T13:06:33.273298Z,MONERO,Investors pull liquidity from MONERO markets,0.0,neutral
+2025-08-06T04:52:33.273306Z,MONERO,Whales reduce exposure to MONERO,0.0,neutral
+2025-11-05T15:44:33.273313Z,MONERO,MONERO receives strong community support,0.7184,positive
+2025-08-23T17:00:33.273321Z,MONERO,MONERO sees declining trading activity,0.0,neutral
+2025-08-06T22:04:33.273331Z,MONERO,MONERO gains traction in global markets,0.34,positive
+2025-10-05T02:14:33.273339Z,MONERO,Negative sentiment grows around MONERO,-0.5719,negative
+2025-07-12T22:39:33.273346Z,MONERO,MONERO faces short-term bearish correction,0.0,neutral
+2025-10-04T08:27:33.273354Z,MONERO,Technical indicators show weakness for MONERO,-0.4215,negative
+2025-10-26T11:26:33.273365Z,MONERO,Market uncertainty pushes MONERO downward,-0.34,negative
+2025-07-11T08:21:33.273373Z,MONERO,MONERO faces short-term bearish correction,0.0,neutral
+2025-11-25T06:50:33.273381Z,MONERO,MONERO shows a strong recovery after recent dip,0.5106,positive
+2025-08-17T06:27:33.273389Z,MONERO,MONERO ecosystem expands with new partnerships,0.1027,positive
+2025-11-10T18:27:33.273397Z,MONERO,MONERO receives strong community support,0.7184,positive
+2025-08-20T14:15:33.273405Z,MONERO,Whales reduce exposure to MONERO,0.0,neutral
+2025-08-10T17:35:33.273412Z,MONERO,MONERO gains traction in global markets,0.34,positive
+2025-08-08T10:54:33.273420Z,MONERO,New upgrade boosts performance of MONERO,0.3182,positive
+2025-07-12T22:24:33.273427Z,MONERO,MONERO gains traction in global markets,0.34,positive
+2025-07-21T08:49:33.273435Z,MONERO,MONERO experiences unusual volatility spike,0.0,neutral
+2025-08-28T04:27:33.273443Z,MONERO,Liquidity for MONERO increases significantly,0.0,neutral
+2025-10-30T08:46:33.273451Z,MONERO,Investors pull liquidity from MONERO markets,0.0,neutral
+2025-10-15T14:31:33.273459Z,MONERO,MONERO faces short-term bearish correction,0.0,neutral
+2025-11-22T07:13:33.273466Z,MONERO,Market uncertainty pushes MONERO downward,-0.34,negative
+2025-10-01T11:43:33.273474Z,MONERO,MONERO experiences strong bullish momentum,0.5106,positive
+2025-07-19T20:25:33.273481Z,MONERO,MONERO ecosystem expands with new partnerships,0.1027,positive
+2025-08-17T14:57:33.273489Z,MONERO,MONERO sees declining trading activity,0.0,neutral
+2025-09-27T21:52:33.273497Z,MONERO,MONERO shows a strong recovery after recent dip,0.5106,positive
+2025-07-27T13:14:33.273504Z,MONERO,Whales accumulate large amounts of MONERO,0.0,neutral
+2025-07-29T15:13:33.273512Z,MONERO,MONERO experiences unusual volatility spike,0.0,neutral
+2025-10-31T13:11:33.273520Z,MONERO,Market uncertainty pushes MONERO downward,-0.34,negative
+2025-09-08T00:24:33.273527Z,MONERO,Liquidity for MONERO increases significantly,0.0,neutral
+2025-08-07T05:33:33.273536Z,MONERO,MONERO experiences a calm trading session,0.3182,positive
+2025-11-20T06:08:33.273546Z,MONERO,MONERO underperforms compared to competitors,0.0,neutral
+2025-11-02T14:42:33.273554Z,MONERO,Investors show strong confidence in MONERO,0.765,positive
+2025-10-04T05:32:33.273562Z,MONERO,MONERO underperforms compared to competitors,0.0,neutral
+2025-08-15T22:35:33.273570Z,MONERO,Technical indicators show weakness for MONERO,-0.4215,negative
+2025-10-18T10:52:33.273577Z,MONERO,Liquidity for MONERO increases significantly,0.0,neutral
+2025-07-25T07:13:33.273585Z,MONERO,Investors pull liquidity from MONERO markets,0.0,neutral
+2025-11-07T04:47:33.273594Z,MONERO,MONERO experiences unusual volatility spike,0.0,neutral
+2025-07-13T23:09:33.273601Z,MONERO,MONERO faces short-term bearish correction,0.0,neutral
+2025-11-01T22:35:33.273609Z,MONERO,Whales reduce exposure to MONERO,0.0,neutral
+2025-09-10T21:58:33.273617Z,MONERO,MONERO ecosystem expands with new partnerships,0.1027,positive
+2025-08-13T13:16:33.273625Z,MONERO,MONERO adoption rises sharply as institutions enter,0.0,neutral
+2025-08-09T00:03:33.273632Z,MONERO,MONERO sees major spike in transaction activity,0.0,neutral
+2025-08-16T05:14:33.273640Z,MONERO,MONERO faces short-term bearish correction,0.0,neutral
+2025-09-01T09:39:33.273648Z,MONERO,MONERO experiences unusual volatility spike,0.0,neutral
+2025-08-22T16:47:33.273656Z,MONERO,Whales accumulate large amounts of MONERO,0.0,neutral
+2025-11-21T06:16:33.273663Z,MONERO,New upgrade boosts performance of MONERO,0.3182,positive
+2025-11-23T21:28:33.273671Z,MONERO,Investors show strong confidence in MONERO,0.765,positive
+2025-11-21T02:18:33.273678Z,MONERO,MONERO underperforms compared to competitors,0.0,neutral
+2025-11-09T09:11:33.273686Z,MONERO,Liquidity for MONERO increases significantly,0.0,neutral
+2025-08-22T06:30:33.273694Z,MONERO,Investors show strong confidence in MONERO,0.765,positive
+2025-11-26T16:40:33.273702Z,MONERO,Investors pull liquidity from MONERO markets,0.0,neutral
+2025-09-12T07:29:33.273710Z,MONERO,Liquidity for MONERO increases significantly,0.0,neutral
+2025-11-22T21:16:33.273718Z,MONERO,MONERO adoption rises sharply as institutions enter,0.0,neutral
+2025-07-28T11:20:33.273727Z,MONERO,Regulatory pressure negatively impacts MONERO,-0.296,negative
+2025-10-20T09:40:33.273735Z,MONERO,MONERO shows a strong recovery after recent dip,0.5106,positive
+2025-07-14T03:04:33.273743Z,MONERO,MONERO drops after heavy selling pressure,-0.296,negative
+2025-09-12T18:55:33.273750Z,MONERO,MONERO experiences unusual volatility spike,0.0,neutral
+2025-09-24T08:01:33.273758Z,MONERO,Regulatory pressure negatively impacts MONERO,-0.296,negative
+2025-09-05T13:50:33.273766Z,MONERO,MONERO experiences unusual volatility spike,0.0,neutral
+2025-10-03T14:23:33.273773Z,MONERO,Whales reduce exposure to MONERO,0.0,neutral
+2025-09-11T19:14:33.273781Z,MONERO,Investors show strong confidence in MONERO,0.765,positive
+2025-11-04T15:04:33.273789Z,MONERO,MONERO surges amid renewed market optimism,0.5423,positive
+2025-10-09T09:42:33.273798Z,MONERO,MONERO ecosystem expands with new partnerships,0.1027,positive
+2025-09-11T22:42:33.273805Z,MONERO,MONERO drops after heavy selling pressure,-0.296,negative
+2025-07-11T22:02:33.273815Z,MONERO,Market uncertainty pushes MONERO downward,-0.34,negative
+2025-09-15T14:30:33.273822Z,MONERO,MONERO ecosystem expands with new partnerships,0.1027,positive
+2025-07-27T23:08:33.273830Z,MONERO,MONERO gains traction in global markets,0.34,positive
+2025-08-31T06:37:33.273838Z,MONERO,MONERO underperforms compared to competitors,0.0,neutral
+2025-08-06T23:53:33.273845Z,MONERO,Investors pull liquidity from MONERO markets,0.0,neutral
+2025-08-02T05:13:33.273853Z,MONERO,Whales accumulate large amounts of MONERO,0.0,neutral
+2025-11-02T06:54:33.273861Z,NEM,NEM drops after heavy selling pressure,-0.296,negative
+2025-07-25T09:14:33.273869Z,NEM,Regulatory pressure negatively impacts NEM,-0.296,negative
+2025-11-21T15:44:33.273877Z,NEM,NEM surges amid renewed market optimism,0.5423,positive
+2025-08-24T14:54:33.273884Z,NEM,NEM underperforms compared to competitors,0.0,neutral
+2025-09-20T18:05:33.273892Z,NEM,Technical indicators show weakness for NEM,-0.4215,negative
+2025-11-23T09:39:33.273899Z,NEM,Analysts predict upward movement for NEM,0.0,neutral
+2025-11-20T05:21:33.273908Z,NEM,Regulatory pressure negatively impacts NEM,-0.296,negative
+2025-10-11T01:25:33.273916Z,NEM,NEM ecosystem expands with new partnerships,0.1027,positive
+2025-09-24T01:29:33.273924Z,NEM,NEM sees major spike in transaction activity,0.0,neutral
+2025-10-17T03:26:33.273931Z,NEM,NEM faces short-term bearish correction,0.0,neutral
+2025-09-30T06:56:33.273939Z,NEM,NEM sees declining trading activity,0.0,neutral
+2025-07-21T13:20:33.273947Z,NEM,New upgrade boosts performance of NEM,0.3182,positive
+2025-11-06T20:41:33.273954Z,NEM,NEM faces short-term bearish correction,0.0,neutral
+2025-11-11T13:03:33.273962Z,NEM,Investors show strong confidence in NEM,0.765,positive
+2025-08-09T06:07:33.273970Z,NEM,NEM experiences unusual volatility spike,0.0,neutral
+2025-08-06T04:42:33.273977Z,NEM,Technical indicators show weakness for NEM,-0.4215,negative
+2025-08-07T04:03:33.273985Z,NEM,Investors pull liquidity from NEM markets,0.0,neutral
+2025-10-05T09:32:33.273993Z,NEM,Whales reduce exposure to NEM,0.0,neutral
+2025-10-29T07:38:33.274000Z,NEM,Whales reduce exposure to NEM,0.0,neutral
+2025-10-29T05:10:33.274008Z,NEM,Whales reduce exposure to NEM,0.0,neutral
+2025-07-29T11:10:33.274016Z,NEM,NEM sees declining trading activity,0.0,neutral
+2025-09-04T01:18:33.274023Z,NEM,NEM experiences strong bullish momentum,0.5106,positive
+2025-07-15T06:34:33.274031Z,NEM,Whales accumulate large amounts of NEM,0.0,neutral
+2025-10-17T04:59:33.274039Z,NEM,Market uncertainty pushes NEM downward,-0.34,negative
+2025-07-31T18:12:33.274048Z,NEM,NEM receives strong community support,0.7184,positive
+2025-11-14T20:17:33.274058Z,NEM,NEM experiences strong bullish momentum,0.5106,positive
+2025-09-20T13:45:33.274066Z,NEM,Liquidity for NEM increases significantly,0.0,neutral
+2025-09-30T14:21:33.274074Z,NEM,NEM faces short-term bearish correction,0.0,neutral
+2025-10-06T05:52:33.274081Z,NEM,Technical indicators show weakness for NEM,-0.4215,negative
+2025-07-17T04:50:33.274091Z,NEM,Analysts predict upward movement for NEM,0.0,neutral
+2025-08-27T01:17:33.274099Z,NEM,Whales reduce exposure to NEM,0.0,neutral
+2025-09-27T17:34:33.274106Z,NEM,NEM underperforms compared to competitors,0.0,neutral
+2025-11-02T22:06:33.274114Z,NEM,NEM adoption rises sharply as institutions enter,0.0,neutral
+2025-09-15T19:40:33.274122Z,NEM,NEM trades sideways with minimal volatility,0.0,neutral
+2025-10-28T09:43:33.274129Z,NEM,Market uncertainty pushes NEM downward,-0.34,negative
+2025-08-21T16:25:33.274137Z,NEM,NEM experiences a calm trading session,0.3182,positive
+2025-08-30T03:07:33.274144Z,NEM,NEM shows a strong recovery after recent dip,0.5106,positive
+2025-07-23T15:42:33.274152Z,NEM,NEM drops after heavy selling pressure,-0.296,negative
+2025-10-23T06:51:33.274160Z,NEM,NEM adoption rises sharply as institutions enter,0.0,neutral
+2025-10-26T20:05:33.274168Z,NEM,Whales accumulate large amounts of NEM,0.0,neutral
+2025-10-13T17:53:33.274175Z,NEM,NEM faces short-term bearish correction,0.0,neutral
+2025-07-18T05:23:33.274183Z,NEM,NEM receives strong community support,0.7184,positive
+2025-07-19T10:41:33.274190Z,NEM,Technical indicators show weakness for NEM,-0.4215,negative
+2025-07-29T20:42:33.274198Z,NEM,NEM sees major spike in transaction activity,0.0,neutral
+2025-09-18T02:26:33.274206Z,NEM,NEM receives strong community support,0.7184,positive
+2025-07-17T08:45:33.274215Z,NEM,NEM underperforms compared to competitors,0.0,neutral
+2025-09-27T04:00:33.274223Z,NEM,Analysts predict upward movement for NEM,0.0,neutral
+2025-08-30T09:54:33.274230Z,NEM,Market uncertainty pushes NEM downward,-0.34,negative
+2025-09-08T00:35:33.274238Z,NEM,Liquidity for NEM increases significantly,0.0,neutral
+2025-10-28T04:32:33.274245Z,NEM,Investors pull liquidity from NEM markets,0.0,neutral
+2025-10-22T23:00:33.274253Z,NEM,NEM experiences unusual volatility spike,0.0,neutral
+2025-08-14T04:15:33.274260Z,NEM,New upgrade boosts performance of NEM,0.3182,positive
+2025-07-20T10:44:33.274268Z,NEM,NEM drops after heavy selling pressure,-0.296,negative
+2025-09-04T06:38:33.274276Z,NEM,NEM shows a strong recovery after recent dip,0.5106,positive
+2025-08-19T05:34:33.274287Z,NEM,NEM experiences strong bullish momentum,0.5106,positive
+2025-11-10T08:00:33.274303Z,NEM,Investors show strong confidence in NEM,0.765,positive
+2025-09-27T15:30:33.274311Z,NEM,NEM receives strong community support,0.7184,positive
+2025-11-10T20:29:33.274318Z,NEM,NEM sees declining trading activity,0.0,neutral
+2025-07-15T17:44:33.274326Z,NEM,New upgrade boosts performance of NEM,0.3182,positive
+2025-09-09T05:21:33.274333Z,NEM,NEM shows a strong recovery after recent dip,0.5106,positive
+2025-08-19T04:48:33.274341Z,NEM,NEM drops after heavy selling pressure,-0.296,negative
+2025-11-10T00:26:33.274351Z,NEM,NEM experiences strong bullish momentum,0.5106,positive
+2025-08-11T12:39:33.274359Z,NEM,Investors pull liquidity from NEM markets,0.0,neutral
+2025-09-01T01:14:33.274367Z,NEM,Analysts predict upward movement for NEM,0.0,neutral
+2025-07-20T12:12:33.274377Z,NEM,Liquidity for NEM increases significantly,0.0,neutral
+2025-08-25T10:21:33.274385Z,NEM,Whales accumulate large amounts of NEM,0.0,neutral
+2025-11-26T13:38:33.274393Z,NEM,Whales reduce exposure to NEM,0.0,neutral
+2025-09-24T05:05:33.274400Z,NEM,NEM ecosystem expands with new partnerships,0.1027,positive
+2025-11-02T15:59:33.274408Z,NEM,NEM sees declining trading activity,0.0,neutral
+2025-10-22T16:23:33.274415Z,NEM,NEM faces short-term bearish correction,0.0,neutral
+2025-09-20T02:17:33.274423Z,NEM,Negative sentiment grows around NEM,-0.5719,negative
+2025-09-20T09:25:33.274431Z,NEM,NEM underperforms compared to competitors,0.0,neutral
+2025-11-17T20:20:33.274438Z,NEM,NEM sees major spike in transaction activity,0.0,neutral
+2025-11-19T08:21:33.274446Z,NEM,Investors show strong confidence in NEM,0.765,positive
+2025-08-06T04:20:33.274453Z,NEM,NEM sees declining trading activity,0.0,neutral
+2025-11-05T07:55:33.274461Z,NEM,NEM faces short-term bearish correction,0.0,neutral
+2025-10-02T13:40:33.274468Z,NEM,Technical indicators show weakness for NEM,-0.4215,negative
+2025-10-24T20:28:33.274476Z,NEM,NEM experiences unusual volatility spike,0.0,neutral
+2025-10-26T00:09:33.274484Z,NEM,NEM sees major spike in transaction activity,0.0,neutral
+2025-11-15T15:28:33.274492Z,NEM,Investors pull liquidity from NEM markets,0.0,neutral
+2025-07-11T06:50:33.274500Z,POLKADOT,POLKADOT experiences unusual volatility spike,0.0,neutral
+2025-07-26T10:04:33.274508Z,POLKADOT,POLKADOT experiences unusual volatility spike,0.0,neutral
+2025-08-30T10:49:33.274515Z,POLKADOT,POLKADOT adoption rises sharply as institutions enter,0.0,neutral
+2025-07-22T16:57:33.274523Z,POLKADOT,POLKADOT faces short-term bearish correction,0.0,neutral
+2025-10-28T11:35:33.274531Z,POLKADOT,Market uncertainty pushes POLKADOT downward,-0.34,negative
+2025-11-17T21:19:33.274540Z,POLKADOT,POLKADOT experiences unusual volatility spike,0.0,neutral
+2025-08-26T22:55:33.274547Z,POLKADOT,Technical indicators show weakness for POLKADOT,-0.4215,negative
+2025-09-16T05:22:33.274556Z,POLKADOT,Investors pull liquidity from POLKADOT markets,0.0,neutral
+2025-11-18T01:28:33.274564Z,POLKADOT,POLKADOT ecosystem expands with new partnerships,0.1027,positive
+2025-09-06T20:12:33.274572Z,POLKADOT,Investors pull liquidity from POLKADOT markets,0.0,neutral
+2025-11-16T18:44:33.274579Z,POLKADOT,POLKADOT gains traction in global markets,0.34,positive
+2025-08-07T20:25:33.274587Z,POLKADOT,Market uncertainty pushes POLKADOT downward,-0.34,negative
+2025-11-05T00:58:33.274594Z,POLKADOT,Whales accumulate large amounts of POLKADOT,0.0,neutral
+2025-08-20T17:42:33.274602Z,POLKADOT,POLKADOT experiences strong bullish momentum,0.5106,positive
+2025-08-29T07:54:33.274611Z,POLKADOT,POLKADOT experiences strong bullish momentum,0.5106,positive
+2025-08-29T23:10:33.274619Z,POLKADOT,Investors pull liquidity from POLKADOT markets,0.0,neutral
+2025-09-02T18:38:33.274626Z,POLKADOT,POLKADOT gains traction in global markets,0.34,positive
+2025-08-03T20:47:33.274634Z,POLKADOT,Investors pull liquidity from POLKADOT markets,0.0,neutral
+2025-09-06T14:05:33.274641Z,POLKADOT,POLKADOT experiences strong bullish momentum,0.5106,positive
+2025-07-26T00:47:33.274649Z,POLKADOT,POLKADOT adoption rises sharply as institutions enter,0.0,neutral
+2025-11-19T18:25:33.274657Z,POLKADOT,POLKADOT adoption rises sharply as institutions enter,0.0,neutral
+2025-10-04T18:50:33.274664Z,POLKADOT,POLKADOT sees declining trading activity,0.0,neutral
+2025-09-16T02:57:33.274672Z,POLKADOT,Whales accumulate large amounts of POLKADOT,0.0,neutral
+2025-08-02T08:28:33.274679Z,POLKADOT,POLKADOT faces short-term bearish correction,0.0,neutral
+2025-07-14T10:55:33.274687Z,POLKADOT,POLKADOT experiences unusual volatility spike,0.0,neutral
+2025-08-11T09:32:33.274695Z,POLKADOT,POLKADOT sees major spike in transaction activity,0.0,neutral
+2025-08-22T09:43:33.274703Z,POLKADOT,Investors show strong confidence in POLKADOT,0.765,positive
+2025-08-30T19:00:33.274710Z,POLKADOT,Technical indicators show weakness for POLKADOT,-0.4215,negative
+2025-10-30T04:23:33.274718Z,POLKADOT,POLKADOT ecosystem expands with new partnerships,0.1027,positive
+2025-11-17T23:38:33.274726Z,POLKADOT,POLKADOT shows a strong recovery after recent dip,0.5106,positive
+2025-09-30T20:23:33.274734Z,POLKADOT,Analysts predict upward movement for POLKADOT,0.0,neutral
+2025-10-20T03:31:33.274743Z,POLKADOT,Whales reduce exposure to POLKADOT,0.0,neutral
+2025-09-28T11:53:33.274751Z,POLKADOT,Whales accumulate large amounts of POLKADOT,0.0,neutral
+2025-09-01T09:33:33.274758Z,POLKADOT,Negative sentiment grows around POLKADOT,-0.5719,negative
+2025-10-19T06:11:33.274767Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-10-15T18:41:33.274774Z,POLKADOT,Whales reduce exposure to POLKADOT,0.0,neutral
+2025-10-25T05:58:33.274782Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-10-02T18:16:33.274790Z,POLKADOT,Whales accumulate large amounts of POLKADOT,0.0,neutral
+2025-07-31T03:42:33.274797Z,POLKADOT,Regulatory pressure negatively impacts POLKADOT,-0.296,negative
+2025-07-13T05:46:33.274806Z,POLKADOT,POLKADOT experiences strong bullish momentum,0.5106,positive
+2025-08-09T07:12:33.274814Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-09-12T04:51:33.274822Z,POLKADOT,POLKADOT faces short-term bearish correction,0.0,neutral
+2025-07-26T13:00:33.274831Z,POLKADOT,POLKADOT gains traction in global markets,0.34,positive
+2025-07-26T22:43:33.274838Z,POLKADOT,New upgrade boosts performance of POLKADOT,0.3182,positive
+2025-10-05T18:55:33.274846Z,POLKADOT,Technical indicators show weakness for POLKADOT,-0.4215,negative
+2025-08-19T06:53:33.274853Z,POLKADOT,Negative sentiment grows around POLKADOT,-0.5719,negative
+2025-11-08T22:45:33.274861Z,POLKADOT,Investors show strong confidence in POLKADOT,0.765,positive
+2025-08-13T00:56:33.274869Z,POLKADOT,POLKADOT drops after heavy selling pressure,-0.296,negative
+2025-09-14T06:20:33.274876Z,POLKADOT,New upgrade boosts performance of POLKADOT,0.3182,positive
+2025-08-10T03:13:33.274884Z,POLKADOT,Negative sentiment grows around POLKADOT,-0.5719,negative
+2025-11-06T10:32:33.274892Z,POLKADOT,POLKADOT sees major spike in transaction activity,0.0,neutral
+2025-07-11T22:32:33.274899Z,POLKADOT,Investors show strong confidence in POLKADOT,0.765,positive
+2025-10-10T15:34:33.274907Z,POLKADOT,POLKADOT faces short-term bearish correction,0.0,neutral
+2025-08-19T10:06:33.274920Z,POLKADOT,POLKADOT receives strong community support,0.7184,positive
+2025-09-05T02:47:33.274928Z,POLKADOT,POLKADOT receives strong community support,0.7184,positive
+2025-10-30T01:13:33.274937Z,POLKADOT,Whales reduce exposure to POLKADOT,0.0,neutral
+2025-07-23T08:32:33.274945Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-09-01T06:01:33.274953Z,POLKADOT,Regulatory pressure negatively impacts POLKADOT,-0.296,negative
+2025-11-14T23:32:33.274961Z,POLKADOT,POLKADOT shows no major price movement today,-0.296,negative
+2025-09-12T16:29:33.274968Z,POLKADOT,POLKADOT drops after heavy selling pressure,-0.296,negative
+2025-11-03T05:10:33.274976Z,POLKADOT,POLKADOT sees major spike in transaction activity,0.0,neutral
+2025-08-23T17:14:33.274983Z,POLKADOT,POLKADOT gains traction in global markets,0.34,positive
+2025-09-04T17:57:33.274991Z,POLKADOT,Whales reduce exposure to POLKADOT,0.0,neutral
+2025-08-18T08:24:33.274999Z,POLKADOT,POLKADOT adoption rises sharply as institutions enter,0.0,neutral
+2025-11-03T21:47:33.275006Z,POLKADOT,POLKADOT sees major spike in transaction activity,0.0,neutral
+2025-08-31T23:31:33.275014Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-11-17T23:01:33.275021Z,POLKADOT,Market activity around POLKADOT remains stable,0.296,positive
+2025-08-28T23:34:33.275029Z,POLKADOT,Whales accumulate large amounts of POLKADOT,0.0,neutral
+2025-09-25T21:44:33.275037Z,POLKADOT,POLKADOT faces short-term bearish correction,0.0,neutral
+2025-09-09T20:08:33.275044Z,POLKADOT,Negative sentiment grows around POLKADOT,-0.5719,negative
+2025-08-23T03:59:33.275053Z,POLKADOT,Analysts predict upward movement for POLKADOT,0.0,neutral
+2025-07-18T19:23:33.275063Z,POLKADOT,Regulatory pressure negatively impacts POLKADOT,-0.296,negative
+2025-10-14T14:01:33.275070Z,POLKADOT,POLKADOT shows a strong recovery after recent dip,0.5106,positive
+2025-11-06T04:30:33.275078Z,POLKADOT,Negative sentiment grows around POLKADOT,-0.5719,negative
+2025-09-30T06:32:33.275085Z,POLKADOT,POLKADOT shows a strong recovery after recent dip,0.5106,positive
+2025-09-27T12:58:33.275093Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-09-22T13:46:33.275101Z,POLKADOT,POLKADOT underperforms compared to competitors,0.0,neutral
+2025-10-29T16:05:33.275108Z,POLKADOT,POLKADOT gains traction in global markets,0.34,positive
+2025-10-14T11:44:33.275116Z,POLKADOT,Liquidity for POLKADOT increases significantly,0.0,neutral
+2025-08-05T23:18:33.275125Z,POLKADOT,POLKADOT underperforms compared to competitors,0.0,neutral
+2025-11-12T08:59:33.275134Z,SOLANA,New upgrade boosts performance of SOLANA,0.3182,positive
+2025-08-25T00:20:33.275142Z,SOLANA,SOLANA surges amid renewed market optimism,0.5423,positive
+2025-11-01T05:09:33.275150Z,SOLANA,Whales accumulate large amounts of SOLANA,0.0,neutral
+2025-08-11T07:08:33.275159Z,SOLANA,SOLANA receives strong community support,0.7184,positive
+2025-10-24T07:09:33.275166Z,SOLANA,Liquidity for SOLANA increases significantly,0.0,neutral
+2025-09-12T23:58:33.275174Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-08-01T08:25:33.275182Z,SOLANA,Liquidity for SOLANA increases significantly,0.0,neutral
+2025-10-21T07:17:33.275189Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-11-26T06:01:33.275197Z,SOLANA,Technical indicators show weakness for SOLANA,-0.4215,negative
+2025-09-07T02:00:33.275204Z,SOLANA,Investors show strong confidence in SOLANA,0.765,positive
+2025-11-21T14:18:33.275212Z,SOLANA,Liquidity for SOLANA increases significantly,0.0,neutral
+2025-11-10T06:22:33.275220Z,SOLANA,Whales reduce exposure to SOLANA,0.0,neutral
+2025-10-12T04:17:33.275227Z,SOLANA,Analysts predict upward movement for SOLANA,0.0,neutral
+2025-09-03T08:44:33.275235Z,SOLANA,SOLANA sees major spike in transaction activity,0.0,neutral
+2025-10-19T01:51:33.275243Z,SOLANA,SOLANA adoption rises sharply as institutions enter,0.0,neutral
+2025-08-17T18:47:33.275251Z,SOLANA,SOLANA sees declining trading activity,0.0,neutral
+2025-09-10T17:36:33.275258Z,SOLANA,Investors pull liquidity from SOLANA markets,0.0,neutral
+2025-08-15T10:30:33.275266Z,SOLANA,New upgrade boosts performance of SOLANA,0.3182,positive
+2025-11-08T12:28:33.275273Z,SOLANA,New upgrade boosts performance of SOLANA,0.3182,positive
+2025-08-09T06:55:33.275281Z,SOLANA,SOLANA faces short-term bearish correction,0.0,neutral
+2025-11-06T02:17:33.275292Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-08-23T16:03:33.275305Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-09-26T02:06:33.275315Z,SOLANA,Market uncertainty pushes SOLANA downward,-0.34,negative
+2025-11-09T09:14:33.275324Z,SOLANA,Market activity around SOLANA remains stable,0.296,positive
+2025-08-31T10:22:33.275332Z,SOLANA,Investors show strong confidence in SOLANA,0.765,positive
+2025-09-26T04:09:33.275339Z,SOLANA,SOLANA experiences a calm trading session,0.3182,positive
+2025-09-03T15:41:33.275347Z,SOLANA,SOLANA ecosystem expands with new partnerships,0.1027,positive
+2025-10-02T01:14:33.275355Z,SOLANA,SOLANA surges amid renewed market optimism,0.5423,positive
+2025-08-19T03:06:33.275362Z,SOLANA,SOLANA gains traction in global markets,0.34,positive
+2025-10-06T10:48:33.275370Z,SOLANA,SOLANA experiences unusual volatility spike,0.0,neutral
+2025-08-10T06:19:33.275379Z,SOLANA,Market uncertainty pushes SOLANA downward,-0.34,negative
+2025-08-22T01:59:33.275386Z,SOLANA,Negative sentiment grows around SOLANA,-0.5719,negative
+2025-11-15T22:55:33.275394Z,SOLANA,SOLANA drops after heavy selling pressure,-0.296,negative
+2025-11-08T18:21:33.275402Z,SOLANA,Negative sentiment grows around SOLANA,-0.5719,negative
+2025-09-18T09:18:33.275409Z,SOLANA,SOLANA sees major spike in transaction activity,0.0,neutral
+2025-10-09T16:33:33.275417Z,SOLANA,Investors pull liquidity from SOLANA markets,0.0,neutral
+2025-09-14T02:29:33.275425Z,SOLANA,SOLANA surges amid renewed market optimism,0.5423,positive
+2025-11-01T20:03:33.275432Z,SOLANA,Investors show strong confidence in SOLANA,0.765,positive
+2025-08-17T08:00:33.275440Z,SOLANA,New upgrade boosts performance of SOLANA,0.3182,positive
+2025-08-23T21:38:33.275448Z,SOLANA,SOLANA faces short-term bearish correction,0.0,neutral
+2025-07-19T21:41:33.275455Z,SOLANA,SOLANA gains traction in global markets,0.34,positive
+2025-09-19T17:20:33.275463Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-07-24T05:39:33.275470Z,SOLANA,SOLANA ecosystem expands with new partnerships,0.1027,positive
+2025-10-13T14:38:33.275478Z,SOLANA,Whales reduce exposure to SOLANA,0.0,neutral
+2025-08-16T15:06:33.275486Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-09-11T18:57:33.275494Z,SOLANA,SOLANA sees declining trading activity,0.0,neutral
+2025-08-21T19:23:33.275504Z,SOLANA,SOLANA receives strong community support,0.7184,positive
+2025-10-22T08:54:33.275512Z,SOLANA,SOLANA adoption rises sharply as institutions enter,0.0,neutral
+2025-08-04T00:34:33.275520Z,SOLANA,Investors show strong confidence in SOLANA,0.765,positive
+2025-08-08T17:21:33.275528Z,SOLANA,Whales accumulate large amounts of SOLANA,0.0,neutral
+2025-10-15T22:13:33.275535Z,SOLANA,Liquidity for SOLANA increases significantly,0.0,neutral
+2025-09-19T21:22:33.275543Z,SOLANA,SOLANA drops after heavy selling pressure,-0.296,negative
+2025-11-01T19:44:33.275551Z,SOLANA,SOLANA gains traction in global markets,0.34,positive
+2025-10-02T02:10:33.275558Z,SOLANA,SOLANA surges amid renewed market optimism,0.5423,positive
+2025-10-24T09:59:33.275568Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-07-20T03:21:33.275576Z,SOLANA,Liquidity for SOLANA increases significantly,0.0,neutral
+2025-10-31T02:59:33.275584Z,SOLANA,SOLANA sees declining trading activity,0.0,neutral
+2025-07-26T05:04:33.275592Z,SOLANA,Regulatory pressure negatively impacts SOLANA,-0.296,negative
+2025-09-25T07:35:33.275599Z,SOLANA,SOLANA gains traction in global markets,0.34,positive
+2025-10-08T05:51:33.275607Z,SOLANA,SOLANA faces short-term bearish correction,0.0,neutral
+2025-11-23T17:55:33.275614Z,SOLANA,Negative sentiment grows around SOLANA,-0.5719,negative
+2025-09-25T19:11:33.275622Z,SOLANA,Analysts predict upward movement for SOLANA,0.0,neutral
+2025-07-18T15:01:33.275630Z,SOLANA,SOLANA faces short-term bearish correction,0.0,neutral
+2025-07-29T09:10:33.275638Z,SOLANA,SOLANA adoption rises sharply as institutions enter,0.0,neutral
+2025-11-21T04:05:33.275645Z,SOLANA,Investors pull liquidity from SOLANA markets,0.0,neutral
+2025-10-24T07:33:33.275653Z,SOLANA,SOLANA experiences strong bullish momentum,0.5106,positive
+2025-09-21T21:39:33.275661Z,SOLANA,Negative sentiment grows around SOLANA,-0.5719,negative
+2025-09-22T20:44:33.275670Z,SOLANA,SOLANA drops after heavy selling pressure,-0.296,negative
+2025-10-18T18:14:33.275677Z,SOLANA,Negative sentiment grows around SOLANA,-0.5719,negative
+2025-07-24T07:42:33.275685Z,SOLANA,Whales accumulate large amounts of SOLANA,0.0,neutral
+2025-10-22T17:37:33.275693Z,SOLANA,Liquidity for SOLANA increases significantly,0.0,neutral
+2025-08-03T18:14:33.275700Z,SOLANA,Negative sentiment grows around SOLANA,-0.5719,negative
+2025-10-21T13:53:33.275707Z,SOLANA,SOLANA faces short-term bearish correction,0.0,neutral
+2025-08-22T04:42:33.275715Z,SOLANA,SOLANA sees declining trading activity,0.0,neutral
+2025-11-24T09:00:33.275723Z,SOLANA,SOLANA surges amid renewed market optimism,0.5423,positive
+2025-08-29T10:19:33.275730Z,SOLANA,SOLANA underperforms compared to competitors,0.0,neutral
+2025-09-16T22:03:33.275738Z,SOLANA,SOLANA shows a strong recovery after recent dip,0.5106,positive
+2025-10-25T00:26:33.275746Z,SOLANA,SOLANA sees major spike in transaction activity,0.0,neutral
+2025-11-02T18:41:33.275753Z,SOLANA,SOLANA underperforms compared to competitors,0.0,neutral
+2025-11-08T08:06:33.275761Z,SOLANA,SOLANA underperforms compared to competitors,0.0,neutral
+2025-08-22T04:16:33.275769Z,STELLAR,STELLAR sees major spike in transaction activity,0.0,neutral
+2025-09-14T18:34:33.275777Z,STELLAR,Negative sentiment grows around STELLAR,-0.5719,negative
+2025-11-24T14:20:33.275785Z,STELLAR,STELLAR underperforms compared to competitors,0.0,neutral
+2025-10-25T05:17:33.275793Z,STELLAR,STELLAR trades sideways with minimal volatility,0.0,neutral
+2025-11-22T06:49:33.275800Z,STELLAR,STELLAR faces short-term bearish correction,0.0,neutral
+2025-07-26T15:07:33.275808Z,STELLAR,Market uncertainty pushes STELLAR downward,-0.34,negative
+2025-09-05T15:08:33.275817Z,STELLAR,Regulatory pressure negatively impacts STELLAR,-0.296,negative
+2025-07-25T06:24:33.275826Z,STELLAR,STELLAR gains traction in global markets,0.34,positive
+2025-08-08T08:30:33.275834Z,STELLAR,Technical indicators show weakness for STELLAR,-0.4215,negative
+2025-08-12T03:41:33.275843Z,STELLAR,STELLAR receives strong community support,0.7184,positive
+2025-10-17T22:08:33.275852Z,STELLAR,STELLAR experiences unusual volatility spike,0.0,neutral
+2025-10-16T11:40:33.275860Z,STELLAR,STELLAR sees declining trading activity,0.0,neutral
+2025-11-07T05:58:33.275868Z,STELLAR,STELLAR drops after heavy selling pressure,-0.296,negative
+2025-11-14T04:57:33.275876Z,STELLAR,Analysts predict upward movement for STELLAR,0.0,neutral
+2025-10-20T09:38:33.275884Z,STELLAR,STELLAR experiences unusual volatility spike,0.0,neutral
+2025-10-24T17:16:33.275892Z,STELLAR,STELLAR drops after heavy selling pressure,-0.296,negative
+2025-10-28T23:25:33.275899Z,STELLAR,Regulatory pressure negatively impacts STELLAR,-0.296,negative
+2025-08-12T16:10:33.275907Z,STELLAR,Whales accumulate large amounts of STELLAR,0.0,neutral
+2025-11-05T12:46:33.275915Z,STELLAR,Regulatory pressure negatively impacts STELLAR,-0.296,negative
+2025-10-13T21:51:33.275923Z,STELLAR,STELLAR ecosystem expands with new partnerships,0.1027,positive
+2025-10-31T15:52:33.275931Z,STELLAR,STELLAR sees declining trading activity,0.0,neutral
+2025-08-02T10:13:33.275938Z,STELLAR,STELLAR drops after heavy selling pressure,-0.296,negative
+2025-10-24T11:33:33.275946Z,STELLAR,STELLAR sees declining trading activity,0.0,neutral
+2025-11-22T18:43:33.275954Z,STELLAR,Market uncertainty pushes STELLAR downward,-0.34,negative
+2025-07-23T03:17:33.275961Z,STELLAR,STELLAR sees major spike in transaction activity,0.0,neutral
+2025-09-03T23:07:33.275970Z,STELLAR,STELLAR shows a strong recovery after recent dip,0.5106,positive
+2025-09-04T14:09:33.275977Z,STELLAR,Regulatory pressure negatively impacts STELLAR,-0.296,negative
+2025-10-15T01:08:33.275985Z,STELLAR,STELLAR drops after heavy selling pressure,-0.296,negative
+2025-09-11T15:07:33.275993Z,STELLAR,STELLAR adoption rises sharply as institutions enter,0.0,neutral
+2025-07-23T19:11:33.276000Z,STELLAR,STELLAR sees major spike in transaction activity,0.0,neutral
+2025-09-19T04:18:33.276008Z,STELLAR,STELLAR ecosystem expands with new partnerships,0.1027,positive
+2025-07-14T02:01:33.276015Z,STELLAR,STELLAR underperforms compared to competitors,0.0,neutral
+2025-07-22T20:14:33.276024Z,STELLAR,Liquidity for STELLAR increases significantly,0.0,neutral
+2025-08-18T22:33:33.276032Z,STELLAR,Investors show strong confidence in STELLAR,0.765,positive
+2025-11-18T00:13:33.276041Z,STELLAR,Market uncertainty pushes STELLAR downward,-0.34,negative
+2025-11-02T06:01:33.276049Z,STELLAR,STELLAR faces short-term bearish correction,0.0,neutral
+2025-11-18T13:06:33.276056Z,STELLAR,STELLAR experiences strong bullish momentum,0.5106,positive
+2025-11-26T02:16:33.276064Z,STELLAR,STELLAR faces short-term bearish correction,0.0,neutral
+2025-11-01T11:01:33.276072Z,STELLAR,STELLAR receives strong community support,0.7184,positive
+2025-09-24T18:44:33.276081Z,STELLAR,Analysts predict upward movement for STELLAR,0.0,neutral
+2025-09-25T19:02:33.276089Z,STELLAR,STELLAR experiences a calm trading session,0.3182,positive
+2025-11-16T01:06:33.276097Z,STELLAR,Investors show strong confidence in STELLAR,0.765,positive
+2025-11-15T17:07:33.276104Z,STELLAR,Liquidity for STELLAR increases significantly,0.0,neutral
+2025-10-24T04:56:33.276112Z,STELLAR,Investors show strong confidence in STELLAR,0.765,positive
+2025-08-13T22:52:33.276120Z,STELLAR,STELLAR surges amid renewed market optimism,0.5423,positive
+2025-11-22T00:14:33.276128Z,STELLAR,STELLAR sees major spike in transaction activity,0.0,neutral
+2025-07-23T08:44:33.276135Z,STELLAR,Market uncertainty pushes STELLAR downward,-0.34,negative
+2025-11-22T09:30:33.276143Z,STELLAR,STELLAR gains traction in global markets,0.34,positive
+2025-11-12T13:25:33.276150Z,STELLAR,Investors pull liquidity from STELLAR markets,0.0,neutral
+2025-07-16T02:13:33.276158Z,STELLAR,STELLAR gains traction in global markets,0.34,positive
+2025-10-28T16:57:33.276166Z,STELLAR,Technical indicators show weakness for STELLAR,-0.4215,negative
+2025-11-01T14:36:33.276173Z,STELLAR,Technical indicators show weakness for STELLAR,-0.4215,negative
+2025-10-05T03:06:33.276181Z,STELLAR,Liquidity for STELLAR increases significantly,0.0,neutral
+2025-08-30T12:37:33.276189Z,STELLAR,STELLAR underperforms compared to competitors,0.0,neutral
+2025-08-14T03:56:33.276196Z,STELLAR,STELLAR experiences unusual volatility spike,0.0,neutral
+2025-10-08T14:43:33.276204Z,STELLAR,Investors pull liquidity from STELLAR markets,0.0,neutral
+2025-10-11T04:13:33.276212Z,STELLAR,STELLAR receives strong community support,0.7184,positive
+2025-10-19T11:53:33.276219Z,STELLAR,STELLAR receives strong community support,0.7184,positive
+2025-07-16T09:39:33.276227Z,STELLAR,STELLAR receives strong community support,0.7184,positive
+2025-10-03T03:52:33.276235Z,STELLAR,STELLAR gains traction in global markets,0.34,positive
+2025-11-07T12:48:33.276245Z,STELLAR,STELLAR drops after heavy selling pressure,-0.296,negative
+2025-08-19T18:18:33.276253Z,STELLAR,STELLAR ecosystem expands with new partnerships,0.1027,positive
+2025-11-16T08:34:33.276261Z,STELLAR,STELLAR faces short-term bearish correction,0.0,neutral
+2025-10-15T23:38:33.276269Z,STELLAR,STELLAR experiences strong bullish momentum,0.5106,positive
+2025-08-11T16:23:33.276276Z,STELLAR,STELLAR ecosystem expands with new partnerships,0.1027,positive
+2025-08-23T22:32:33.276284Z,STELLAR,STELLAR sees major spike in transaction activity,0.0,neutral
+2025-07-13T04:06:33.276295Z,STELLAR,STELLAR underperforms compared to competitors,0.0,neutral
+2025-10-22T00:37:33.276308Z,STELLAR,Analysts predict upward movement for STELLAR,0.0,neutral
+2025-09-23T17:56:33.276316Z,STELLAR,STELLAR adoption rises sharply as institutions enter,0.0,neutral
+2025-10-15T16:15:33.276324Z,STELLAR,STELLAR sees major spike in transaction activity,0.0,neutral
+2025-10-21T13:54:33.276333Z,STELLAR,Market activity around STELLAR remains stable,0.296,positive
+2025-09-06T15:40:33.276340Z,STELLAR,STELLAR shows a strong recovery after recent dip,0.5106,positive
+2025-10-23T19:39:33.276348Z,STELLAR,STELLAR drops after heavy selling pressure,-0.296,negative
+2025-11-05T09:58:33.276355Z,STELLAR,Investors pull liquidity from STELLAR markets,0.0,neutral
+2025-07-16T16:00:33.276363Z,STELLAR,Liquidity for STELLAR increases significantly,0.0,neutral
+2025-09-18T07:33:33.276370Z,STELLAR,STELLAR gains traction in global markets,0.34,positive
+2025-07-15T13:49:33.276378Z,STELLAR,STELLAR experiences unusual volatility spike,0.0,neutral
+2025-09-10T21:29:33.276386Z,STELLAR,STELLAR underperforms compared to competitors,0.0,neutral
+2025-11-18T09:43:33.276393Z,STELLAR,Analysts predict upward movement for STELLAR,0.0,neutral
+2025-11-05T16:49:33.276401Z,STELLAR,STELLAR ecosystem expands with new partnerships,0.1027,positive
+2025-11-04T05:07:33.276410Z,TETHER,TETHER sees major spike in transaction activity,0.0,neutral
+2025-08-10T00:38:33.276418Z,TETHER,Whales accumulate large amounts of TETHER,0.0,neutral
+2025-07-15T18:03:33.276426Z,TETHER,Market uncertainty pushes TETHER downward,-0.34,negative
+2025-11-09T16:49:33.276435Z,TETHER,Investors show strong confidence in TETHER,0.765,positive
+2025-09-19T20:07:33.276443Z,TETHER,TETHER ecosystem expands with new partnerships,0.1027,positive
+2025-10-09T03:32:33.276452Z,TETHER,Liquidity for TETHER increases significantly,0.0,neutral
+2025-08-06T22:50:33.276459Z,TETHER,TETHER sees declining trading activity,0.0,neutral
+2025-09-17T14:29:33.276467Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-09-27T15:48:33.276476Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-11-01T20:06:33.276484Z,TETHER,TETHER ecosystem expands with new partnerships,0.1027,positive
+2025-09-09T16:14:33.276492Z,TETHER,TETHER ecosystem expands with new partnerships,0.1027,positive
+2025-10-15T20:20:33.276499Z,TETHER,TETHER surges amid renewed market optimism,0.5423,positive
+2025-10-08T22:45:33.276507Z,TETHER,Whales accumulate large amounts of TETHER,0.0,neutral
+2025-07-21T23:57:33.276515Z,TETHER,Market uncertainty pushes TETHER downward,-0.34,negative
+2025-08-15T16:45:33.276522Z,TETHER,TETHER faces short-term bearish correction,0.0,neutral
+2025-09-06T04:12:33.276530Z,TETHER,TETHER experiences unusual volatility spike,0.0,neutral
+2025-07-13T23:40:33.276537Z,TETHER,TETHER shows a strong recovery after recent dip,0.5106,positive
+2025-10-03T02:03:33.276545Z,TETHER,TETHER experiences strong bullish momentum,0.5106,positive
+2025-10-12T13:24:33.276552Z,TETHER,Regulatory pressure negatively impacts TETHER,-0.296,negative
+2025-07-19T03:23:33.276560Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-07-28T17:46:33.276568Z,TETHER,TETHER faces short-term bearish correction,0.0,neutral
+2025-10-22T06:01:33.276576Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-11-10T15:52:33.276585Z,TETHER,Liquidity for TETHER increases significantly,0.0,neutral
+2025-08-08T08:18:33.276593Z,TETHER,TETHER faces short-term bearish correction,0.0,neutral
+2025-09-30T03:55:33.276602Z,TETHER,Liquidity for TETHER increases significantly,0.0,neutral
+2025-08-07T08:31:33.276610Z,TETHER,TETHER faces short-term bearish correction,0.0,neutral
+2025-10-02T18:55:33.276618Z,TETHER,TETHER drops after heavy selling pressure,-0.296,negative
+2025-09-11T09:37:33.276626Z,TETHER,TETHER sees major spike in transaction activity,0.0,neutral
+2025-10-19T20:49:33.276635Z,TETHER,Technical indicators show weakness for TETHER,-0.4215,negative
+2025-10-30T12:58:33.276642Z,TETHER,TETHER experiences strong bullish momentum,0.5106,positive
+2025-08-28T09:52:33.276650Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-09-04T17:34:33.276658Z,TETHER,Whales reduce exposure to TETHER,0.0,neutral
+2025-10-14T22:47:33.276665Z,TETHER,TETHER adoption rises sharply as institutions enter,0.0,neutral
+2025-10-31T20:30:33.276673Z,TETHER,Technical indicators show weakness for TETHER,-0.4215,negative
+2025-07-31T01:12:33.276680Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-10-29T17:57:33.276688Z,TETHER,Liquidity for TETHER increases significantly,0.0,neutral
+2025-10-20T12:41:33.276696Z,TETHER,TETHER sees major spike in transaction activity,0.0,neutral
+2025-11-02T20:59:33.276703Z,TETHER,Whales accumulate large amounts of TETHER,0.0,neutral
+2025-09-24T19:49:33.276712Z,TETHER,Whales reduce exposure to TETHER,0.0,neutral
+2025-10-29T22:17:33.276720Z,TETHER,TETHER drops after heavy selling pressure,-0.296,negative
+2025-08-21T23:29:33.276728Z,TETHER,TETHER adoption rises sharply as institutions enter,0.0,neutral
+2025-11-25T15:08:33.276736Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-09-30T14:10:33.276743Z,TETHER,Technical indicators show weakness for TETHER,-0.4215,negative
+2025-10-29T03:20:33.276751Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-11-12T02:36:33.276759Z,TETHER,TETHER underperforms compared to competitors,0.0,neutral
+2025-09-10T02:34:33.276768Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-11-02T03:03:33.276775Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-09-14T12:55:33.276783Z,TETHER,TETHER drops after heavy selling pressure,-0.296,negative
+2025-10-30T10:16:33.276791Z,TETHER,Whales accumulate large amounts of TETHER,0.0,neutral
+2025-08-03T19:47:33.276798Z,TETHER,TETHER shows a strong recovery after recent dip,0.5106,positive
+2025-08-06T14:05:33.276807Z,TETHER,Liquidity for TETHER increases significantly,0.0,neutral
+2025-08-09T18:01:33.276815Z,TETHER,New upgrade boosts performance of TETHER,0.3182,positive
+2025-09-22T03:14:33.276822Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-08-30T01:59:33.276830Z,TETHER,TETHER experiences strong bullish momentum,0.5106,positive
+2025-09-05T11:05:33.276839Z,TETHER,TETHER underperforms compared to competitors,0.0,neutral
+2025-11-06T01:43:33.276847Z,TETHER,Negative sentiment grows around TETHER,-0.5719,negative
+2025-07-28T20:19:33.276855Z,TETHER,Analysts predict upward movement for TETHER,0.0,neutral
+2025-11-05T23:34:33.276862Z,TETHER,Investors show strong confidence in TETHER,0.765,positive
+2025-09-08T10:15:33.276870Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-08-30T13:41:33.276878Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-08-21T04:01:33.276885Z,TETHER,TETHER drops after heavy selling pressure,-0.296,negative
+2025-07-16T10:28:33.276893Z,TETHER,Regulatory pressure negatively impacts TETHER,-0.296,negative
+2025-08-15T11:01:33.276901Z,TETHER,Negative sentiment grows around TETHER,-0.5719,negative
+2025-07-11T02:08:33.276909Z,TETHER,TETHER adoption rises sharply as institutions enter,0.0,neutral
+2025-11-13T05:14:33.276921Z,TETHER,TETHER underperforms compared to competitors,0.0,neutral
+2025-09-29T16:26:33.276929Z,TETHER,TETHER sees major spike in transaction activity,0.0,neutral
+2025-11-07T22:19:33.276936Z,TETHER,TETHER ecosystem expands with new partnerships,0.1027,positive
+2025-07-21T05:19:33.276944Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-09-04T23:57:33.276952Z,TETHER,Liquidity for TETHER increases significantly,0.0,neutral
+2025-11-17T23:42:33.276959Z,TETHER,Whales reduce exposure to TETHER,0.0,neutral
+2025-09-04T13:36:33.276968Z,TETHER,Investors show strong confidence in TETHER,0.765,positive
+2025-08-03T17:19:33.276976Z,TETHER,TETHER trades sideways with minimal volatility,0.0,neutral
+2025-08-15T20:14:33.276985Z,TETHER,TETHER surges amid renewed market optimism,0.5423,positive
+2025-10-28T17:56:33.276994Z,TETHER,Negative sentiment grows around TETHER,-0.5719,negative
+2025-11-04T07:51:33.277001Z,TETHER,TETHER ecosystem expands with new partnerships,0.1027,positive
+2025-08-06T08:05:33.277009Z,TETHER,TETHER faces short-term bearish correction,0.0,neutral
+2025-08-10T17:03:33.277017Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-08-08T06:36:33.277025Z,TETHER,TETHER gains traction in global markets,0.34,positive
+2025-11-06T20:56:33.277032Z,TETHER,TETHER experiences strong bullish momentum,0.5106,positive
+2025-10-06T09:39:33.277040Z,TETHER,TETHER receives strong community support,0.7184,positive
+2025-08-05T07:06:33.277049Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-11-23T06:57:33.277057Z,TRON,Analysts predict upward movement for TRON,0.0,neutral
+2025-08-23T06:38:33.277065Z,TRON,Regulatory pressure negatively impacts TRON,-0.296,negative
+2025-10-11T20:35:33.277073Z,TRON,New upgrade boosts performance of TRON,0.3182,positive
+2025-07-14T18:55:33.277081Z,TRON,Whales accumulate large amounts of TRON,0.0,neutral
+2025-07-11T15:18:33.277088Z,TRON,TRON sees major spike in transaction activity,0.0,neutral
+2025-10-15T11:10:33.277097Z,TRON,TRON experiences a calm trading session,0.3182,positive
+2025-09-20T10:12:33.277105Z,TRON,TRON trades sideways with minimal volatility,0.0,neutral
+2025-09-17T00:14:33.277113Z,TRON,TRON drops after heavy selling pressure,-0.296,negative
+2025-08-22T04:23:33.277121Z,TRON,Whales accumulate large amounts of TRON,0.0,neutral
+2025-10-28T04:30:33.277128Z,TRON,TRON gains traction in global markets,0.34,positive
+2025-10-25T04:05:33.277137Z,TRON,Investors pull liquidity from TRON markets,0.0,neutral
+2025-08-14T23:03:33.277145Z,TRON,Investors pull liquidity from TRON markets,0.0,neutral
+2025-08-14T17:32:33.277153Z,TRON,Investors show strong confidence in TRON,0.765,positive
+2025-09-30T13:49:33.277161Z,TRON,Analysts predict upward movement for TRON,0.0,neutral
+2025-10-14T08:31:33.277169Z,TRON,TRON surges amid renewed market optimism,0.5423,positive
+2025-07-31T15:31:33.277176Z,TRON,TRON faces short-term bearish correction,0.0,neutral
+2025-08-20T02:12:33.277184Z,TRON,Investors pull liquidity from TRON markets,0.0,neutral
+2025-11-02T14:45:33.277192Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-11-08T05:21:33.277201Z,TRON,Technical indicators show weakness for TRON,-0.4215,negative
+2025-07-27T12:22:33.277209Z,TRON,Liquidity for TRON increases significantly,0.0,neutral
+2025-08-13T01:20:33.277217Z,TRON,TRON shows a strong recovery after recent dip,0.5106,positive
+2025-10-07T18:18:33.277225Z,TRON,TRON sees major spike in transaction activity,0.0,neutral
+2025-09-24T04:38:33.277233Z,TRON,Whales accumulate large amounts of TRON,0.0,neutral
+2025-07-14T12:04:33.277243Z,TRON,TRON experiences strong bullish momentum,0.5106,positive
+2025-09-07T23:40:33.277250Z,TRON,Investors show strong confidence in TRON,0.765,positive
+2025-10-27T21:03:33.277258Z,TRON,TRON faces short-term bearish correction,0.0,neutral
+2025-10-22T13:07:33.277266Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-07-16T07:13:33.277274Z,TRON,TRON ecosystem expands with new partnerships,0.1027,positive
+2025-07-17T01:54:33.277281Z,TRON,TRON ecosystem expands with new partnerships,0.1027,positive
+2025-07-13T21:17:33.277289Z,TRON,Analysts predict upward movement for TRON,0.0,neutral
+2025-08-25T02:53:33.277297Z,TRON,Whales reduce exposure to TRON,0.0,neutral
+2025-10-24T03:20:33.277304Z,TRON,Whales reduce exposure to TRON,0.0,neutral
+2025-07-15T16:40:33.277314Z,TRON,Negative sentiment grows around TRON,-0.5719,negative
+2025-07-30T06:20:33.277321Z,TRON,TRON sees declining trading activity,0.0,neutral
+2025-11-14T22:06:33.277329Z,TRON,TRON sees declining trading activity,0.0,neutral
+2025-08-22T07:03:33.277337Z,TRON,Negative sentiment grows around TRON,-0.5719,negative
+2025-09-30T08:39:33.277346Z,TRON,TRON surges amid renewed market optimism,0.5423,positive
+2025-08-25T23:05:33.277353Z,TRON,Whales accumulate large amounts of TRON,0.0,neutral
+2025-11-21T07:47:33.277361Z,TRON,TRON trades sideways with minimal volatility,0.0,neutral
+2025-11-05T15:39:33.277370Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-10-23T15:20:33.277378Z,TRON,TRON experiences unusual volatility spike,0.0,neutral
+2025-07-12T03:03:33.277386Z,TRON,TRON receives strong community support,0.7184,positive
+2025-09-02T04:33:33.277393Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-11-26T02:57:33.277401Z,TRON,TRON receives strong community support,0.7184,positive
+2025-10-30T03:28:33.277409Z,TRON,TRON sees declining trading activity,0.0,neutral
+2025-11-13T18:31:33.277417Z,TRON,TRON shows no major price movement today,-0.296,negative
+2025-07-24T18:03:33.277425Z,TRON,Whales reduce exposure to TRON,0.0,neutral
+2025-09-26T06:45:33.277433Z,TRON,TRON underperforms compared to competitors,0.0,neutral
+2025-09-18T02:05:33.277441Z,TRON,TRON receives strong community support,0.7184,positive
+2025-07-18T17:54:33.277449Z,TRON,TRON drops after heavy selling pressure,-0.296,negative
+2025-07-28T14:56:33.277456Z,TRON,Investors pull liquidity from TRON markets,0.0,neutral
+2025-10-09T21:24:33.277465Z,TRON,Liquidity for TRON increases significantly,0.0,neutral
+2025-09-21T00:15:33.277473Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-08-11T01:30:33.277482Z,TRON,TRON sees declining trading activity,0.0,neutral
+2025-10-30T02:52:33.277490Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-10-18T10:48:33.277498Z,TRON,Whales accumulate large amounts of TRON,0.0,neutral
+2025-08-28T14:56:33.277505Z,TRON,TRON drops after heavy selling pressure,-0.296,negative
+2025-07-13T10:06:33.277513Z,TRON,TRON experiences strong bullish momentum,0.5106,positive
+2025-09-21T01:16:33.277521Z,TRON,Negative sentiment grows around TRON,-0.5719,negative
+2025-08-22T17:55:33.277529Z,TRON,Regulatory pressure negatively impacts TRON,-0.296,negative
+2025-11-09T06:17:33.277536Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-10-15T20:16:33.277544Z,TRON,TRON sees declining trading activity,0.0,neutral
+2025-08-30T06:31:33.277551Z,TRON,Technical indicators show weakness for TRON,-0.4215,negative
+2025-10-27T12:48:33.277559Z,TRON,TRON experiences strong bullish momentum,0.5106,positive
+2025-08-06T00:36:33.277567Z,TRON,TRON gains traction in global markets,0.34,positive
+2025-10-04T04:46:33.277575Z,TRON,Market uncertainty pushes TRON downward,-0.34,negative
+2025-08-19T17:48:33.277582Z,TRON,Market activity around TRON remains stable,0.296,positive
+2025-08-27T17:06:33.277590Z,TRON,TRON adoption rises sharply as institutions enter,0.0,neutral
+2025-07-17T08:38:33.277599Z,TRON,Regulatory pressure negatively impacts TRON,-0.296,negative
+2025-09-07T07:42:33.277607Z,TRON,Whales accumulate large amounts of TRON,0.0,neutral
+2025-11-07T09:23:33.277614Z,TRON,TRON experiences unusual volatility spike,0.0,neutral
+2025-08-20T20:59:33.277624Z,TRON,TRON faces short-term bearish correction,0.0,neutral
+2025-11-07T18:25:33.277632Z,TRON,TRON experiences strong bullish momentum,0.5106,positive
+2025-07-15T04:43:33.277640Z,TRON,TRON adoption rises sharply as institutions enter,0.0,neutral
+2025-10-26T09:18:33.277648Z,TRON,TRON sees major spike in transaction activity,0.0,neutral
+2025-10-30T07:24:33.277656Z,TRON,TRON ecosystem expands with new partnerships,0.1027,positive
+2025-07-12T13:06:33.277664Z,TRON,Liquidity for TRON increases significantly,0.0,neutral
+2025-07-27T03:55:33.277672Z,TRON,Regulatory pressure negatively impacts TRON,-0.296,negative
+2025-10-24T19:15:33.277679Z,TRON,New upgrade boosts performance of TRON,0.3182,positive
+2025-08-17T07:47:33.277687Z,UNISWAP,UNISWAP underperforms compared to competitors,0.0,neutral
+2025-08-03T05:17:33.277695Z,UNISWAP,Technical indicators show weakness for UNISWAP,-0.4215,negative
+2025-07-19T09:13:33.277703Z,UNISWAP,Market activity around UNISWAP remains stable,0.296,positive
+2025-07-26T00:01:33.277711Z,UNISWAP,UNISWAP sees major spike in transaction activity,0.0,neutral
+2025-08-14T19:07:33.277718Z,UNISWAP,Market uncertainty pushes UNISWAP downward,-0.34,negative
+2025-08-21T13:16:33.277727Z,UNISWAP,Technical indicators show weakness for UNISWAP,-0.4215,negative
+2025-07-21T07:09:33.277735Z,UNISWAP,UNISWAP adoption rises sharply as institutions enter,0.0,neutral
+2025-10-06T00:10:33.277743Z,UNISWAP,Analysts predict upward movement for UNISWAP,0.0,neutral
+2025-08-05T01:52:33.277750Z,UNISWAP,UNISWAP surges amid renewed market optimism,0.5423,positive
+2025-08-15T23:55:33.277758Z,UNISWAP,Whales reduce exposure to UNISWAP,0.0,neutral
+2025-10-22T00:41:33.277766Z,UNISWAP,UNISWAP experiences strong bullish momentum,0.5106,positive
+2025-10-31T13:05:33.277773Z,UNISWAP,Investors show strong confidence in UNISWAP,0.765,positive
+2025-11-13T12:43:33.277781Z,UNISWAP,UNISWAP underperforms compared to competitors,0.0,neutral
+2025-11-03T06:00:33.277790Z,UNISWAP,UNISWAP receives strong community support,0.7184,positive
+2025-10-19T09:40:33.277803Z,UNISWAP,UNISWAP shows no major price movement today,-0.296,negative
+2025-09-26T22:14:33.277817Z,UNISWAP,Whales accumulate large amounts of UNISWAP,0.0,neutral
+2025-10-17T20:40:33.277833Z,UNISWAP,Liquidity for UNISWAP increases significantly,0.0,neutral
+2025-09-08T14:26:33.277848Z,UNISWAP,UNISWAP shows a strong recovery after recent dip,0.5106,positive
+2025-08-24T15:54:33.277861Z,UNISWAP,UNISWAP drops after heavy selling pressure,-0.296,negative
+2025-09-11T02:38:33.277874Z,UNISWAP,UNISWAP gains traction in global markets,0.34,positive
+2025-08-19T06:27:33.277886Z,UNISWAP,UNISWAP experiences unusual volatility spike,0.0,neutral
+2025-10-29T16:26:33.277900Z,UNISWAP,Market uncertainty pushes UNISWAP downward,-0.34,negative
+2025-07-21T03:30:33.277912Z,UNISWAP,UNISWAP gains traction in global markets,0.34,positive
+2025-08-18T12:47:33.277924Z,UNISWAP,UNISWAP gains traction in global markets,0.34,positive
+2025-08-28T08:40:33.277936Z,UNISWAP,Regulatory pressure negatively impacts UNISWAP,-0.296,negative
+2025-09-04T16:25:33.277950Z,UNISWAP,UNISWAP surges amid renewed market optimism,0.5423,positive
+2025-11-18T08:05:33.277963Z,UNISWAP,Investors pull liquidity from UNISWAP markets,0.0,neutral
+2025-08-10T22:03:33.277978Z,UNISWAP,Negative sentiment grows around UNISWAP,-0.5719,negative
+2025-11-03T00:04:33.277986Z,UNISWAP,Liquidity for UNISWAP increases significantly,0.0,neutral
+2025-10-28T07:09:33.277995Z,UNISWAP,Negative sentiment grows around UNISWAP,-0.5719,negative
+2025-09-21T18:26:33.278003Z,UNISWAP,New upgrade boosts performance of UNISWAP,0.3182,positive
+2025-09-29T22:09:33.278011Z,UNISWAP,UNISWAP ecosystem expands with new partnerships,0.1027,positive
+2025-09-04T21:08:33.278019Z,UNISWAP,UNISWAP gains traction in global markets,0.34,positive
+2025-10-24T01:03:33.278027Z,UNISWAP,UNISWAP experiences a calm trading session,0.3182,positive
+2025-10-11T07:50:33.278035Z,UNISWAP,New upgrade boosts performance of UNISWAP,0.3182,positive
+2025-10-02T07:04:33.278046Z,UNISWAP,Analysts predict upward movement for UNISWAP,0.0,neutral
+2025-07-17T13:12:33.278054Z,UNISWAP,Analysts predict upward movement for UNISWAP,0.0,neutral
+2025-09-02T14:40:33.278061Z,UNISWAP,Technical indicators show weakness for UNISWAP,-0.4215,negative
+2025-11-07T00:27:33.278118Z,UNISWAP,UNISWAP shows a strong recovery after recent dip,0.5106,positive
+2025-10-24T02:12:33.278150Z,UNISWAP,Whales reduce exposure to UNISWAP,0.0,neutral
+2025-11-19T18:01:33.278176Z,UNISWAP,Whales accumulate large amounts of UNISWAP,0.0,neutral
+2025-08-13T17:05:33.278198Z,UNISWAP,UNISWAP sees declining trading activity,0.0,neutral
+2025-07-14T17:34:33.278220Z,UNISWAP,Negative sentiment grows around UNISWAP,-0.5719,negative
+2025-08-24T11:59:33.278237Z,UNISWAP,UNISWAP sees declining trading activity,0.0,neutral
+2025-10-15T01:36:33.278254Z,UNISWAP,Liquidity for UNISWAP increases significantly,0.0,neutral
+2025-09-12T06:32:33.278273Z,UNISWAP,Whales reduce exposure to UNISWAP,0.0,neutral
+2025-07-13T01:08:33.278291Z,UNISWAP,UNISWAP underperforms compared to competitors,0.0,neutral
+2025-08-30T18:54:33.278313Z,UNISWAP,UNISWAP faces short-term bearish correction,0.0,neutral
+2025-07-24T03:14:33.278328Z,UNISWAP,UNISWAP gains traction in global markets,0.34,positive
+2025-07-18T06:31:33.278340Z,UNISWAP,UNISWAP ecosystem expands with new partnerships,0.1027,positive
+2025-11-18T19:47:33.278349Z,UNISWAP,UNISWAP underperforms compared to competitors,0.0,neutral
+2025-09-15T21:37:33.278359Z,UNISWAP,UNISWAP sees declining trading activity,0.0,neutral
+2025-07-16T06:10:33.278368Z,UNISWAP,UNISWAP ecosystem expands with new partnerships,0.1027,positive
+2025-10-14T17:53:33.278378Z,UNISWAP,UNISWAP surges amid renewed market optimism,0.5423,positive
+2025-11-26T02:13:33.278392Z,UNISWAP,UNISWAP adoption rises sharply as institutions enter,0.0,neutral
+2025-10-11T19:29:33.278403Z,UNISWAP,UNISWAP sees major spike in transaction activity,0.0,neutral
+2025-10-31T16:07:33.278413Z,UNISWAP,Investors show strong confidence in UNISWAP,0.765,positive
+2025-11-09T01:16:33.278424Z,UNISWAP,Technical indicators show weakness for UNISWAP,-0.4215,negative
+2025-08-13T13:33:33.278434Z,UNISWAP,UNISWAP shows a strong recovery after recent dip,0.5106,positive
+2025-09-02T23:04:33.278444Z,UNISWAP,UNISWAP surges amid renewed market optimism,0.5423,positive
+2025-11-19T11:25:33.278453Z,UNISWAP,Market activity around UNISWAP remains stable,0.296,positive
+2025-10-01T08:05:33.278463Z,UNISWAP,Whales reduce exposure to UNISWAP,0.0,neutral
+2025-08-12T06:24:33.278474Z,UNISWAP,Analysts predict upward movement for UNISWAP,0.0,neutral
+2025-07-14T09:08:33.278484Z,UNISWAP,UNISWAP gains traction in global markets,0.34,positive
+2025-08-02T14:12:33.278494Z,UNISWAP,Liquidity for UNISWAP increases significantly,0.0,neutral
+2025-11-12T04:15:33.278510Z,UNISWAP,UNISWAP sees declining trading activity,0.0,neutral
+2025-08-03T13:11:33.278522Z,UNISWAP,UNISWAP experiences a calm trading session,0.3182,positive
+2025-09-06T19:00:33.278532Z,UNISWAP,Analysts predict upward movement for UNISWAP,0.0,neutral
+2025-08-18T21:47:33.278542Z,UNISWAP,UNISWAP shows a strong recovery after recent dip,0.5106,positive
+2025-10-19T20:05:33.278552Z,UNISWAP,Liquidity for UNISWAP increases significantly,0.0,neutral
+2025-07-23T07:11:33.278562Z,UNISWAP,UNISWAP sees major spike in transaction activity,0.0,neutral
+2025-10-16T06:24:33.278572Z,UNISWAP,Whales accumulate large amounts of UNISWAP,0.0,neutral
+2025-07-29T14:29:33.278582Z,UNISWAP,UNISWAP sees major spike in transaction activity,0.0,neutral
+2025-08-20T03:10:33.278592Z,UNISWAP,UNISWAP surges amid renewed market optimism,0.5423,positive
+2025-08-31T22:56:33.278601Z,UNISWAP,UNISWAP faces short-term bearish correction,0.0,neutral
+2025-08-27T03:28:33.278611Z,UNISWAP,UNISWAP sees major spike in transaction activity,0.0,neutral
+2025-07-28T13:22:33.278621Z,UNISWAP,Whales accumulate large amounts of UNISWAP,0.0,neutral
+2025-07-31T23:37:33.278630Z,UNISWAP,UNISWAP receives strong community support,0.7184,positive
+2025-11-16T05:25:33.278641Z,UNISWAP,Investors show strong confidence in UNISWAP,0.765,positive
+2025-08-30T11:12:33.278869Z,UNISWAP,Whales accumulate large amounts of UNISWAP,0.0,neutral
+2025-10-07T17:37:33.278884Z,USDCOIN,Whales accumulate large amounts of USDCOIN,0.0,neutral
+2025-09-27T15:29:33.278895Z,USDCOIN,Whales reduce exposure to USDCOIN,0.0,neutral
+2025-10-25T03:44:33.278903Z,USDCOIN,Market uncertainty pushes USDCOIN downward,-0.34,negative
+2025-09-08T13:42:33.278911Z,USDCOIN,USDCOIN underperforms compared to competitors,0.0,neutral
+2025-09-18T23:23:33.278919Z,USDCOIN,USDCOIN sees declining trading activity,0.0,neutral
+2025-10-10T22:17:33.278928Z,USDCOIN,USDCOIN sees major spike in transaction activity,0.0,neutral
+2025-07-13T00:47:33.278936Z,USDCOIN,USDCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-19T09:17:33.278947Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-11-06T05:58:33.278956Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-08-26T16:16:33.278964Z,USDCOIN,Whales reduce exposure to USDCOIN,0.0,neutral
+2025-11-16T05:10:33.278972Z,USDCOIN,Investors pull liquidity from USDCOIN markets,0.0,neutral
+2025-10-18T10:58:33.278980Z,USDCOIN,USDCOIN gains traction in global markets,0.34,positive
+2025-10-07T13:27:33.278989Z,USDCOIN,USDCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-11-25T22:36:33.278997Z,USDCOIN,Negative sentiment grows around USDCOIN,-0.5719,negative
+2025-10-31T21:38:33.279005Z,USDCOIN,USDCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-07-16T13:53:33.279013Z,USDCOIN,USDCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-23T13:08:33.279022Z,USDCOIN,USDCOIN receives strong community support,0.7184,positive
+2025-09-11T00:54:33.279030Z,USDCOIN,USDCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-11-14T16:36:33.279037Z,USDCOIN,Analysts predict upward movement for USDCOIN,0.0,neutral
+2025-08-12T07:17:33.279045Z,USDCOIN,USDCOIN faces short-term bearish correction,0.0,neutral
+2025-09-23T11:51:33.279052Z,USDCOIN,USDCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-11-11T06:05:33.279060Z,USDCOIN,Investors pull liquidity from USDCOIN markets,0.0,neutral
+2025-07-23T06:41:33.279067Z,USDCOIN,USDCOIN receives strong community support,0.7184,positive
+2025-10-26T05:03:33.279083Z,USDCOIN,USDCOIN experiences unusual volatility spike,0.0,neutral
+2025-08-03T22:36:33.279092Z,USDCOIN,Whales accumulate large amounts of USDCOIN,0.0,neutral
+2025-11-07T10:27:33.279100Z,USDCOIN,USDCOIN experiences strong bullish momentum,0.5106,positive
+2025-07-29T18:00:33.279108Z,USDCOIN,Market activity around USDCOIN remains stable,0.296,positive
+2025-11-07T04:07:33.279116Z,USDCOIN,New upgrade boosts performance of USDCOIN,0.3182,positive
+2025-10-28T00:11:33.279124Z,USDCOIN,Investors show strong confidence in USDCOIN,0.765,positive
+2025-09-06T03:29:33.279132Z,USDCOIN,USDCOIN experiences unusual volatility spike,0.0,neutral
+2025-09-19T22:38:33.279139Z,USDCOIN,USDCOIN underperforms compared to competitors,0.0,neutral
+2025-07-19T21:45:33.279149Z,USDCOIN,Technical indicators show weakness for USDCOIN,-0.4215,negative
+2025-11-18T05:40:33.279156Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-11-21T20:18:33.279164Z,USDCOIN,USDCOIN receives strong community support,0.7184,positive
+2025-07-14T02:59:33.279171Z,USDCOIN,USDCOIN surges amid renewed market optimism,0.5423,positive
+2025-10-13T20:41:33.279179Z,USDCOIN,Market activity around USDCOIN remains stable,0.296,positive
+2025-11-15T02:06:33.279187Z,USDCOIN,USDCOIN experiences strong bullish momentum,0.5106,positive
+2025-11-05T01:21:33.279196Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-11-22T18:05:33.279203Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-11-06T15:42:33.279211Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-11-24T08:02:33.279219Z,USDCOIN,USDCOIN receives strong community support,0.7184,positive
+2025-10-14T19:33:33.279227Z,USDCOIN,USDCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-08-12T13:36:33.279236Z,USDCOIN,USDCOIN faces short-term bearish correction,0.0,neutral
+2025-09-15T03:38:33.279243Z,USDCOIN,Regulatory pressure negatively impacts USDCOIN,-0.296,negative
+2025-11-11T16:53:33.279251Z,USDCOIN,USDCOIN underperforms compared to competitors,0.0,neutral
+2025-09-17T12:25:33.279259Z,USDCOIN,Whales reduce exposure to USDCOIN,0.0,neutral
+2025-08-23T06:42:33.279267Z,USDCOIN,USDCOIN sees declining trading activity,0.0,neutral
+2025-10-16T19:15:33.279275Z,USDCOIN,USDCOIN gains traction in global markets,0.34,positive
+2025-10-07T09:37:33.279283Z,USDCOIN,Investors show strong confidence in USDCOIN,0.765,positive
+2025-07-22T15:39:33.279290Z,USDCOIN,USDCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-07-22T00:02:33.279298Z,USDCOIN,USDCOIN underperforms compared to competitors,0.0,neutral
+2025-09-09T03:49:33.279306Z,USDCOIN,Investors pull liquidity from USDCOIN markets,0.0,neutral
+2025-11-18T17:39:33.279314Z,USDCOIN,USDCOIN sees major spike in transaction activity,0.0,neutral
+2025-08-31T00:03:33.279322Z,USDCOIN,USDCOIN receives strong community support,0.7184,positive
+2025-07-11T23:38:33.279329Z,USDCOIN,USDCOIN underperforms compared to competitors,0.0,neutral
+2025-09-16T12:18:33.279338Z,USDCOIN,USDCOIN receives strong community support,0.7184,positive
+2025-10-13T21:50:33.279346Z,USDCOIN,Market uncertainty pushes USDCOIN downward,-0.34,negative
+2025-09-04T08:31:33.279354Z,USDCOIN,USDCOIN surges amid renewed market optimism,0.5423,positive
+2025-07-27T02:24:33.279361Z,USDCOIN,Whales reduce exposure to USDCOIN,0.0,neutral
+2025-09-17T09:56:33.279369Z,USDCOIN,USDCOIN sees declining trading activity,0.0,neutral
+2025-10-14T11:45:33.279377Z,USDCOIN,USDCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-11-14T14:31:33.279385Z,USDCOIN,USDCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-11-17T03:30:33.279392Z,USDCOIN,USDCOIN sees declining trading activity,0.0,neutral
+2025-10-31T00:25:33.279400Z,USDCOIN,USDCOIN underperforms compared to competitors,0.0,neutral
+2025-09-02T04:09:33.279407Z,USDCOIN,Analysts predict upward movement for USDCOIN,0.0,neutral
+2025-07-16T18:10:33.279415Z,USDCOIN,USDCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-10-31T20:42:33.279423Z,USDCOIN,USDCOIN experiences strong bullish momentum,0.5106,positive
+2025-11-04T12:08:33.279430Z,USDCOIN,Whales accumulate large amounts of USDCOIN,0.0,neutral
+2025-11-03T16:43:33.279438Z,USDCOIN,Market uncertainty pushes USDCOIN downward,-0.34,negative
+2025-11-14T23:39:33.279447Z,USDCOIN,USDCOIN drops after heavy selling pressure,-0.296,negative
+2025-10-01T09:35:33.279455Z,USDCOIN,Regulatory pressure negatively impacts USDCOIN,-0.296,negative
+2025-08-03T09:52:33.279463Z,USDCOIN,Analysts predict upward movement for USDCOIN,0.0,neutral
+2025-08-25T15:18:33.279471Z,USDCOIN,Technical indicators show weakness for USDCOIN,-0.4215,negative
+2025-07-14T14:30:33.279478Z,USDCOIN,USDCOIN experiences unusual volatility spike,0.0,neutral
+2025-10-30T16:52:33.279486Z,USDCOIN,Investors pull liquidity from USDCOIN markets,0.0,neutral
+2025-10-08T05:31:33.279499Z,USDCOIN,Investors show strong confidence in USDCOIN,0.765,positive
+2025-11-17T19:55:33.279512Z,USDCOIN,Analysts predict upward movement for USDCOIN,0.0,neutral
+2025-07-26T14:44:33.279524Z,USDCOIN,Liquidity for USDCOIN increases significantly,0.0,neutral
+2025-09-12T00:48:33.279538Z,USDCOIN,Investors pull liquidity from USDCOIN markets,0.0,neutral
+2025-08-26T19:34:33.279558Z,USDCOIN,Market activity around USDCOIN remains stable,0.296,positive
+2025-11-16T18:03:33.279568Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN drops after heavy selling pressure,-0.296,negative
+2025-11-22T08:20:33.279576Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-10-16T23:50:33.279584Z,WRAPPEDBITCOIN,Investors show strong confidence in WRAPPEDBITCOIN,0.765,positive
+2025-10-08T10:28:33.279592Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-08-05T20:17:33.279600Z,WRAPPEDBITCOIN,Market uncertainty pushes WRAPPEDBITCOIN downward,-0.34,negative
+2025-07-23T09:11:33.279608Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN surges amid renewed market optimism,0.5423,positive
+2025-08-25T15:22:33.279616Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-11-01T10:29:33.279623Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN sees declining trading activity,0.0,neutral
+2025-09-18T00:52:33.279631Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences unusual volatility spike,0.0,neutral
+2025-09-15T16:36:33.279640Z,WRAPPEDBITCOIN,Negative sentiment grows around WRAPPEDBITCOIN,-0.5719,negative
+2025-08-21T10:50:33.279647Z,WRAPPEDBITCOIN,Liquidity for WRAPPEDBITCOIN increases significantly,0.0,neutral
+2025-09-17T04:23:33.279657Z,WRAPPEDBITCOIN,Regulatory pressure negatively impacts WRAPPEDBITCOIN,-0.296,negative
+2025-07-17T11:27:33.279665Z,WRAPPEDBITCOIN,Whales accumulate large amounts of WRAPPEDBITCOIN,0.0,neutral
+2025-11-11T04:38:33.279672Z,WRAPPEDBITCOIN,Technical indicators show weakness for WRAPPEDBITCOIN,-0.4215,negative
+2025-11-24T11:23:33.279680Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences unusual volatility spike,0.0,neutral
+2025-10-01T23:34:33.279688Z,WRAPPEDBITCOIN,Liquidity for WRAPPEDBITCOIN increases significantly,0.0,neutral
+2025-10-04T23:56:33.279695Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN receives strong community support,0.7184,positive
+2025-07-30T14:09:33.279703Z,WRAPPEDBITCOIN,Regulatory pressure negatively impacts WRAPPEDBITCOIN,-0.296,negative
+2025-09-19T12:26:33.279711Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-11-09T00:23:33.279718Z,WRAPPEDBITCOIN,Liquidity for WRAPPEDBITCOIN increases significantly,0.0,neutral
+2025-07-29T23:50:33.279726Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-09-29T07:18:33.279742Z,WRAPPEDBITCOIN,Investors show strong confidence in WRAPPEDBITCOIN,0.765,positive
+2025-09-23T11:11:33.279750Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences a calm trading session,0.3182,positive
+2025-10-19T12:41:33.279758Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN underperforms compared to competitors,0.0,neutral
+2025-07-17T17:04:33.279766Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN drops after heavy selling pressure,-0.296,negative
+2025-08-03T07:31:33.279774Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN sees major spike in transaction activity,0.0,neutral
+2025-08-06T06:42:33.279783Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN underperforms compared to competitors,0.0,neutral
+2025-11-21T00:26:33.279790Z,WRAPPEDBITCOIN,Investors pull liquidity from WRAPPEDBITCOIN markets,0.0,neutral
+2025-08-28T02:31:33.279798Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-08-26T01:49:33.279811Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN drops after heavy selling pressure,-0.296,negative
+2025-07-27T18:00:33.279819Z,WRAPPEDBITCOIN,Regulatory pressure negatively impacts WRAPPEDBITCOIN,-0.296,negative
+2025-07-21T16:44:33.279826Z,WRAPPEDBITCOIN,Market uncertainty pushes WRAPPEDBITCOIN downward,-0.34,negative
+2025-09-27T02:51:33.279834Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-08-10T13:08:33.279841Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN receives strong community support,0.7184,positive
+2025-11-06T05:40:33.279850Z,WRAPPEDBITCOIN,Investors show strong confidence in WRAPPEDBITCOIN,0.765,positive
+2025-08-15T13:48:33.279857Z,WRAPPEDBITCOIN,Whales accumulate large amounts of WRAPPEDBITCOIN,0.0,neutral
+2025-07-21T14:01:33.279865Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN shows a strong recovery after recent dip,0.5106,positive
+2025-11-06T03:50:33.279873Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN gains traction in global markets,0.34,positive
+2025-10-25T21:09:33.279880Z,WRAPPEDBITCOIN,Whales reduce exposure to WRAPPEDBITCOIN,0.0,neutral
+2025-11-11T13:19:33.279888Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-10-27T15:27:33.279896Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-10-26T16:09:33.279903Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-11-19T03:01:33.279911Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences strong bullish momentum,0.5106,positive
+2025-11-12T11:57:33.279919Z,WRAPPEDBITCOIN,Investors show strong confidence in WRAPPEDBITCOIN,0.765,positive
+2025-10-31T21:46:33.279926Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN ecosystem expands with new partnerships,0.1027,positive
+2025-09-24T08:54:33.279934Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences strong bullish momentum,0.5106,positive
+2025-08-25T11:48:33.279942Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-07-17T08:38:33.279949Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-08-03T23:02:33.279961Z,WRAPPEDBITCOIN,Negative sentiment grows around WRAPPEDBITCOIN,-0.5719,negative
+2025-09-18T20:21:33.279969Z,WRAPPEDBITCOIN,Technical indicators show weakness for WRAPPEDBITCOIN,-0.4215,negative
+2025-10-11T20:52:33.279979Z,WRAPPEDBITCOIN,Liquidity for WRAPPEDBITCOIN increases significantly,0.0,neutral
+2025-10-24T21:09:33.279987Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN faces short-term bearish correction,0.0,neutral
+2025-10-11T20:44:33.279997Z,WRAPPEDBITCOIN,Whales reduce exposure to WRAPPEDBITCOIN,0.0,neutral
+2025-08-21T00:38:33.280005Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN surges amid renewed market optimism,0.5423,positive
+2025-08-17T22:02:33.280013Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN sees declining trading activity,0.0,neutral
+2025-08-14T20:23:33.280020Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN surges amid renewed market optimism,0.5423,positive
+2025-07-24T02:12:33.280028Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-07-18T02:50:33.280035Z,WRAPPEDBITCOIN,Technical indicators show weakness for WRAPPEDBITCOIN,-0.4215,negative
+2025-08-10T09:09:33.280043Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-07-15T15:18:33.280051Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN sees major spike in transaction activity,0.0,neutral
+2025-10-08T06:16:33.280059Z,WRAPPEDBITCOIN,Investors pull liquidity from WRAPPEDBITCOIN markets,0.0,neutral
+2025-10-27T12:33:33.280066Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN receives strong community support,0.7184,positive
+2025-09-11T22:51:33.280074Z,WRAPPEDBITCOIN,Whales accumulate large amounts of WRAPPEDBITCOIN,0.0,neutral
+2025-09-21T19:20:33.280081Z,WRAPPEDBITCOIN,Liquidity for WRAPPEDBITCOIN increases significantly,0.0,neutral
+2025-11-19T11:21:33.280089Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN underperforms compared to competitors,0.0,neutral
+2025-07-24T22:53:33.280096Z,WRAPPEDBITCOIN,Negative sentiment grows around WRAPPEDBITCOIN,-0.5719,negative
+2025-08-02T15:38:33.280104Z,WRAPPEDBITCOIN,Whales accumulate large amounts of WRAPPEDBITCOIN,0.0,neutral
+2025-08-02T07:51:33.280113Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN underperforms compared to competitors,0.0,neutral
+2025-10-17T15:49:33.280121Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN adoption rises sharply as institutions enter,0.0,neutral
+2025-10-20T05:06:33.280129Z,WRAPPEDBITCOIN,Technical indicators show weakness for WRAPPEDBITCOIN,-0.4215,negative
+2025-07-21T00:19:33.280136Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN surges amid renewed market optimism,0.5423,positive
+2025-08-20T19:16:33.280144Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences strong bullish momentum,0.5106,positive
+2025-10-21T01:49:33.280152Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences unusual volatility spike,0.0,neutral
+2025-10-10T03:29:33.280161Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN surges amid renewed market optimism,0.5423,positive
+2025-09-23T00:02:33.280169Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN gains traction in global markets,0.34,positive
+2025-08-18T18:53:33.280176Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN experiences unusual volatility spike,0.0,neutral
+2025-09-22T04:58:33.280184Z,WRAPPEDBITCOIN,Market uncertainty pushes WRAPPEDBITCOIN downward,-0.34,negative
+2025-08-28T08:20:33.280191Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN gains traction in global markets,0.34,positive
+2025-11-06T16:14:33.280199Z,WRAPPEDBITCOIN,WRAPPEDBITCOIN underperforms compared to competitors,0.0,neutral
+2025-09-21T21:25:33.280207Z,WRAPPEDBITCOIN,Analysts predict upward movement for WRAPPEDBITCOIN,0.0,neutral
+2025-10-27T07:10:33.280215Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-10-04T22:49:33.280223Z,XRP,Market uncertainty pushes XRP downward,-0.34,negative
+2025-09-13T12:26:33.280231Z,XRP,Negative sentiment grows around XRP,-0.5719,negative
+2025-08-17T11:21:33.280239Z,XRP,XRP drops after heavy selling pressure,-0.296,negative
+2025-07-16T18:31:33.280248Z,XRP,Liquidity for XRP increases significantly,0.0,neutral
+2025-08-25T12:12:33.280256Z,XRP,New upgrade boosts performance of XRP,0.3182,positive
+2025-11-08T03:05:33.280264Z,XRP,XRP sees declining trading activity,0.0,neutral
+2025-08-31T18:03:33.280273Z,XRP,XRP experiences a calm trading session,0.3182,positive
+2025-07-13T11:50:33.280281Z,XRP,XRP experiences strong bullish momentum,0.5106,positive
+2025-07-19T15:37:33.280288Z,XRP,Liquidity for XRP increases significantly,0.0,neutral
+2025-08-09T17:42:33.280296Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-08-25T10:05:33.280303Z,XRP,XRP receives strong community support,0.7184,positive
+2025-10-25T16:42:33.280311Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-10-06T04:16:33.280318Z,XRP,Regulatory pressure negatively impacts XRP,-0.296,negative
+2025-08-10T04:36:33.280328Z,XRP,Market uncertainty pushes XRP downward,-0.34,negative
+2025-11-15T15:42:33.280335Z,XRP,XRP sees major spike in transaction activity,0.0,neutral
+2025-10-09T22:02:33.280343Z,XRP,XRP faces short-term bearish correction,0.0,neutral
+2025-10-28T22:06:33.280350Z,XRP,XRP experiences a calm trading session,0.3182,positive
+2025-09-15T07:17:33.280358Z,XRP,XRP surges amid renewed market optimism,0.5423,positive
+2025-08-12T02:30:33.280365Z,XRP,Negative sentiment grows around XRP,-0.5719,negative
+2025-08-26T15:54:33.280373Z,XRP,XRP receives strong community support,0.7184,positive
+2025-10-01T00:39:33.280380Z,XRP,XRP underperforms compared to competitors,0.0,neutral
+2025-08-18T01:03:33.280388Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-10-01T20:51:33.280396Z,XRP,XRP sees major spike in transaction activity,0.0,neutral
+2025-07-22T05:45:33.280403Z,XRP,XRP experiences strong bullish momentum,0.5106,positive
+2025-10-01T12:49:33.280412Z,XRP,XRP underperforms compared to competitors,0.0,neutral
+2025-08-11T13:52:33.280420Z,XRP,XRP gains traction in global markets,0.34,positive
+2025-09-04T22:48:33.280428Z,XRP,XRP sees declining trading activity,0.0,neutral
+2025-09-12T03:13:33.280435Z,XRP,XRP underperforms compared to competitors,0.0,neutral
+2025-09-05T00:00:33.280446Z,XRP,XRP sees major spike in transaction activity,0.0,neutral
+2025-09-25T09:03:33.280453Z,XRP,XRP gains traction in global markets,0.34,positive
+2025-10-22T20:57:33.280461Z,XRP,Regulatory pressure negatively impacts XRP,-0.296,negative
+2025-09-27T00:29:33.280469Z,XRP,XRP faces short-term bearish correction,0.0,neutral
+2025-10-21T10:58:33.280477Z,XRP,XRP drops after heavy selling pressure,-0.296,negative
+2025-10-06T14:20:33.280484Z,XRP,XRP gains traction in global markets,0.34,positive
+2025-09-05T11:00:33.280492Z,XRP,XRP surges amid renewed market optimism,0.5423,positive
+2025-07-13T23:37:33.280501Z,XRP,Whales accumulate large amounts of XRP,0.0,neutral
+2025-08-12T07:41:33.280509Z,XRP,Investors show strong confidence in XRP,0.765,positive
+2025-08-17T05:40:33.280516Z,XRP,New upgrade boosts performance of XRP,0.3182,positive
+2025-10-31T09:02:33.280524Z,XRP,XRP drops after heavy selling pressure,-0.296,negative
+2025-10-07T17:36:33.280532Z,XRP,Market activity around XRP remains stable,0.296,positive
+2025-11-08T02:56:33.280539Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-08-20T18:26:33.280547Z,XRP,XRP ecosystem expands with new partnerships,0.1027,positive
+2025-11-25T13:36:33.280564Z,XRP,XRP shows a strong recovery after recent dip,0.5106,positive
+2025-11-04T18:10:33.280575Z,XRP,Technical indicators show weakness for XRP,-0.4215,negative
+2025-09-10T10:35:33.280583Z,XRP,XRP sees major spike in transaction activity,0.0,neutral
+2025-09-15T16:37:33.280590Z,XRP,XRP experiences strong bullish momentum,0.5106,positive
+2025-09-09T04:00:33.280598Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-07-31T18:40:33.280606Z,XRP,XRP gains traction in global markets,0.34,positive
+2025-10-09T15:05:33.280614Z,XRP,New upgrade boosts performance of XRP,0.3182,positive
+2025-08-15T16:33:33.280621Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-10-26T01:16:33.280629Z,XRP,Whales accumulate large amounts of XRP,0.0,neutral
+2025-07-30T05:02:33.280636Z,XRP,Regulatory pressure negatively impacts XRP,-0.296,negative
+2025-11-17T08:57:33.280645Z,XRP,XRP ecosystem expands with new partnerships,0.1027,positive
+2025-09-07T18:33:33.280653Z,XRP,XRP surges amid renewed market optimism,0.5423,positive
+2025-09-30T08:32:33.280661Z,XRP,XRP experiences unusual volatility spike,0.0,neutral
+2025-08-27T07:37:33.280669Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-07-29T08:49:33.280676Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-07-29T22:23:33.280684Z,XRP,XRP drops after heavy selling pressure,-0.296,negative
+2025-08-09T11:13:33.280691Z,XRP,XRP drops after heavy selling pressure,-0.296,negative
+2025-11-14T13:34:33.280699Z,XRP,Market uncertainty pushes XRP downward,-0.34,negative
+2025-11-06T02:47:33.280706Z,XRP,XRP sees declining trading activity,0.0,neutral
+2025-08-30T16:12:33.280714Z,XRP,Technical indicators show weakness for XRP,-0.4215,negative
+2025-11-05T00:59:33.280721Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-10-11T22:38:33.280731Z,XRP,Analysts predict upward movement for XRP,0.0,neutral
+2025-11-10T14:42:33.280739Z,XRP,New upgrade boosts performance of XRP,0.3182,positive
+2025-11-21T14:59:33.280747Z,XRP,Market uncertainty pushes XRP downward,-0.34,negative
+2025-10-05T18:23:33.280755Z,XRP,Market uncertainty pushes XRP downward,-0.34,negative
+2025-10-18T16:09:33.280764Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-08-13T09:03:33.280772Z,XRP,XRP surges amid renewed market optimism,0.5423,positive
+2025-07-15T12:56:33.280780Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-07-24T03:38:33.280788Z,XRP,XRP surges amid renewed market optimism,0.5423,positive
+2025-10-08T21:44:33.280795Z,XRP,Investors show strong confidence in XRP,0.765,positive
+2025-08-28T03:55:33.280803Z,XRP,Investors pull liquidity from XRP markets,0.0,neutral
+2025-08-17T21:10:33.280811Z,XRP,XRP surges amid renewed market optimism,0.5423,positive
+2025-10-05T17:23:33.280818Z,XRP,XRP drops after heavy selling pressure,-0.296,negative
+2025-08-15T02:20:33.280826Z,XRP,Whales reduce exposure to XRP,0.0,neutral
+2025-07-19T01:52:33.280834Z,XRP,New upgrade boosts performance of XRP,0.3182,positive
+2025-09-18T00:16:33.280841Z,XRP,Technical indicators show weakness for XRP,-0.4215,negative
+2025-11-18T11:23:33.280849Z,XRP,Market activity around XRP remains stable,0.296,positive
