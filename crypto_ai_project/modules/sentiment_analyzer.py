@@ -323,14 +323,27 @@ def analyze_news_sentiment(df_news: pd.DataFrame) -> pd.DataFrame:
         return df_news
 
     def score_row(row):
-        text = (row.get("title") or "") + " " + (row.get("summary") or "")
+        title = row.get("title")
+        summary = row.get("summary")
+
+        # NaN / None → "" és mindenből stringet csinálunk
+        if pd.isna(title):
+            title = ""
+        else:
+            title = str(title)
+
+        if pd.isna(summary):
+            summary = ""
+        else:
+            summary = str(summary)
+
+        text = title + " " + summary
         vs = analyzer.polarity_scores(text)
         return vs["compound"]
 
     df = df_news.copy()
     df["sentiment"] = df.apply(score_row, axis=1)
     return df
-
 
 def build_sentiment_timeseries() -> pd.DataFrame:
     """
