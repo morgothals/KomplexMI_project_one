@@ -6,3 +6,10 @@ yfinance>=0.2
 requests>=2.32
 beautifulsoup4>=4.12
 flask>=3.0
+vaderSentiment>=3.3.2
+python-dotenv>=1.0.0
+dotenv>=0.0.5
+feedparser >=6.0.10
+lxml
+flask
+plotly
