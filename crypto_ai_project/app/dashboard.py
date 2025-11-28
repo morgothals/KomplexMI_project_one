@@ -1,70 +1,203 @@
 # app/dashboard.py
-from flask import Blueprint, render_template, jsonify
-import pandas as pd
 
-from modules.config import MARKET_DATA_CSV, SENTIMENT_DATA_CSV
+from pathlib import Path
+from flask import Flask, render_template, jsonify
+import pandas as pd
+import numpy as np
+
+from modules.config import (
+    MARKET_DATA_CSV,
+    MARKET_INTRADAY_1M_CSV,
+    SENTIMENT_DATA_CSV,
+)
 from modules.advisor import generate_advice
 
-bp = Blueprint("dashboard", __name__)
+app = Flask(__name__)
+
+# ---------- Segédfüggvények adatokhoz ----------
+
+def load_ohlcv_1h(limit: int = 200) -> list[dict]:
+    """
+    Utolsó 'limit' darab 1H OHLCV gyertya a MARKET_DATA_CSV-ből.
+    Vissza: list[ dict(time, open, high, low, close, volume) ]
+    """
+    path = Path(MARKET_DATA_CSV)
+    if not path.exists():
+        return []
+
+    df = pd.read_csv(path, parse_dates=["timestamp"])
+    if df.empty:
+        return []
+
+    df = df.sort_values("timestamp").tail(limit)
+
+    candles = []
+    for _, row in df.iterrows():
+        candles.append(
+            {
+                "time": row["timestamp"].isoformat(),
+                "open": float(row["open"]),
+                "high": float(row["high"]),
+                "low": float(row["low"]),
+                "close": float(row["close"]),
+                "volume": float(row.get("volume", 0.0)),
+            }
+        )
+    return candles
 
 
-@bp.route("/")
+def load_intraday_1m(limit: int = 300) -> list[dict]:
+    """
+    Aznapi 1 perces OHLCV (ha létezik MARKET_INTRADAY_1M_CSV).
+    Jó egy kis zoom-os intraday chartra.
+    """
+    path = Path(MARKET_INTRADAY_1M_CSV)
+    if not path.exists():
+        return []
+
+    df = pd.read_csv(path, parse_dates=["timestamp"])
+    if df.empty:
+        return []
+
+    df = df.sort_values("timestamp").tail(limit)
+
+    points = []
+    for _, row in df.iterrows():
+        points.append(
+            {
+                "time": row["timestamp"].isoformat(),
+                "price": float(row["close"]),
+                "volume": float(row.get("volume", 0.0)),
+            }
+        )
+    return points
+
+
+def load_sentiment_series(days: int = 60) -> dict:
+    """
+    Sentiment rövid idősor a SENTIMENT_DATA_CSV-ből.
+    Visszaad:
+      {
+        "timestamps": [...],
+        "news_sentiment": [...],
+        "fear_greed": [...],
+        "latest": {"news_sentiment": float|None, "fear_greed": int|None}
+      }
+    """
+    path = Path(SENTIMENT_DATA_CSV)
+    if not path.exists():
+        return {
+            "timestamps": [],
+            "news_sentiment": [],
+            "fear_greed": [],
+            "latest": {"news_sentiment": None, "fear_greed": None},
+        }
+
+    df = pd.read_csv(path, parse_dates=["timestamp"])
+    if df.empty:
+        return {
+            "timestamps": [],
+            "news_sentiment": [],
+            "fear_greed": [],
+            "latest": {"news_sentiment": None, "fear_greed": None},
+        }
+
+    df = df.sort_values("timestamp")
+    cutoff = df["timestamp"].max() - pd.Timedelta(days=days)
+    df = df[df["timestamp"] >= cutoff]
+
+    timestamps = [ts.isoformat() for ts in df["timestamp"]]
+
+    news_sent = df.get("news_sentiment")
+    fear_greed = df.get("fear_greed")
+
+    news_sent_list = (
+        [float(x) if pd.notna(x) else None for x in news_sent]
+        if news_sent is not None
+        else []
+    )
+    fear_greed_list = (
+        [int(x) if pd.notna(x) else None for x in fear_greed]
+        if fear_greed is not None
+        else []
+    )
+
+    latest_news = news_sent_list[-1] if news_sent_list else None
+    latest_fg = fear_greed_list[-1] if fear_greed_list else None
+
+    return {
+        "timestamps": timestamps,
+        "news_sentiment": news_sent_list,
+        "fear_greed": fear_greed_list,
+        "latest": {
+            "news_sentiment": latest_news,
+            "fear_greed": latest_fg,
+        },
+    }
+
+
+# ---------- Flask route-ok ----------
+
+@app.route("/")
 def index():
-    # Csak a HTML-t adja, az adatokat AJAX-szal töltjük
+    """
+    HTML dashboard (Chart.js grafikonokkal).
+    Az adatok JS-ben az /api/state végpontról jönnek.
+    """
     return render_template("dashboard.html")
 
 
-@bp.route("/api/ohlcv")
-def api_ohlcv():
+@app.route("/api/state")
+def api_state():
     """
-    Utolsó N gyertya OHLCV adatai a gyertya grafikonnak.
+    Frontend által használt JSON:
+      - 1H OHLCV gyertyák
+      - intraday 1m ár
+      - sentiment idősor + aktuális értékek
+      - modell előrejelzés + BUY / HOLD / SELL
     """
-    N = 200  # mennyi gyertyát mutassunk
-    df = pd.read_csv(MARKET_DATA_CSV, parse_dates=["timestamp"]).set_index("timestamp")
-    df = df.sort_index().tail(N)
+    # 1) OHLCV
+    candles_1h = load_ohlcv_1h(limit=200)
+    intraday_1m = load_intraday_1m(limit=300)
 
-    data = {
-        "timestamp": df.index.astype(str).tolist(),
-        "open": df["open"].tolist(),
-        "high": df["high"].tolist(),
-        "low": df["low"].tolist(),
-        "close": df["close"].tolist(),
-        "volume": df["volume"].tolist(),
-    }
-    return jsonify(data)
+    # 2) Sentiment
+    sentiment = load_sentiment_series(days=60)
 
-
-@bp.route("/api/fear_greed")
-def api_fear_greed():
-    """
-    Fear & Greed + hírsentiment az utolsó ~60 napra.
-    """
-    try:
-        df = pd.read_csv(SENTIMENT_DATA_CSV, parse_dates=["timestamp"]).set_index("timestamp")
-    except FileNotFoundError:
-        return jsonify({"timestamp": [], "fear_greed": [], "news_sentiment": []})
-
-    df = df.sort_index().last("60D")
-
-    data = {
-        "timestamp": df.index.astype(str).tolist(),
-        "fear_greed": df["fear_greed"].fillna(0).astype(float).tolist()
-        if "fear_greed" in df.columns else [],
-        "news_sentiment": df["news_sentiment"].fillna(0).astype(float).tolist()
-        if "news_sentiment" in df.columns else [],
-    }
-    return jsonify(data)
-
-
-@bp.route("/api/advice")
-def api_advice():
-    """
-    Modell előrejelzés + jelzés.
-    """
+    # 3) Modell előrejelzés és tanács
     try:
         advice = generate_advice()
     except Exception as e:
-        # Ha valami gond van (pl. nincs modell még)
-        return jsonify({"error": str(e)}), 500
+        # Ha valamiért nincs modell, scalerek, vagy training_features, akkor hiba nélkül térjünk vissza
+        advice = {
+            "signal": "ERROR",
+            "error": str(e),
+            "last_close": None,
+            "next_price_pred": None,
+            "rel_change_pred": None,
+            "fear_greed": sentiment["latest"]["fear_greed"],
+            "news_sentiment": sentiment["latest"]["news_sentiment"],
+        }
 
-    return jsonify(advice)
+    payload = {
+        "candles_1h": candles_1h,
+        "intraday_1m": intraday_1m,
+        "sentiment": sentiment,
+        "advice": advice,
+    }
+
+    return jsonify(payload)
+
+
+def create_app():
+    """
+    Ha később gunicorn/uwsgi vagy más WSGI server alá akarnád rakni:
+    from app.dashboard import create_app
+    app = create_app()
+    """
+    return app
+
+
+if __name__ == "__main__":
+    # Lokális futtatáshoz:
+    #   (venv) python -m app.dashboard
+    app.run(host="0.0.0.0", port=5000, debug=True)
