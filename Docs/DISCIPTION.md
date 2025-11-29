@@ -1,447 +1,548 @@
 
-### Cél:
-Egy AI-alapú befektetési tanácsadó rendszer fejlesztése, ami:
+---
 
-automatikusan adatokat gyűjt (pl. kriptovaluta, deviza, cég, ország gazdasági adatok),
+## 🔷 Projekt összefoglaló – `crypto_ai_project`
 
-ezekből következtetéseket és ajánlásokat készít,
+Ez egy Python alapú **crypto befektetési tanácsadó rendszer** Bitcoinra fókuszálva.
+Fő funkciók:
 
-és neurális hálók + természetes nyelvű modellek segítségével értelmezi a híreket, trendeket.
-
-Ez tehát egy narrow AI (szűk célú AI) projekt: nem általános mesterséges intelligencia, hanem egy konkrét problémára – befektetési döntések segítésére – tanított rendszer.
+* Piaci adatok gyűjtése (Binance OHLCV + intraday 1m).
+* On-chain adatok (Blockchain.com charts API).
+* Makró adatok (S&P500, DXY – Yahoo Finance).
+* Hír- és sentiment elemzés (CoinDesk, Reddit, Cointelegraph + Fear & Greed index).
+* Feature engineering (technikai indikátorok, on-chain, makró, esemény feature-ök).
+* **LSTM modell**, ami a következő 1 órás **log-return-t** tanulja, ebből számolunk következő árat.
+* Rule-based advisor (BUY / HOLD / SELL).
+* Egyszerű Flask + Chart.js dashboard.
 
 ---
 
-## 🧩 Összefoglaló architektúra
+## 📁 Könyvtárstruktúra (lényeges részek)
 
-```
-[Adatgyűjtés modul] → [Szövegelemző modell] → [Idősor-előrejelző modell] → [Tanácsadó (döntéstámogató) modul]
-```
+A projekt gyökere: `crypto_ai_project/`
 
-Minden modul önállóan fejleszthető, és később egy `main.py` vagy webes felület integrálja őket.
+Fontos mappák és fájlok:
 
----
-
-## 👥 Szereposztás és feladatok
-
-### 🧑‍💻 **1. személy (DANI) – Adatgyűjtés és API integráció (Data Engineer)**
-
-**Cél:**
-Automatikusan gyűjti a piaci adatokat és híreket.
-
-**Feladatai:**
-
-* Árfolyamadatok letöltése (Yahoo Finance, CoinGecko, Binance API, stb.)
-* Kriptovaluta hírek, tweetek, vagy RSS feedek lekérése
-* Időbélyegzett (timestampelt) adatok mentése CSV-be / SQLite-ba
-* Adattisztítás (hiányzó értékek, duplikátumok kezelése)
-* Adatelőkészítés az LSTM modellhez
-
-**Kimenet:**
-
-* `data/market_data.csv` (árfolyamok)
-* `data/news_data.csv` (hírek szövege, forrás, dátum)
-
-**Tech stack:**
-
-* Python + `requests`, `pandas`, `yfinance`, `BeautifulSoup4`, `tweepy`
-
----
-
-### 🤖 **2. személy (ÁDÁM) – Szövegelemzés és hangulatelemzés (NLP specialist)**
-
-**Cél:**
-A hírek, tweetek és cikkek szövegének automatikus értelmezése.
-
-**Feladatai:**
-
-* Szöveg tisztítása (URL-ek, szimbólumok, tokenizálás)
-* Sentiment-analízis (pozitív / negatív / semleges)
-* Kulcsszavak kinyerése (pl. "ETF", "halving", "regulation")
-* Modell választása:
-
-  * Egyszerű: `TextBlob`, `VADER`
-  * Haladó: `BERT`, `FinBERT`, `HuggingFace transformers`
-* Az eredményt numerikus formában (pl. +1 / 0 / -1) menti el az árfolyam-adatok mellé
-
-**Kimenet:**
-
-* `data/sentiment_data.csv` (datetime, sentiment, source)
-
-**Tech stack:**
-
-* Python + `transformers`, `nltk`, `textblob`, `pandas`
-
----
-
-### 📈 **3. személy (PETI)– Idősor-előrejelzés (ML engineer / Data Scientist)**
-
-**Cél:**
-A piaci és hangulatadatok alapján előrejelzést adni az árfolyam irányára.
-
-**Feladatai:**
-
-* Az előkészített adatokból idősor (time series) létrehozása
-* Feature engineering (pl. mozgóátlag, RSI, hangulat-index)
-* Modell kiválasztása:
-
-  * Alap: LSTM, GRU
-  * Alternatíva: RandomForestRegressor vagy XGBoost
-* Tanítás és tesztelés
-* Modell mentése (`.h5` vagy `.pkl`)
-
-**Kimenet:**
-
-* `models/crypto_forecast_model.h5`
-* `predictions/next_6h_forecast.csv`
-
-**Tech stack:**
-
-* Python + `tensorflow` / `keras` vagy `scikit-learn`, `matplotlib`
-
----
-
-### 🧠 **4. személy (SZABI) – Tanácsadó és front-end integráció (AI logic & UI)**
-
-**Cél:**
-A rendszer eredményeit emberi nyelven értelmezhető módon tálalni.
-
-**Feladatai:**
-
-* Integrálni a három előző modult
-* Betölti a legfrissebb árfolyamot, hírek hangulatát és a modell előrejelzését
-* Összegzi az eredményt:
-
-  * “A piaci hangulat pozitív → vétel ajánlott.”
-  * “Negatív trend + rossz hírek → eladás ajánlott.”
-* Egyszerű GUI vagy webes dashboard készítése:
-
-  * `streamlit` / `gradio` / `flask` / `dash`
-* Vizualizáció: trendgrafikon, hírek hangulata, model output
-
-**Kimenet:**
-
-* `main.py` vagy webapp
-* Felhasználóbarát “AI Advisor” nézet
-
-**Tech stack:**
-
-* Python + `streamlit` vagy `flask`
-* Frontendhez: `plotly`, `matplotlib`
-
----
-
-## 🔄 Párhuzamos munkaszervezés
-
-| Hét | Tevékenység                                                    | Résztvevők |
-| --- | -------------------------------------------------------------- | ---------- |
-| 1.  | Projekt setup (GitHub repo, mappastruktúra, API-k kipróbálása) | mindenki   |
-| 2.  | Adatgyűjtés kódolása + szöveg-feldolgozás alapok               | 1. + 2.    |
-| 3.  | NLP modell tanítása + árfolyam-előrejelzés modellezés          | 2. + 3.    |
-| 4.  | Eredmények integrálása + UI építés                             | 4.         |
-| 5.  | Tesztelés, prezentáció, finomhangolás                          | mindenki   |
-
----
-
-## 📂 Példa mappastruktúra
-
-```
+```text
 crypto_ai_project/
-├── data/
-│   ├── market_data.csv
-│   ├── news_data.csv
-│   ├── sentiment_data.csv
-├── models/
-│   ├── sentiment_model.pkl
-│   ├── forecast_model.h5
-├── modules/
-│   ├── data_collector.py
-│   ├── sentiment_analyzer.py
-│   ├── forecast_model.py
-│   ├── advisor.py
 ├── app/
-│   ├── dashboard.py
-│   ├── templates/
-│   └── static/
-├── README.md
-└── main.py
+│   ├── dashboard.py          # Flask app (API + HTML dashboard)
+│   └── templates/
+│       └── dashboard.html    # Frontend UI (Tailwind + Chart.js)
+├── data/
+│   ├── raw/
+│   │   └── bitcoin_kaggle.csv           # Kaggle BTC history (kézzel letöltve)
+│   ├── processed/
+│   │   ├── market_data.csv              # Binance 1h OHLCV (incrementális)
+│   │   ├── market_data_full.csv         # (bootstrap-ból) Kaggle + Binance 1h merge
+│   │   ├── onchain_data.csv             # Blockchain.com teljes history napi on-chain
+│   │   ├── macro_data.csv               # S&P500 + DXY napi zárók (teljes history)
+│   │   ├── sentiment_data.csv           # Rövid (kb. 60 nap) napi sentiment idősor
+│   │   ├── news_data.csv                # Max 30 nap nyers hírek (CoinDesk, Reddit, CT)
+│   │   ├── training_features_1h.csv     # LSTM train feature store (1h)
+│   │   └── training_sentiment_features.csv # Hosszú távú napi sentiment feature store
+│   └── runtime/
+│       └── market_intraday_1m.csv       # Aznapi 1m Binance OHLCV (naponta felülírva)
+├── models/
+│   ├── forecast_model.keras             # Keras LSTM modell (log-return target)
+│   └── forecast_scalers.pkl             # MinMaxScaler-ek X-re és y-ra (joblib)
+├── modules/
+│   ├── __init__.py
+│   ├── config.py                        # Útvonalak, konstansok, API URL-ek
+│   ├── data_collector.py                # Minden, ami adatletöltés
+│   ├── feature_engineering.py           # Technikai indikátorok (MA, RSI, stb.)
+│   ├── feature_assembler.py             # Market + on-chain + macro + sentiment összejoin
+│   ├── sentiment_analyzer.py            # Hírek + Fear&Greed → napi sentiment
+│   ├── forecast_model.py                # LSTM train/predict logika (log-return)
+│   └── advisor.py                       # Rule-based BUY/HOLD/SELL jelzés
+├── bootstrap_market_data.py             # Kaggle + Binance 1H history összefűzés
+├── build_training_features.py           # Végső training_features_1h.csv előállítása
+├── main.py                              # CLI: update_data, build_features, train, advise
+└── venv/                                # Virtuális env (lokális)
 ```
+
+(A pontos fájlnevek/mappák minimálisan eltérhetnek, de logikailag így néz ki.)
 
 ---
 
-## 💬 Kommunikáció és integráció
+## ⚙️ `modules/config.py`
 
-* **GitHub repository** (branch: data, nlp, model, ui)
-* **Egységes CSV formátum:** minden modul `datetime` mezőt használjon
-* **Interfészek:** minden modul függvényként exportálja az eredményét pl.
+Itt vannak a központi beállítások:
+
+* Alappathok:
+
+  * `BASE_DIR`
+  * `DATA_DIR`
+  * `MODELS_DIR`
+* Konkrét fájlok:
+
+  * `MARKET_DATA_CSV` → `data/processed/market_data.csv`
+  * `ONCHAIN_DATA_CSV` → `data/processed/onchain_data.csv`
+  * `MACRO_DATA_CSV` → `data/processed/macro_data.csv`
+  * `SENTIMENT_DATA_CSV` → `data/processed/sentiment_data.csv`
+  * `NEWS_DATA_CSV` → `data/processed/news_data.csv`
+  * `TRAINING_FEATURES_CSV` → `data/processed/training_features_1h.csv`
+  * `TRAINING_SENTIMENT_FEATURES_CSV` → `data/processed/training_sentiment_features.csv`
+  * `MARKET_INTRADAY_1M_CSV` → `data/runtime/market_intraday_1m.csv`
+  * `FORECAST_MODEL_PATH` → `models/forecast_model.keras`
+  * `FORECAST_SCALER_PATH` → `models/forecast_scalers.pkl`
+* API / URL konstansok:
+
+  * `BINANCE_BASE_URL`, `SYMBOL="BTCUSDT"`, `INTERVAL="1h"`
+  * `FEAR_GREED_API_URL` (Alternative.me)
+  * `BLOCKCHAIN_CHARTS_BASE` (Blockchain.com charts)
+  * `COINDESK_RSS_URL`
+  * `REDDIT_CRYPTO_RSS_URL`
+  * `COINTELEGRAPH_TAG_URLS` (markets, bitcoin)
+* Modell paraméterek:
+
+  * `LOOKBACK` (pl. 60 → 60 óra visszatekintő ablak LSTM-hez)
+
+---
+
+## 🧲 Adatgyűjtés – `modules/data_collector.py`
+
+### Binance OHLCV (1H, incrementális)
+
+`update_market_data_csv(symbol=SYMBOL, interval=INTERVAL)`
+
+* Beolvassa a `MARKET_DATA_CSV`-t, ha létezik.
+* Megkeresi az utolsó `timestamp`-et.
+* Azt követő időponttól hívja a Binance `/api/v3/klines` endpointot.
+* Az új gyertyákat hozzáfűzi, duplikátokat timestamp alapján kigyomlálja.
+* Mentés: `market_data.csv`, index: `timestamp`, oszlopok: `open, high, low, close, volume`.
+
+### Binance intraday 1m (mai napra)
+
+`update_intraday_minute_data(symbol=SYMBOL)`
+
+* A mai nap 00:00:00 UTC-től kezdve lehúzza az 1 perces BTCUSDT gyertyákat (több batch).
+* Cseréli a `MARKET_INTRADAY_1M_CSV` file-t (full rewrite).
+* Csak a **mai** napra vonatkozik.
+
+### On-chain (Blockchain.com charts API, teljes history)
+
+`update_onchain_data()`
+
+* Hívott chartok:
+
+  * `n-transactions` → `tx_count`
+  * `n-unique-addresses` → `active_addresses`
+  * `hash-rate` → `hash_rate`
+  * `avg-block-size` → `avg_block_size`
+  * `miners-revenue` → `miners_revenue`
+* Mindegyiket `timespan=all`-lal húzza.
+* Minden chartból DataFrame: index = `timestamp` (UTC napi), `value` → átnevezve.
+* Outer join-nal összefésüli.
+* Mentés: `onchain_data.csv`
+
+### Makró (Yahoo Finance, teljes history)
+
+`update_macro_data()`
+
+* Ticker mapping:
+
+  * `sp500_close` → `^GSPC`
+  * `dxy_close` → `DX-Y.NYB`
+* `yf.download(..., period="max", interval="1d", auto_adjust=False)`
+* Az Adj Close / Close oszlopból egy Series-t csinál, átnevezi, joinolja.
+* Indexet UTC-re lokalizálja.
+* Mentés: `macro_data.csv`
+
+---
+
+## 📰 Hírek & Sentiment – `modules/sentiment_analyzer.py`
+
+### Hírforrások
+
+* `fetch_coindesk_rss()` → CoinDesk RSS (limit=100).
+* `fetch_reddit_crypto_rss()` → r/CryptoCurrency RSS (limit=100).
+* `fetch_cointelegraph_all_tags()` → Cointelegraph:
+
+  * HTML parsolás a tag oldalakból (markets, bitcoin) BeautifulSoup-pal.
+  * URL + cím + időpecsét (relatív idő szövegek → `_parse_cointelegraph_relative_date`).
+  * Duplikát URL-ek kiszűrése.
+  * Csak kb. 30 napon belüli hírek.
+
+### Hírtár frissítés (max 30 nap)
+
+`update_news_store()`
+
+* Beolvassa a létező `NEWS_DATA_CSV`-t (ha hiányzik/hibás, újraépíti).
+* Figyel mindenre:
+
+  * `EmptyDataError`
+  * rossz formátum
+  * timestamp oszlop hiánya
+* Lekéri az új híreket (CoinDesk, Reddit, Cointelegraph).
+* Összefűzi `df_old` + `df_new`, URL alapján deduplikál.
+* Csak az utolsó 30 napot tartja meg:
+
+  * `df_all = df_all[df_all["timestamp"] >= _one_month_ago()]`
+* Rendezés timestamp szerint.
+* Mentés: `news_data.csv`
+  Oszlopok:
+
+  * `timestamp` (UTC, tz-aware)
+  * `source`
+  * `title`
+  * `summary`
+  * `url`
+
+**Megjegyzés:** a valóságban az RSS feedek csak 1–2 napnyi cikket adnak vissza, ezért 30 napra vágás ellenére tipikusan **csak az utolsó néhány nap hírei vannak**.
+
+### Cikk-szintű sentiment
+
+`analyze_news_sentiment(df_news)`
+
+* VADER (`SentimentIntensityAnalyzer`) compound score minden cikkre.
+* `title` + `summary` → text (NaN → `""`, mindenképp stringgé alakítva).
+* Új oszlop: `sentiment` ([-1, 1] tartomány).
+
+### Napi sentiment idősor + long-term training store
+
+`build_sentiment_timeseries()`
+
+* 1. `df_news = update_news_store()`
+* 2. `df_scored = analyze_news_sentiment(df_news)`
+* 3. Napi aggregáció:
+
+  * `date = timestamp.floor("D")`
+  * `groupby("date")`:
+
+    * `news_sentiment = átlag(sentiment)`
+    * `news_sentiment_std = szórás(sentiment)`
+    * `bullish_ratio = (sentiment > 0).arány`
+    * `bearish_ratio = (sentiment < 0).arány`
+* 4. Fear & Greed idősor:
+
+  * külön API-hívás (Alternative.me) → napi `fear_greed` értékek.
+  * join a napi dataframe-re.
+* 5. Rövid runtime sentiment idősor:
+
+  * max ~60 nap → `SENTIMENT_DATA_CSV`
+* 6. Hosszú távú training sentiment store:
+
+  * `TRAINING_SENTIMENT_FEATURES_CSV`:
+
+    * beolvassa a régit, index=timestamp
+    * hozzáfűzi az új napokat
+    * index alapján deduplikál
+    * menti vissza
+
+---
+
+## 📐 Feature engineering & training store
+
+### Technikai indikátorok – `modules/feature_engineering.py`
+
+Van egy `add_all_features(df_mkt)` jellegű függvény, ami:
+
+* Bemenet: 1H OHLCV (index: timestamp, oszlopok: open, high, low, close, volume).
+* Hozzáad:
+
+  * Alap price feature-ök:
+
+    * `hl_range` (high-low)
+    * `oc_diff` (open-close)
+    * `ret` (pct_change)
+  * Trend indikátorok:
+
+    * MA_7, MA_21, MA_50
+    * EMA_12, EMA_26
+    * esetleg Hull Moving Average (ha implementálva)
+  * Momentum:
+
+    * RSI (14)
+    * ROC
+  * Volatilitás:
+
+    * rolling STD (7, 30)
+    * ATR (Average True Range)
+  * Volume-based:
+
+    * OBV
+    * Volume change %
+* Visszatér: bővített `df_mkt_with_features`.
+
+### Esemény-feature-ök (halving, nagy regulációs/makró események)
+
+A `build_training_features.py` (és/vagy `feature_assembler.py`) során:
+
+* Kézzel összeírt listából generálunk eseményjelzőket, pl.:
+
+  * `event_halving_*` (halving napjai + környezetük, pl. ±30 napban 1)
+  * `event_regulation_*` (pl. nagy SEC döntések, Kína-ban, stb.)
+  * `event_macro_shock_*` (pl. Covid crash)
+* Ezekből 1H-ra vagy 1D-re resample-ölt bináris/időtartam feature-ök keletkeznek, amelyeket hozzájoinolunk a training store-hoz.
+
+### Végső training feature store – `build_training_features.py`
+
+Ez a script:
+
+1. Betölti a **teljes** market history-t (pl. `market_data_full.csv` vagy resample-öl `market_data.csv`-t 1H-ra).
+2. Rárakja a technikai indikátorokat (`add_all_features`).
+3. Hozzájoinolja:
+
+   * on-chain (`onchain_data.csv`, napi → 1H align, fwd/bwd fill),
+   * makró (`macro_data.csv`, napi → 1H align),
+   * hosszú távú sentiment (`training_sentiment_features.csv` → napi → 1H align),
+   * esemény-feature-öket.
+4. Vág:
+
+   * keres közös időtartományt, ahol minden fontos oszlopban van értelmes adat,
+   * a nagyon régi időszakokra a sentiment tipikusan semleges (mert nincs history).
+5. Tisztít:
+
+   * végtelenek → NaN
+   * NaN-ok ésszerű fill/drop logikával.
+6. Mentés:
+
+   * `TRAINING_FEATURES_CSV` → `data/processed/training_features_1h.csv`.
+
+---
+
+## 🤖 LSTM modell – `modules/forecast_model.py`
+
+A modell **log-return-t tanul**, nem direkt árat.
+
+### Training adat betöltése
+
+`load_training_data()`
+
+* Betölti a `TRAINING_FEATURES_CSV`-t, index=timestamp.
+
+* Ellenőrzi, hogy van-e `close`.
+
+* Kiszámítja:
 
   ```python
-  def get_latest_forecast(symbol="BTC"):
-      return {"trend": "up", "confidence": 0.78}
+  df["log_return"] = np.log(df["close"] / df["close"].shift(1))
+  df = df.dropna(subset=["log_return"])
+  ```
+
+* **Target**: `y = log_return` (N x 1)
+
+* **Features**: `X = df.drop(columns=["log_return"]).values`
+  (általában `close` bent marad feature-ként, de igény szerint kivehető).
+
+### Szekvenciák
+
+`build_sequences(X, y, lookback=LOOKBACK)`
+
+* Standard sliding window:
+
+  * X_seq shape: `(N-lookback, lookback, num_features)`
+  * y_seq shape: `(N-lookback, 1)`  → a `lookback` utáni log-return.
+
+### Modell tréning
+
+`train_model(epochs=50, batch_size=32, patience=10)`
+
+* MinMaxScaler X-re és y-ra (`FORECAST_SCALER_PATH`-ba mentve).
+
+* Train/test split 90/10.
+
+* Architektúra:
+
+  ```python
+  model = Sequential([
+      LSTM(128, return_sequences=True, input_shape=(LOOKBACK, num_features)),
+      Dropout(0.2),
+      LSTM(64),
+      Dropout(0.2),
+      Dense(1),
+  ])
+  model.compile(optimizer="adam", loss="mse")
+  early = EarlyStopping(monitor="val_loss", patience=10, restore_best_weights=True)
+  model.fit(...)
+  ```
+
+* Mentés:
+
+  * modell: `FORECAST_MODEL_PATH` → `models/forecast_model.keras`
+  * scalerek: `FORECAST_SCALER_PATH` → `models/forecast_scalers.pkl`
+
+### Modell betöltése
+
+`load_trained_model()`
+
+* `model = load_model(FORECAST_MODEL_PATH, compile=False)`  ← **fontos**
+* Scalerek: `joblib.load(FORECAST_SCALER_PATH)`
+
+### Következő ár becslése
+
+`predict_next_close()`
+
+* Újra betölti a `TRAINING_FEATURES_CSV`-et + log-return targetet.
+
+* Az utolsó `LOOKBACK` sorból input ablakot csinál.
+
+* Modellt hívja: predikció **skálázott log-return-re**, majd visszaskálázza.
+
+* Utolsó valós `close`:
+
+  ```python
+  last_close = float(df["close"].iloc[-1])
+  pred_log_return = scaler_y.inverse_transform(y_pred_scaled)[0, 0]
+  predicted_close = last_close * np.exp(pred_log_return)
+  ```
+
+* Visszatérés:
+
+  * `predicted_close` (következő órás BTC ár),
+  * `last_close`,
+  * `last_row` (utolsó sor a df-ből, minden feature-rel).
+
+---
+
+## 💡 Advisor – `modules/advisor.py`
+
+`generate_advice()`
+
+* Meghívja a `predict_next_close()`-t.
+
+* Számolja a relatív változást:
+
+  ```python
+  rel_change = (predicted_close - last_close) / last_close
+  ```
+
+* Beolvassa a legfrissebb:
+
+  * `fear_greed` értéket,
+  * `news_sentiment` értéket (sentiment short idősor legutolsó sora).
+
+* Egy egyszerű szabályrendszer szerint jelzést ad:
+
+  * Ha `rel_change` >> 0 és sentiment/FG is “pozitív” → `BUY`
+  * Ha `rel_change` ~0 → `HOLD`
+  * Ha `rel_change` << 0 → `SELL`
+
+* Visszaad egy dict-et, pl.:
+
+  ```python
+  {
+      "signal": "BUY" | "HOLD" | "SELL" | "ERROR",
+      "last_close": float,
+      "next_price_pred": float,
+      "rel_change_pred": float,
+      "fear_greed": int | None,
+      "news_sentiment": float | None,
+      # ha hiba volt:
+      "error": "..." (opcionális)
+  }
   ```
 
 ---
 
+## 🌐 Flask dashboard – `app/dashboard.py` + `templates/dashboard.html`
 
-szuper — íme az **1. fázis (4 hét)** részletes, tanár-barát projektterv, 4 főre bontva, párhuzamosítható feladatokkal, konkrét kimenetekkel és mérőszámokkal. A dátumok Budapest szerint értendők.
+### Backend (Flask)
 
-# 🗓 Ütemezés áttekintés (2025)
+`app/dashboard.py`
 
-* **1. hét:** nov 5 – nov 11
-* **2. hét:** nov 12 – nov 18
-* **3. hét:** nov 19 – nov 25
-* **4. hét:** nov 26 – dec 2
+* `index()` → `/`
 
-# 👥 Szerepek (fix felelősség + helyettesíthetőség)
+  * Rendereli a `dashboard.html`-t.
+* `api_state()` → `/api/state`
 
-* **A – Data Engineer (Adatgyűjtés & ETL):** API-k, adatminőség, tárolás
-* **B – NLP Specialist (Szövegelemzés):** sentiment, kulcsszavak, kiértékelés
-* **C – ML Engineer (Idősor-előrejelzés):** feature-ök, modell, validáció
-* **D – Integrátor & UI (Tanácsadó logika + Dashboard):** pipeline, UX, vizualizáció
+  * Visszaad JSON-t:
 
----
+    * `candles_1h` → list of dict:
 
-# 📂 Kötelező egységes interfészek (már az 1. héten lefektetve)
+      * `time`, `open`, `high`, `low`, `close`, `volume`
+      * forrás: `MARKET_DATA_CSV` utolsó ~200 sor
+    * `intraday_1m` → list of dict:
 
-**Közös időbélyeg formátum:** `UTC ISO8601` (pl. `2025-11-05T08:00:00Z`)
-**Szimbólum kulcs:** `symbol ∈ {BTC-USD, ETH-USD, SOL-USD}`
+      * `time`, `price`, `volume`
+      * forrás: `MARKET_INTRADAY_1M_CSV` utolsó ~300 sor
+    * `sentiment` → dict:
 
-**Fájl-sémák**
+      * `timestamps` (lista ISO dátum)
+      * `news_sentiment` (lista float vagy null)
+      * `fear_greed` (lista int vagy null)
+      * `latest`:
 
-* `data/market_data.csv`
+        * `news_sentiment`, `fear_greed`
+      * forrás: `SENTIMENT_DATA_CSV`
+    * `advice` → a `generate_advice()` kimenete (lásd fent).
+  * Ha a modell/scaler hiányzik, `advice.signal = "ERROR"` + `error` mezővel.
 
-  * oszlopok: `timestamp, symbol, open, high, low, close, volume`
-* `data/news_raw.csv`
+Van `create_app()` is, ha WSGI serverrel (gunicorn/uwsgi) akarjuk futtatni.
 
-  * oszlopok: `timestamp, source, title, text, url, symbol_tags`
-* `data/sentiment.csv`
+Indítás lokálisan:
 
-  * oszlopok: `timestamp, doc_id, symbol, sentiment_score[-1..1], sentiment_label{neg,neu,pos}, keywords[list]`
-* `data/features.csv` (model input C-nek)
+```bash
+(venv) python -m app.dashboard
+# vagy
+(venv) python app/dashboard.py
+```
 
-  * oszlopok: `timestamp, symbol, close, rsi14, sma20, sma50, sent_mean_3h, sent_mean_24h, ... , target_dir{down,flat,up}`
+### Frontend (dashboard.html)
 
-**Függvény-szerződések (Python)**
+* TailwindCSS CDN + Chart.js CDN.
+* Három fő panel:
 
-* `modules/data_collector.py::collect_market(symbol: str, start: str, end: str) -> pd.DataFrame`
-* `modules/news_collector.py::collect_news(symbols: list[str], start: str, end: str) -> pd.DataFrame`
-* `modules/sentiment_analyzer.py::score_news(df_news: pd.DataFrame) -> pd.DataFrame`
-* `modules/feature_builder.py::build_timeseries(df_mkt, df_sent) -> pd.DataFrame`
-* `modules/forecast_model.py::train(df_feat) -> TrainedModel; predict(model, horizon_h:int=6) -> dict`
-* `modules/advisor.py::advise(pred, context) -> {"action": "buy|hold|sell", "confidence": float, "rationale": str}`
+  1. **Jelzés panel**:
 
----
+     * BUY / HOLD / SELL (vagy ERROR)
+     * utolsó záróár
+     * következő ár predikció
+     * várható % változás
+  2. **Hangulat panel**:
 
-# ✅ Mérőszámok (elfogadási kritériumok)
+     * aktuális Fear & Greed
+     * aktuális news_sentiment
+     * alatta Chart.js vonaldiagram:
 
-* **NLP (B):**
+       * news_sentiment (y1)
+       * Fear & Greed (y2)
+  3. **Intraday (1m)**:
 
-  * *Label-szintű ellenőrzés:* min. **70%** pontosság kézzel ellenőrzött 100 minta-cikken
-  * *Stabilitás:* ugyanazon hír szentimentje ±0.1-nél jobban ne ingadozzon újrafutáskor
-* **Idősor (C):**
+     * egyszerű vonaldiagram az aznapi close-okról.
+* Alul: 1H close chart (candlestick helyett most sima close-vonal).
+* JS:
 
-  * *Irányhelyesség 6h horizonton:* **≥ 55%** (baseline felett)
-  * *MAPE (ha regressziós előrejelzés):* **≤ 8–12%** piloton
-* **Rendszer (D + mindenki):**
-
-  * *End-to-end futtatás:* egy gombos (CLI/Streamlit) pipeline lefut hiba nélkül
-  * *Dashboard:* grafikonok + akciójavaslat + indoklás látható, frissíthető
-* **Adatminőség (A):**
-
-  * *Hiányzók aránya:* kritikus feature-ökben **< 1%**, imputálás dokumentálva
-  * *Időszinkron:* piac és hírfolyam összeillesztés drifte **< 1 perc** átlag
-
----
-
-# 🧭 1. hét (nov 5–11) – Alapok, adatút és prototípusok
-
-**Mindenki**
-
-* GitHub repo, issue sablonok, branch-stratégia (`feat/*`, `fix/*`, `docs/*`), CI lint
-* `.env.example` (API kulcsok helye), `README` v0, adatvédelmi/etikai megjegyzések
-
-**A – Data Engineer**
-
-* API-próbák: egy választott árfolyamforrás (pl. yfinance / CoinGecko) + 2 hírforrás (RSS vagy könnyen elérhető feed)
-* `collect_market()` és `collect_news()` kezdeti implementáció, CSV-mentés
-* Időzóna-normalizálás, duplikátum-szűrés, rate-limit kezelési terv
-
-**B – NLP**
-
-* Baseline sentiment: VADER/TextBlob **és** egy finomhangolatlan FinBERT/BERT modell összevetése 30–50 cikken
-* `score_news()` prototípus: `sentiment_score`, `sentiment_label`, `keywords`
-* Kézi címkézésre minta CSV (min. 100 sor) – ez lesz a későbbi validáció alapja
-
-**C – ML**
-
-* Feature-katalógus tervezet (TA, műszaki indikátorok + aggregált szentiment)
-* `feature_builder()` váz: RSI, SMA, gördülő sent_mean (3h/24h)
-* Train/test split stratégia időalapon (no leakage), baseline (naiv irányjelző)
-
-**D – Integrátor & UI**
-
-* Streamlit váz: 3 tab (Piac, Hírek & Szentiment, Tanács)
-* Adatbetöltés gomb, egyszerű grafikonok (close, sent_mean)
-* Egységes hibaüzenetek, loading állapotok
-
-**Deliverable (1. hét vége):**
-
-* Futó **adatletöltés + baseline sentiment + baseline feature**
-* Streamlit app v0 (grafikon + táblázat), rövid **tech demo** 5 percben
+  * `/api/state` fetch 60 másodpercenként.
+  * `upsertCharts(state)` frissíti/hozza létre a Chart.js grafikonokat.
+  * `updateInfoPanels(state)` frissíti a számokat / jelzést.
 
 ---
 
-# 🔧 2. hét (nov 12–18) – NLP finomítás + Feature-rendszer + Adatminőség
+## 🧪 Tipikus futási sorrend
 
-**A – Data Engineer**
+1. **Adatfrissítés** (piaci, on-chain, makró, sentiment):
 
-* Stabilizálás: visszatérési kódok, retry/backoff, logolás (`logs/etl_*.jsonl`)
-* Szimbólum-tagelés hírekben (cím/URL alapján), egyszerű NER/regex kulcsszűrés
-* Időbeli join ellenőrzése (hír ➜ megfelelő gyertya/ablak)
+   ```bash
+   python main.py update_data
+   ```
 
-**B – NLP**
+2. **Training feature store építés** (ha változtak az adatok / feature-ök):
 
-* Finomhangolás (ha idő engedi): kis kézi címkézett mintán *light* fine-tune vagy prompt-alapú normalizálás
-* Kulcsszó-pipeline: “ETF”, “regulation”, “halving”, “hack”, “SEC”, stb. (top-N tf-idf + kézi stoplista)
-* Validáció: 100 minta, pontosság/konzisztencia jelentés
+   ```bash
+   python build_training_features.py
+   # output: data/processed/training_features_1h.csv
+   ```
 
-**C – ML**
+3. **Modell tanítása**:
 
-* Feature-rendszer kibővítése (volatility, ATR, z-score, sent_volatility)
-* Célváltozó: **irány (up/flat/down 6h)** + alternatív regressziós cél (Δ% 6h)
-* Modellkísérletek: **GRU/LSTM** baseline **vs.** XGBoost/RandomForest (irány)
-* Keresztvalidáció időablakokkal (rolling origin)
+   ```bash
+   python main.py train --epochs 20
+   # vagy simán: python main.py train
+   ```
 
-**D – Integrátor & UI**
+4. **Advisor futtatása CLI-ből**:
 
-* Modell-pluginek: `predict()` integrálása az appba, kimeneti kártya: *Action + Confidence + Why*
-* Vizualizációk:
+   ```bash
+   python main.py advise
+   ```
 
-  * gyertya + előrejelzés sáv
-  * 24h szentiment idősor
-  * kulcsszó felhő / top-kulcsszavak lista
+5. **Flask dashboard** indítása:
 
-**Deliverable (2. hét vége):**
-
-* **NLP jelentés** (pontosság, döntési példák)
-* **Model comparison** jegyzet (irányhelyesség, baseline felett)
-* App v1: előrejelzés + akciókártya megjelenik
-
----
-
-# 📈 3. hét (nov 19–25) – Modell stabilizálás + Backtesting + Tanácsadói szabályok
-
-**A – Data Engineer**
-
-* Backfill 3–6 hónap adatra (legalább BTC-USD), uniform CSV-k
-* Adatminőség dashboard (missing, outlier, időcsúszás)
-
-**B – NLP**
-
-* Driftszonda: kulcsszavak/források szerepének változása (heti snapshot)
-* Hibaanalízis: félrecímkézett minták katalógusa (tanárnak nagyon jó pont)
-
-**C – ML**
-
-* **Backtesting**: gördülő ablakos teszt 6h horizonton, metrikák összesítése
-* **Feature importance** (klasszikus modellnél), LSTM-nél SHAP mintasorokra
-* Threshold-optimalizálás “no-trade” sávra (bizonytalanság esetén HOLD)
-
-**D – Integrátor & UI**
-
-* **Tanácsadói szabálymotor** (ensemble):
-
-  * ha `pred_dir=up` & `sent_mean_3h>0` & vol nem extrém → **BUY**
-  * ha `pred_dir=down` & negatív hangulat → **SELL**
-  * ha bizonytalan → **HOLD**
-* Jelmagyarázat + kockázati disclaimer, *paper trade* gomb (nem köt valódi ügyletet)
-
-**Deliverable (3. hét vége):**
-
-* **Backtest riport** (irányhelyesség, MAPE, confusion matrix)
-* App v2: szabályalapú tanácsadó, részletes indoklással
+   ```bash
+   python -m app.dashboard
+   # majd böngészőben: http://localhost:5000/
+   ```
 
 ---
-
-# 🚀 4. hét (nov 26–dec 2) – Finiselés, prezentáció, dokumentáció
-
-**A – Data Engineer**
-
-* Reprodukálható `make data`/`python run_etl.py` parancs
-* Végső adat-dokumentáció (források, korlátok, etika)
-
-**B – NLP**
-
-* Végső validáció (új 50 cikk), hibakategóriák és javaslatok
-* Rövid “model card” a sentiment modulhoz
-
-**C – ML**
-
-* Végső modell mentése (`models/forecast_lstm_v1.h5` + `models/meta.json`)
-* Tanárbarát ábra: *predikció vs. valóság* + irányhelyesség időben
-
-**D – Integrátor & UI**
-
-* Polírozott dashboard (egységes design, dark mode ok), “Demo flow” gomb
-* **1-kattintásos demo:** `python main.py --symbol BTC-USD --horizon 6`
-
-**Közös deliverablek:**
-
-* **Végső preziszlajd** (10–12 dia): cél, architektúra, metrikák, demo GIF
-* **README (végleges):** telepítés, futtatás, mappastruktúra, eredmények, korlátok
-* **Etikai/jogi megjegyzés:** nem valós befektetési tanács
-
----
-
-# 🧱 Kockázatok & mitigáció
-
-* **API rate-limit / változó elérhetőség:** cache-elés, retry/backoff, forrás-fallback
-* **NLP zajos adat:** több forrás, szabályos kulcsszűrés, kézi validációs minta
-* **Idősor drift:** rendszeres backtesting, threshold-alapú HOLD
-* **Integrációs csúszás:** korai függvény-szerződések, dummy adapterek a másik fél helyett
-
----
-
-# 🛠 Technológiai csomag (javaslat)
-
-* **Python 3.11**, `pandas`, `numpy`, `scikit-learn`, `tensorflow/keras` vagy `pytorch`
-* NLP: `transformers`, `nltk`/`spacy`, baseline: `vaderSentiment`
-* UI: `streamlit`, grafikon: `plotly`/`matplotlib`
-* Orkesztráció: egyszerű `make` vagy `tox`; log: `loguru`
-* Formázás: `black`, `ruff`; típusok: `mypy`
-
----
-
-# 📌 Issue-szintű teendőlista (rövid, megnyitható a GitHub-ban)
-
-**Hét 1**
-
-* [A] `collect_market()` + minta CSV BTC-USD 14 nap
-* [A] `collect_news()` 2 forrásból, 7 nap, symbol tag
-* [B] `score_news()` baseline VADER + FinBERT próba
-* [C] `feature_builder()` váz: RSI, SMA, sent_mean
-* [D] Streamlit váz + grafikonok + betöltés
-
-**Hét 2**
-
-* [A] Retry/backoff + logolás + időszinkron ellenőrző
-* [B] 100 cikk kézi validáció + kulcsszavak
-* [C] LSTM/GRU vs. XGBoost irányhelyesség teszt
-* [D] `predict()` integráció + akciókártya
-
-**Hét 3**
-
-* [A] Backfill 3–6 hó adat
-* [B] Drift/hibaanalízis jegyzet
-* [C] Backtesting riport (rolling window)
-* [D] Szabálymotor + indoklókártya, no-trade sáv
-
-**Hét 4**
-
-* [A] ETL runbook + adatdoksi
-* [B] NLP model card + végső valid
-* [C] Modell mentések + ábrák
-* [D] Demo flow, preziszlajd, README v1.0
-
----
-

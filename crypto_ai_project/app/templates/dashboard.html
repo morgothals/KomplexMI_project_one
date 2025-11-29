@@ -6,7 +6,7 @@
     <title>Crypto AI Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Egyszerű Tailwind CDN (opcionális, csak szebb legyen) -->
+    <!-- Tailwind (csak a kinézet miatt) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -47,9 +47,15 @@
         </div>
 
         <!-- 1H OHLCV chart -->
-        <div class="bg-slate-800 rounded-xl p-4">
+        <div class="bg-slate-800 rounded-xl p-4 mb-4">
             <h2 class="text-lg font-semibold mb-2">BTCUSDT – 1H OHLCV</h2>
             <canvas id="ohlcvChart"></canvas>
+        </div>
+
+        <!-- Hosszútávú görbe + szórássáv -->
+        <div class="bg-slate-800 rounded-xl p-4">
+            <h2 class="text-lg font-semibold mb-2">Hosszútávú BTC trend (görbe + szórássáv)</h2>
+            <canvas id="longCurveChart"></canvas>
         </div>
     </div>
 
@@ -57,6 +63,7 @@
         let ohlcvChart = null;
         let intradayChart = null;
         let sentimentChart = null;
+        let longCurveChart = null;
 
         async function fetchState() {
             const resp = await fetch("/api/state");
@@ -67,6 +74,7 @@
             const ctxOhlcv = document.getElementById("ohlcvChart").getContext("2d");
             const ctxIntraday = document.getElementById("intradayChart").getContext("2d");
             const ctxSent = document.getElementById("sentimentChart").getContext("2d");
+            const ctxLong = document.getElementById("longCurveChart").getContext("2d");
 
             // ----- 1H OHLCV -----
             const candles = state.candles_1h || [];
@@ -79,17 +87,21 @@
                     data: {
                         labels: labelsOhlc,
                         datasets: [{
-                            label: "Close (1H)",
+                            label: "BTC záróár (1H, USD)",
                             data: closeData,
                             borderWidth: 1,
-                            tension: 0.2
+                            tension: 0.2,
+                            pointRadius: 0
                         }]
                     },
                     options: {
                         responsive: true,
                         scales: {
                             x: {
-                                ticks: { display: false }
+                                title: { display: true, text: "Idő (utolsó ~200 óra)" }
+                            },
+                            y: {
+                                title: { display: true, text: "BTC ár (USD)" }
                             }
                         }
                     }
@@ -111,17 +123,21 @@
                     data: {
                         labels: labelsIntra,
                         datasets: [{
-                            label: "Close (1m)",
+                            label: "BTC ár (1m, USD)",
                             data: pricesIntra,
                             borderWidth: 1,
-                            tension: 0.1
+                            tension: 0.1,
+                            pointRadius: 0
                         }]
                     },
                     options: {
                         responsive: true,
                         scales: {
                             x: {
-                                ticks: { display: false }
+                                title: { display: true, text: "Idő (mai nap, percek)" }
+                            },
+                            y: {
+                                title: { display: true, text: "BTC ár (USD)" }
                             }
                         }
                     }
@@ -133,7 +149,7 @@
             }
 
             // ----- Sentiment -----
-            const sent = state.sentiment || { timestamps: [], news_sentiment: [], fear_greed: [] };
+            const sent = state.sentiment || { timestamps: [], news_sentiment: [], fear_greed: [], latest: {} };
             const sentLabels = sent.timestamps || [];
             const sentNews = sent.news_sentiment || [];
             const sentFG = sent.fear_greed || [];
@@ -149,14 +165,16 @@
                                 data: sentNews,
                                 yAxisID: "y1",
                                 borderWidth: 1,
-                                tension: 0.2
+                                tension: 0.2,
+                                pointRadius: 0
                             },
                             {
-                                label: "Fear & Greed",
+                                label: "Fear & Greed index",
                                 data: sentFG,
                                 yAxisID: "y2",
                                 borderWidth: 1,
-                                tension: 0.2
+                                tension: 0.2,
+                                pointRadius: 0
                             }
                         ]
                     },
@@ -164,15 +182,22 @@
                         responsive: true,
                         scales: {
                             x: {
-                                ticks: { display: false }
+                                title: { display: true, text: "Idő (napok)" }
                             },
                             y1: {
                                 position: "left",
-                                beginAtZero: true
+                                beginAtZero: true,
+                                title: { display: true, text: "News sentiment (VADER)" },
+                                suggestedMin: -1,
+                                suggestedMax: 1
                             },
                             y2: {
                                 position: "right",
-                                beginAtZero: true
+                                beginAtZero: true,
+                                title: { display: true, text: "Fear & Greed index" },
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                                grid: { drawOnChartArea: false }
                             }
                         }
                     }
@@ -182,6 +207,73 @@
                 sentimentChart.data.datasets[0].data = sentNews;
                 sentimentChart.data.datasets[1].data = sentFG;
                 sentimentChart.update();
+            }
+
+            // ----- Hosszútávú görbe + szórássáv -----
+            const curve = state.long_curve || {
+                labels: [],
+                pred_price: [],
+                pred_price_low: [],
+                pred_price_high: []
+            };
+
+            const curveLabels = curve.labels || [];
+            const curveMain = curve.pred_price || [];
+            const curveLow = curve.pred_price_low || [];
+            const curveHigh = curve.pred_price_high || [];
+
+            if (!longCurveChart) {
+                longCurveChart = new Chart(ctxLong, {
+                    type: "line",
+                    data: {
+                        labels: curveLabels,
+                        datasets: [
+                            {
+                                label: "Várható BTC ár 5 év múlva",
+                                data: curveMain,
+                                borderWidth: 2,
+                                tension: 0.2,
+                                pointRadius: 3
+                            },
+                            {
+                                label: "Alsó sáv (≈ -1σ)",
+                                data: curveLow,
+                                borderWidth: 1,
+                                tension: 0.2,
+                                pointRadius: 0,
+                                borderDash: [5, 5]
+                            },
+                            {
+                                label: "Felső sáv (≈ +1σ)",
+                                data: curveHigh,
+                                borderWidth: 1,
+                                tension: 0.2,
+                                pointRadius: 0,
+                                borderDash: [5, 5]
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                title: { display: true, text: "Év (current_timestamp)" }
+                            },
+                            y: {
+                                title: { display: true, text: "Modellezett BTC ár 5 év múlva (USD)" },
+                                ticks: {
+                                    callback: (value) => value.toLocaleString()
+                                }
+                            }
+                        }
+                    }
+                });
+            } else {
+                longCurveChart.data.labels = curveLabels;
+                longCurveChart.data.datasets[0].data = curveMain;
+                longCurveChart.data.datasets[1].data = curveLow;
+                longCurveChart.data.datasets[2].data = curveHigh;
+                longCurveChart.update();
             }
         }
 
@@ -199,8 +291,10 @@
             const errorElem = document.getElementById("model_error");
 
             signalElem.textContent = advice.signal || "–";
-            lastCloseElem.textContent = advice.last_close != null ? advice.last_close.toFixed(2) : "–";
-            nextPriceElem.textContent = advice.next_price_pred != null ? advice.next_price_pred.toFixed(2) : "–";
+            lastCloseElem.textContent =
+                advice.last_close != null ? advice.last_close.toFixed(2) : "–";
+            nextPriceElem.textContent =
+                advice.next_price_pred != null ? advice.next_price_pred.toFixed(2) : "–";
 
             if (advice.rel_change_pred != null) {
                 relChangeElem.textContent = (advice.rel_change_pred * 100).toFixed(2);
@@ -233,7 +327,7 @@
 
         // Első betöltéskor:
         refresh();
-        // 60 másodpercenként frissítsük:
+        // 60 másodpercenként frissítés:
         setInterval(refresh, 60000);
     </script>
 </body>

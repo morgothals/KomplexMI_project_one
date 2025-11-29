@@ -9,6 +9,7 @@ from modules.config import (
     MARKET_DATA_CSV,
     MARKET_INTRADAY_1M_CSV,
     SENTIMENT_DATA_CSV,
+    BASE_DIR,
 )
 from modules.advisor import generate_advice
 
@@ -44,6 +45,48 @@ def load_ohlcv_1h(limit: int = 200) -> list[dict]:
             }
         )
     return candles
+
+
+def load_longterm_curve() -> dict:
+    """
+    Log-regressziós hosszútávú BTC görbe betöltése a predictions/btc_log_curve_prediction.csv-ből.
+    Vissza:
+      {
+        "labels": [...],             # Évek stringként
+        "pred_price": [...],
+        "pred_price_low": [...],
+        "pred_price_high": [...]
+      }
+    """
+    path = Path(BASE_DIR) / "predictions" / "btc_log_curve_prediction.csv"
+    if not path.exists():
+        return {
+            "labels": [],
+            "pred_price": [],
+            "pred_price_low": [],
+            "pred_price_high": [],
+        }
+
+    df = pd.read_csv(path, parse_dates=["timestamp"])
+    if df.empty:
+        return {
+            "labels": [],
+            "pred_price": [],
+            "pred_price_low": [],
+            "pred_price_high": [],
+        }
+
+    df = df.sort_values("timestamp")
+
+    # X tengelyen csak az ÉV-et akarjuk kiírni
+    labels = [str(ts.year) for ts in df["timestamp"]]
+
+    return {
+        "labels": labels,
+        "pred_price": [float(x) for x in df["pred_price"]],
+        "pred_price_low": [float(x) for x in df["pred_price_low"]],
+        "pred_price_high": [float(x) for x in df["pred_price_high"]],
+    }
 
 
 def load_intraday_1m(limit: int = 300) -> list[dict]:
@@ -163,11 +206,13 @@ def api_state():
     # 2) Sentiment
     sentiment = load_sentiment_series(days=60)
 
-    # 3) Modell előrejelzés és tanács
+    # 3) Hosszútávú log-görbe
+    long_curve = load_longterm_curve()
+
+    # 4) Modell előrejelzés és tanács
     try:
         advice = generate_advice()
     except Exception as e:
-        # Ha valamiért nincs modell, scalerek, vagy training_features, akkor hiba nélkül térjünk vissza
         advice = {
             "signal": "ERROR",
             "error": str(e),
@@ -182,11 +227,11 @@ def api_state():
         "candles_1h": candles_1h,
         "intraday_1m": intraday_1m,
         "sentiment": sentiment,
+        "long_curve": long_curve,  # <--- ÚJ
         "advice": advice,
     }
 
     return jsonify(payload)
-
 
 def create_app():
     """
