@@ -470,6 +470,13 @@ A JS-ben a `refresh()` 60 másodpercenként újra lehúzza az `/api/state`-et, �
 
 ## 🧪 Tipikus futási sorrend (kiegészítve)
 
+0. **Kaggle letöltés**
+
+Kaggle adat bemásolása -> ehhez kell csinálni -> data/raw/bitcoin_kaggle.csv
+Letöltés: https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data/data
+Betenni és átnevezni bitcoin_kaggle.csv -ra
+
+
 1. **Adatfrissítés** (piaci, on-chain, makró, sentiment, long-term dataset):
 
    ```bash
