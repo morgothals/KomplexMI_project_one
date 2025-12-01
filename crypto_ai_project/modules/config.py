@@ -47,7 +47,7 @@ TRAINING_FEATURES_CSV = PROCESSED_DIR / "training_features_1h.csv"
 BINANCE_MARKET_FULL_CSV = PROCESSED_DIR / "binance_market_1h.csv"
 
 MARKET_INTRADAY_1M_CSV = RUNTIME_DIR / "market_intraday_1m.csv"
-
+NEWS_ALLTIME_CSV = RAW_DIR / "news_alltime.csv"
 # On-chain, makró, rövid távú sentiment (dashboardnak)
 ONCHAIN_DATA_CSV = PROCESSED_DIR / "onchain_data.csv"
 MACRO_DATA_CSV = PROCESSED_DIR / "macro_data.csv"
@@ -57,7 +57,7 @@ SENTIMENT_DATA_CSV = PROCESSED_DIR / "sentiment_data.csv"
 NEWS_DATA_CSV = RUNTIME_DIR / "news_data_30d.csv"
 
 # Modellfájlok
-
+LONGTERM_FEATURES_15D_CSV = PROCESSED_DIR / "longterm_features_15d.csv"
 FORECAST_MODEL_PATH = BASE_DIR / "models" / "forecast_model.keras"
 FORECAST_SCALER_PATH = MODELS_DIR / "forecast_scaler.pkl"
 

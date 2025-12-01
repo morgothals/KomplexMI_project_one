@@ -18,7 +18,9 @@ from modules.feature_assembler import build_all_features
 from modules.sentiment_analyzer import build_sentiment_timeseries
 from modules.advisor import generate_advice
 from modules.forecast_model import train_model
-
+from modules.longterm_features import build_longterm_btc_features
+from modules.longterm_forecaster import run_build_long_horizon_curve
+from modules.log_curve_forecaster import run_log_regression_curve
 
 def cmd_update_data():
     print(">>> Binance OHLCV frissítés...")
@@ -40,6 +42,10 @@ def cmd_update_data():
     print(">>> Intraday 1m OHLCV frissítés (mai nap)...")
     df_1m = update_intraday_minute_data()
     print(f"Intraday 1m shape: {df_1m.shape}")
+
+    print(">>> Hosszútávú BTC feature dataset (15 napos) építése...")
+    df_long = build_longterm_btc_features()
+    print(f"Hosszútávú feature shape: {df_long.shape}")
 
     print("Kész.")
 
@@ -82,6 +88,8 @@ if __name__ == "__main__":
         "build_all_features",
         "train",
         "advise",
+        "build_long_curve", 
+        "log_curve",
     ])
     parser.add_argument("--epochs", type=int, default=10)  # most nem használjuk, de maradhat
     args = parser.parse_args()
@@ -96,3 +104,8 @@ if __name__ == "__main__":
         cmd_train(epochs=args.epochs)
     elif args.command == "advise":
         cmd_advise()
+    elif args.command == "build_long_curve":
+        # tetszés szerint módosíthatod az éveket
+        run_build_long_horizon_curve(start_year=2012, end_year=2031, sigma_multiplier=1.0)
+    elif args.command == "log_curve":
+        run_log_regression_curve(end_year=2030, sigma_mult=1.0)

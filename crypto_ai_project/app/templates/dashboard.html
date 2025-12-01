@@ -1,286 +1,335 @@
 <!doctype html>
 <html lang="hu">
+
 <head>
     <meta charset="utf-8">
     <title>Crypto AI Dashboard</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #0f172a;
-            color: #e5e7eb;
-        }
-        header {
-            padding: 1rem 2rem;
-            background: #020617;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #1f2937;
-        }
-        .title {
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: auto auto;
-            gap: 1rem;
-            padding: 1rem 2rem 2rem 2rem;
-        }
-        .card {
-            background: #020617;
-            border-radius: 0.75rem;
-            padding: 1rem;
-            border: 1px solid #1f2937;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }
-        #ohlcv-chart, #fear-greed-chart {
-            width: 100%;
-            height: 350px;
-        }
-        .signal {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-        }
-        .signal-buy { color: #22c55e; }
-        .signal-sell { color: #ef4444; }
-        .signal-hold { color: #eab308; }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .signal-meta {
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-            color: #9ca3af;
-        }
-        .metric {
-            margin-top: 0.5rem;
-        }
-        .metric span.label {
-            color: #9ca3af;
-        }
-        .metric span.value {
-            font-weight: 600;
-            margin-left: 0.35rem;
-        }
-        .updated {
-            font-size: 0.8rem;
-            color: #6b7280;
-        }
-    </style>
+    <!-- Tailwind (csak a kinézet miatt) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
-<header>
-    <div class="title">Crypto AI Dashboard – BTC/USDT</div>
-    <div class="updated" id="updated-text">
-        Utolsó frissítés: -
-    </div>
-</header>
 
-<div class="container">
-    <!-- Bal felső: OHLCV gyertyák -->
-    <div class="card">
-        <h3>BTC/USDT OHLCV gyertyák</h3>
-        <div id="ohlcv-chart"></div>
-    </div>
+<body class="bg-slate-900 text-slate-100">
+    <div class="min-h-screen p-4 md:p-8">
+        <h1 class="text-2xl md:text-3xl font-bold mb-4">
+            Bitcoin AI Advisor Dashboard
+        </h1>
 
-    <!-- Jobb felső: modell jelzés -->
-    <div class="card">
-        <h3>AI jelzés</h3>
-        <div id="signal-box">
-            <div id="signal-text" class="signal">-</div>
-            <div class="metric">
-                <span class="label">Utolsó záróár:</span>
-                <span class="value" id="last-close">-</span>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+            <!-- Modell jelzés -->
+            <div class="bg-slate-800 rounded-xl p-4">
+                <h2 class="text-lg font-semibold mb-2">Jelzés</h2>
+                <div id="signal" class="text-3xl font-bold">–</div>
+                <div class="mt-2 text-sm text-slate-300">
+                    <div>Utolsó záróár: <span id="last_close">–</span> USD</div>
+                    <div>Következő ár predikció: <span id="next_price_pred">–</span> USD</div>
+                    <div>Várható változás: <span id="rel_change_pred">–</span> %</div>
+                </div>
+                <div class="mt-3 text-xs text-slate-400" id="model_error"></div>
             </div>
-            <div class="metric">
-                <span class="label">Predikált ár:</span>
-                <span class="value" id="predicted-price">-</span>
+
+            <!-- Fear & Greed + News sentiment -->
+            <div class="bg-slate-800 rounded-xl p-4">
+                <h2 class="text-lg font-semibold mb-2">Hangulat</h2>
+                <div>Fear &amp; Greed: <span id="fg_value">–</span></div>
+                <div>News sentiment: <span id="news_sent_value">–</span></div>
+                <canvas id="sentimentChart" class="mt-3"></canvas>
             </div>
-            <div class="metric">
-                <span class="label">Várható változás:</span>
-                <span class="value" id="rel-change">-</span>
+
+            <!-- Intraday info -->
+            <div class="bg-slate-800 rounded-xl p-4">
+                <h2 class="text-lg font-semibold mb-2">Intraday (1m)</h2>
+                <canvas id="intradayChart"></canvas>
             </div>
-            <div class="metric">
-                <span class="label">Fear & Greed:</span>
-                <span class="value" id="fg-value">-</span>
-            </div>
-            <div class="metric">
-                <span class="label">Hírsentiment:</span>
-                <span class="value" id="news-sentiment">-</span>
-            </div>
+        </div>
+
+        <!-- 1H OHLCV chart -->
+        <div class="bg-slate-800 rounded-xl p-4 mb-4">
+            <h2 class="text-lg font-semibold mb-2">BTCUSDT – 1H OHLCV</h2>
+            <canvas id="ohlcvChart"></canvas>
+        </div>
+
+        <!-- Hosszútávú görbe + szórássáv -->
+        <div class="bg-slate-800 rounded-xl p-4">
+            <h2 class="text-lg font-semibold mb-2">Hosszútávú BTC trend (görbe + szórássáv)</h2>
+            <canvas id="longCurveChart"></canvas>
         </div>
     </div>
 
-    <!-- Alsó: Fear & Greed + hírsentiment -->
-    <div class="card" style="grid-column: 1 / span 2;">
-        <h3>Hangulat: Fear & Greed + hírsentiment</h3>
-        <div id="fear-greed-chart"></div>
-    </div>
-</div>
+    <script>
+        let ohlcvChart = null;
+        let intradayChart = null;
+        let sentimentChart = null;
+        let longCurveChart = null;
 
-<script>
-async function fetchJSON(url) {
-    const resp = await fetch(url);
-    if (!resp.ok) {
-        throw new Error("HTTP " + resp.status);
-    }
-    return await resp.json();
-}
-
-function formatNumber(num, decimals = 2) {
-    if (num === null || num === undefined || isNaN(num)) return "-";
-    return Number(num).toFixed(decimals);
-}
-
-async function loadOhlcv() {
-    try {
-        const data = await fetchJSON("/api/ohlcv");
-        const trace = {
-            x: data.timestamp,
-            open: data.open,
-            high: data.high,
-            low: data.low,
-            close: data.close,
-            type: "candlestick",
-            increasing: { line: { color: "#22c55e" } },
-            decreasing: { line: { color: "#ef4444" } },
-        };
-        const layout = {
-            margin: {l: 40, r: 20, t: 10, b: 40},
-            paper_bgcolor: "#020617",
-            plot_bgcolor: "#020617",
-            xaxis: {
-                showgrid: false,
-                color: "#9ca3af"
-            },
-            yaxis: {
-                gridcolor: "#1f2937",
-                color: "#9ca3af"
-            },
-        };
-        Plotly.newPlot("ohlcv-chart", [trace], layout, {responsive: true});
-    } catch (e) {
-        console.error("OHLCV betöltés hiba:", e);
-    }
-}
-
-async function loadFearGreed() {
-    try {
-        const data = await fetchJSON("/api/fear_greed");
-        const x = data.timestamp;
-        const fg = data.fear_greed || [];
-        const ns = data.news_sentiment || [];
-
-        const traces = [];
-
-        if (fg.length > 0) {
-            traces.push({
-                x: x,
-                y: fg,
-                name: "Fear & Greed",
-                type: "scatter",
-                mode: "lines",
-                line: {shape: "spline"}
-            });
+        async function fetchState() {
+            const resp = await fetch("/api/state");
+            return await resp.json();
         }
 
-        if (ns.length > 0) {
-            traces.push({
-                x: x,
-                y: ns,
-                name: "News sentiment",
-                yaxis: "y2",
-                type: "scatter",
-                mode: "lines",
-                line: {shape: "spline", dash: "dot"}
-            });
-        }
+        function upsertCharts(state) {
+            const ctxOhlcv = document.getElementById("ohlcvChart").getContext("2d");
+            const ctxIntraday = document.getElementById("intradayChart").getContext("2d");
+            const ctxSent = document.getElementById("sentimentChart").getContext("2d");
+            const ctxLong = document.getElementById("longCurveChart").getContext("2d");
 
-        const layout = {
-            margin: {l: 40, r: 40, t: 10, b: 40},
-            paper_bgcolor: "#020617",
-            plot_bgcolor: "#020617",
-            legend: {font: {color: "#e5e7eb"}},
-            xaxis: {showgrid: false, color: "#9ca3af"},
-            yaxis: {
-                title: "Fear & Greed",
-                gridcolor: "#1f2937",
-                color: "#9ca3af",
-                rangemode: "tozero"
-            },
-            yaxis2: {
-                title: "Sentiment",
-                overlaying: "y",
-                side: "right",
-                color: "#9ca3af"
+            // ----- 1H OHLCV -----
+            const candles = state.candles_1h || [];
+            const labelsOhlc = candles.map(c => c.time);
+            const closeData = candles.map(c => c.close);
+
+            if (!ohlcvChart) {
+                ohlcvChart = new Chart(ctxOhlcv, {
+                    type: "line",
+                    data: {
+                        labels: labelsOhlc,
+                        datasets: [{
+                            label: "BTC záróár (1H, USD)",
+                            data: closeData,
+                            borderWidth: 1,
+                            tension: 0.2,
+                            pointRadius: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                title: { display: true, text: "Idő (utolsó ~200 óra)" }
+                            },
+                            y: {
+                                title: { display: true, text: "BTC ár (USD)" }
+                            }
+                        }
+                    }
+                });
+            } else {
+                ohlcvChart.data.labels = labelsOhlc;
+                ohlcvChart.data.datasets[0].data = closeData;
+                ohlcvChart.update();
             }
-        };
 
-        Plotly.newPlot("fear-greed-chart", traces, layout, {responsive: true});
-    } catch (e) {
-        console.error("Fear&Greed betöltés hiba:", e);
-    }
-}
+            // ----- Intraday 1m -----
+            const intraday = state.intraday_1m || [];
+            const labelsIntra = intraday.map(p => p.time);
+            const pricesIntra = intraday.map(p => p.price);
 
-function updateSignalBox(advice) {
-    const signalText = document.getElementById("signal-text");
-    const lastCloseEl = document.getElementById("last-close");
-    const predEl = document.getElementById("predicted-price");
-    const relEl = document.getElementById("rel-change");
-    const fgEl = document.getElementById("fg-value");
-    const newsSentEl = document.getElementById("news-sentiment");
-    const updatedEl = document.getElementById("updated-text");
+            if (!intradayChart) {
+                intradayChart = new Chart(ctxIntraday, {
+                    type: "line",
+                    data: {
+                        labels: labelsIntra,
+                        datasets: [{
+                            label: "BTC ár (1m, USD)",
+                            data: pricesIntra,
+                            borderWidth: 1,
+                            tension: 0.1,
+                            pointRadius: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                title: { display: true, text: "Idő (mai nap, percek)" }
+                            },
+                            y: {
+                                title: { display: true, text: "BTC ár (USD)" }
+                            }
+                        }
+                    }
+                });
+            } else {
+                intradayChart.data.labels = labelsIntra;
+                intradayChart.data.datasets[0].data = pricesIntra;
+                intradayChart.update();
+            }
 
-    if (advice.error) {
-        signalText.textContent = "Hiba: " + advice.error;
-        signalText.className = "signal";
-        return;
-    }
+            // ----- Sentiment -----
+            const sent = state.sentiment || { timestamps: [], news_sentiment: [], fear_greed: [], latest: {} };
+            const sentLabels = sent.timestamps || [];
+            const sentNews = sent.news_sentiment || [];
+            const sentFG = sent.fear_greed || [];
 
-    const signal = (advice.signal || "").toUpperCase();
-    signalText.textContent = signal;
+            if (!sentimentChart) {
+                sentimentChart = new Chart(ctxSent, {
+                    type: "line",
+                    data: {
+                        labels: sentLabels,
+                        datasets: [
+                            {
+                                label: "News sentiment",
+                                data: sentNews,
+                                yAxisID: "y1",
+                                borderWidth: 1,
+                                tension: 0.2,
+                                pointRadius: 0
+                            },
+                            {
+                                label: "Fear & Greed index",
+                                data: sentFG,
+                                yAxisID: "y2",
+                                borderWidth: 1,
+                                tension: 0.2,
+                                pointRadius: 0
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                title: { display: true, text: "Idő (napok)" }
+                            },
+                            y1: {
+                                position: "left",
+                                beginAtZero: true,
+                                title: { display: true, text: "News sentiment (VADER)" },
+                                suggestedMin: -1,
+                                suggestedMax: 1
+                            },
+                            y2: {
+                                position: "right",
+                                beginAtZero: true,
+                                title: { display: true, text: "Fear & Greed index" },
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                                grid: { drawOnChartArea: false }
+                            }
+                        }
+                    }
+                });
+            } else {
+                sentimentChart.data.labels = sentLabels;
+                sentimentChart.data.datasets[0].data = sentNews;
+                sentimentChart.data.datasets[1].data = sentFG;
+                sentimentChart.update();
+            }
 
-    signalText.className = "signal";
-    if (signal === "BUY") signalText.classList.add("signal-buy");
-    else if (signal === "SELL") signalText.classList.add("signal-sell");
-    else signalText.classList.add("signal-hold");
+            // ----- Hosszútávú görbe + szórássáv -----
+            const curve = state.long_curve || {
+                labels: [],
+                pred_price: [],
+                pred_price_low: [],
+                pred_price_high: []
+            };
 
-    lastCloseEl.textContent = formatNumber(advice.last_close);
-    predEl.textContent = formatNumber(advice.next_price_pred);
-    relEl.textContent = (advice.rel_change_pred !== undefined && advice.rel_change_pred !== null)
-        ? (formatNumber(advice.rel_change_pred * 100, 2) + " %")
-        : "-";
+            const curveLabels = curve.labels || [];
+            const curveMain = curve.pred_price || [];
+            const curveLow = curve.pred_price_low || [];
+            const curveHigh = curve.pred_price_high || [];
 
-    fgEl.textContent = advice.fear_greed !== undefined ? advice.fear_greed : "-";
-    newsSentEl.textContent = formatNumber(advice.news_sentiment, 3);
+            if (!longCurveChart) {
+                longCurveChart = new Chart(ctxLong, {
+                    type: "line",
+                    data: {
+                        labels: curveLabels,
+                        datasets: [
+                            {
+                                label: "Várható BTC ár 5 év múlva",
+                                data: curveMain,
+                                borderWidth: 2,
+                                tension: 0.2,
+                                pointRadius: 3
+                            },
+                            {
+                                label: "Alsó sáv (≈ -1σ)",
+                                data: curveLow,
+                                borderWidth: 1,
+                                tension: 0.2,
+                                pointRadius: 0,
+                                borderDash: [5, 5]
+                            },
+                            {
+                                label: "Felső sáv (≈ +1σ)",
+                                data: curveHigh,
+                                borderWidth: 1,
+                                tension: 0.2,
+                                pointRadius: 0,
+                                borderDash: [5, 5]
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                title: { display: true, text: "Év (current_timestamp)" }
+                            },
+                            y: {
+                                title: { display: true, text: "Modellezett BTC ár 5 év múlva (USD)" },
+                                ticks: {
+                                    callback: (value) => value.toLocaleString()
+                                }
+                            }
+                        }
+                    }
+                });
+            } else {
+                longCurveChart.data.labels = curveLabels;
+                longCurveChart.data.datasets[0].data = curveMain;
+                longCurveChart.data.datasets[1].data = curveLow;
+                longCurveChart.data.datasets[2].data = curveHigh;
+                longCurveChart.update();
+            }
+        }
 
-    const now = new Date();
-    updatedEl.textContent = "Utolsó frissítés: " + now.toLocaleString();
-}
+        function updateInfoPanels(state) {
+            const advice = state.advice || {};
+            const sentiment = state.sentiment || {};
+            const latestSent = sentiment.latest || {};
 
-async function loadAdvice() {
-    try {
-        const advice = await fetchJSON("/api/advice");
-        updateSignalBox(advice);
-    } catch (e) {
-        console.error("Advice betöltés hiba:", e);
-    }
-}
+            const signalElem = document.getElementById("signal");
+            const lastCloseElem = document.getElementById("last_close");
+            const nextPriceElem = document.getElementById("next_price_pred");
+            const relChangeElem = document.getElementById("rel_change_pred");
+            const fgElem = document.getElementById("fg_value");
+            const newsSentElem = document.getElementById("news_sent_value");
+            const errorElem = document.getElementById("model_error");
 
-// Első betöltés
-loadOhlcv();
-loadFearGreed();
-loadAdvice();
+            signalElem.textContent = advice.signal || "–";
+            lastCloseElem.textContent =
+                advice.last_close != null ? advice.last_close.toFixed(2) : "–";
+            nextPriceElem.textContent =
+                advice.next_price_pred != null ? advice.next_price_pred.toFixed(2) : "–";
 
-// Időzített frissítés (pl. 60 másodpercenként csak a jelzés + hangulat)
-setInterval(() => {
-    loadFearGreed();
-    loadAdvice();
-}, 60000);
-</script>
+            if (advice.rel_change_pred != null) {
+                relChangeElem.textContent = (advice.rel_change_pred * 100).toFixed(2);
+            } else {
+                relChangeElem.textContent = "–";
+            }
+
+            const fg = advice.fear_greed ?? latestSent.fear_greed;
+            const ns = advice.news_sentiment ?? latestSent.news_sentiment;
+
+            fgElem.textContent = fg != null ? fg : "–";
+            newsSentElem.textContent = ns != null ? ns.toFixed(3) : "–";
+
+            if (advice.signal === "ERROR" && advice.error) {
+                errorElem.textContent = "Model hiba: " + advice.error;
+            } else {
+                errorElem.textContent = "";
+            }
+        }
+
+        async function refresh() {
+            try {
+                const state = await fetchState();
+                upsertCharts(state);
+                updateInfoPanels(state);
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        // Első betöltéskor:
+        refresh();
+        // 60 másodpercenként frissítés:
+        setInterval(refresh, 60000);
+    </script>
 </body>
+
 </html>
