@@ -20,6 +20,8 @@ MODELS_DIR.mkdir(exist_ok=True, parents=True)
 
 # ---------- Fájlok ----------
 
+KAGGLE_MARKET_CSV = RAW_DIR / "bitcoin_kaggle.csv"
+
 # Régebbi, inkrementális OHLCV (pl. dashboardhoz)
 MARKET_DATA_CSV = DATA_DIR / "market_data.csv"
 
