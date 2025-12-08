@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from flask import Flask, render_template, jsonify
+from flask_cors import CORS  # <--- Hozzáadva: UI kommunikációhoz
 import pandas as pd
 import numpy as np
 
@@ -14,6 +15,7 @@ from modules.config import (
 from modules.advisor import generate_advice
 
 app = Flask(__name__)
+CORS(app)  # <--- Hozzáadva: Engedélyezi a böngészőnek az adatlekérést a React portról
 
 # ---------- Segédfüggvények adatokhoz ----------
 
@@ -36,7 +38,8 @@ def load_ohlcv_1h(limit: int = 200) -> list[dict]:
     for _, row in df.iterrows():
         candles.append(
             {
-                "time": row["timestamp"].isoformat(),
+                # Javítás: A React 'timestamp'-et vár a dátumhoz
+                "timestamp": row["timestamp"].isoformat(),
                 "open": float(row["open"]),
                 "high": float(row["high"]),
                 "low": float(row["low"]),
@@ -108,8 +111,9 @@ def load_intraday_1m(limit: int = 300) -> list[dict]:
     for _, row in df.iterrows():
         points.append(
             {
-                "time": row["timestamp"].isoformat(),
-                "price": float(row["close"]),
+                # Javítás: Reacthoz egységes kulcsnevek
+                "timestamp": row["timestamp"].isoformat(),
+                "close": float(row["close"]),
                 "volume": float(row.get("volume", 0.0)),
             }
         )
@@ -133,7 +137,7 @@ def load_sentiment_series(days: int = 60) -> dict:
             "timestamps": [],
             "news_sentiment": [],
             "fear_greed": [],
-            "latest": {"news_sentiment": None, "fear_greed": None},
+            "latest": {"news_sentiment": 0, "fear_greed": 50},
         }
 
     df = pd.read_csv(path, parse_dates=["timestamp"])
@@ -142,7 +146,7 @@ def load_sentiment_series(days: int = 60) -> dict:
             "timestamps": [],
             "news_sentiment": [],
             "fear_greed": [],
-            "latest": {"news_sentiment": None, "fear_greed": None},
+            "latest": {"news_sentiment": 0, "fear_greed": 50},
         }
 
     df = df.sort_values("timestamp")
@@ -151,27 +155,17 @@ def load_sentiment_series(days: int = 60) -> dict:
 
     timestamps = [ts.isoformat() for ts in df["timestamp"]]
 
-    news_sent = df.get("news_sentiment")
-    fear_greed = df.get("fear_greed")
+    # Javítás: NaN értékek kezelése (JSON nem szereti a NaN-t)
+    news_sent = df["news_sentiment"].fillna(0).tolist() if "news_sentiment" in df.columns else []
+    fear_greed = df["fear_greed"].fillna(50).tolist() if "fear_greed" in df.columns else []
 
-    news_sent_list = (
-        [float(x) if pd.notna(x) else None for x in news_sent]
-        if news_sent is not None
-        else []
-    )
-    fear_greed_list = (
-        [int(x) if pd.notna(x) else None for x in fear_greed]
-        if fear_greed is not None
-        else []
-    )
-
-    latest_news = news_sent_list[-1] if news_sent_list else None
-    latest_fg = fear_greed_list[-1] if fear_greed_list else None
+    latest_news = news_sent[-1] if news_sent else 0
+    latest_fg = int(fear_greed[-1]) if fear_greed else 50
 
     return {
         "timestamps": timestamps,
-        "news_sentiment": news_sent_list,
-        "fear_greed": fear_greed_list,
+        "news_sentiment": news_sent,
+        "fear_greed": fear_greed,
         "latest": {
             "news_sentiment": latest_news,
             "fear_greed": latest_fg,
@@ -187,7 +181,8 @@ def index():
     HTML dashboard (Chart.js grafikonokkal).
     Az adatok JS-ben az /api/state végpontról jönnek.
     """
-    return render_template("dashboard.html")
+    # A React frontend külön fut, ez csak fallback üzenet
+    return "Crypto AI Backend Running. Please use React Frontend on port 5173."
 
 
 @app.route("/api/state")
@@ -211,23 +206,29 @@ def api_state():
 
     # 4) Modell előrejelzés és tanács
     try:
-        advice = generate_advice()
+        raw_advice = generate_advice()
+        # Átalakítás a frontend által várt struktúrára
+        advice = {
+            "signal": raw_advice.get("signal", "HOLD"),
+            "predicted_price": raw_advice.get("next_price_pred"),
+            "direction": "Bullish" if raw_advice.get("rel_change_pred", 0) > 0 else "Bearish",
+            "sentiment_score": sentiment["latest"]["news_sentiment"]
+        }
     except Exception as e:
+        print(f"Advisor Error: {e}")
         advice = {
             "signal": "ERROR",
             "error": str(e),
-            "last_close": None,
-            "next_price_pred": None,
-            "rel_change_pred": None,
-            "fear_greed": sentiment["latest"]["fear_greed"],
-            "news_sentiment": sentiment["latest"]["news_sentiment"],
+            "predicted_price": None,
+            "direction": "Neutral",
+            "sentiment_score": 0,
         }
 
     payload = {
         "candles_1h": candles_1h,
         "intraday_1m": intraday_1m,
         "sentiment": sentiment,
-        "long_curve": long_curve,  # <--- ÚJ
+        "long_curve": long_curve,
         "advice": advice,
     }
 
