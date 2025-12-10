@@ -13,3 +13,4 @@ feedparser >=6.0.10
 lxml
 flask
 plotly
+flask_cors>=4.1.2
