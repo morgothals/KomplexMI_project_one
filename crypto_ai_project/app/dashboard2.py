@@ -9,9 +9,9 @@ from modules.config import (
     MARKET_DATA_CSV,
     MARKET_INTRADAY_1M_CSV,
     SENTIMENT_DATA_CSV,
+    NEWS_DATA_CSV,
     BASE_DIR,
 )
-from modules.advisor import generate_advice
 from LLM.news_adjuster import build_adjusted_forecast
 from LLM.chatbot import crypto_chat
 
@@ -181,6 +181,44 @@ def load_sentiment_series(days: int = 60) -> dict:
     }
 
 
+def load_daily_news(limit: int = 25) -> list[dict]:
+    """Utolsó ~30 napos hírek a NEWS_DATA_CSV-ből (runtime).
+
+    Vissza: [{timestamp, source, title, summary, url}]
+    """
+    path = Path(NEWS_DATA_CSV)
+    if not path.exists():
+        return []
+
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return []
+
+    if df.empty:
+        return []
+
+    if "timestamp" in df.columns:
+        df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce", utc=True)
+        df = df.dropna(subset=["timestamp"]).sort_values("timestamp", ascending=False)
+    else:
+        df = df.tail(limit)
+
+    out = []
+    for _, row in df.head(limit).iterrows():
+        ts = row.get("timestamp")
+        out.append(
+            {
+                "timestamp": ts.isoformat() if pd.notna(ts) else None,
+                "source": str(row.get("source") or ""),
+                "title": str(row.get("title") or ""),
+                "summary": str(row.get("summary") or ""),
+                "url": str(row.get("url") or ""),
+            }
+        )
+    return out
+
+
 # ---------- Flask route-ok ----------
 
 @app.route("/")
@@ -208,11 +246,16 @@ def api_state():
     # 2) Sentiment
     sentiment = load_sentiment_series(days=60)
 
+    # 2b) Napi hírek
+    news = load_daily_news(limit=25)
+
     # 3) Hosszútávú log-görbe
     long_curve = load_longterm_curve()
 
     # 4) Modell előrejelzés és tanács
     try:
+        from modules.advisor import generate_advice
+
         advice = generate_advice()
     except Exception as e:
         advice = {
@@ -221,14 +264,15 @@ def api_state():
             "last_close": None,
             "next_price_pred": None,
             "rel_change_pred": None,
-            "fear_greed": sentiment["latest"]["fear_greed"],
-            "news_sentiment": sentiment["latest"]["news_sentiment"],
+            "fear_greed": sentiment["latest"].get("fear_greed"),
+            "news_sentiment": sentiment["latest"].get("news_sentiment"),
         }
 
     payload = {
         "candles_1h": candles_1h,
         "intraday_1m": intraday_1m,
         "sentiment": sentiment,
+        "news": news,
         "long_curve": long_curve,  # <--- ÚJ
         "advice": advice,
     }
@@ -243,10 +287,13 @@ def api_adjusted_forecast():
     Base: generate_advice(), plusz heuristika vagy LLM ha van kulcs.
     """
     try:
+        from modules.advisor import generate_advice
+
         base = generate_advice()
         sentiment = load_sentiment_series(days=90)
         long_curve = load_longterm_curve()
-        adjusted = build_adjusted_forecast(base, sentiment, long_curve)
+        force_llm = (request.args.get("force_llm") or "").strip() in ("1", "true", "True")
+        adjusted = build_adjusted_forecast(base, sentiment, long_curve, force_llm=force_llm)
         return jsonify({"base": base, "adjusted": adjusted})
     except Exception as exc:  # noqa: BLE001
         return jsonify({"error": str(exc)}), 500
@@ -259,10 +306,11 @@ def api_llm_chat():
     """
     payload = request.get_json(silent=True) or {}
     question = payload.get("question", "").strip()
+    allow_llm = bool(payload.get("allow_llm") is True or str(payload.get("allow_llm") or "").strip() in ("1", "true", "True"))
     if not question:
         return jsonify({"error": "question is required"}), 400
     try:
-        answer = crypto_chat(question)
+        answer = crypto_chat(question, allow_llm=allow_llm)
         return jsonify(answer)
     except Exception as exc:  # noqa: BLE001
         return jsonify({"error": str(exc)}), 500

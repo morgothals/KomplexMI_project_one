@@ -35,7 +35,36 @@ class LLMClient:
             "Authorization": f"Bearer {self.api_key}",
         }
 
+    def _as_prompt(self, messages: Iterable[Mapping[str, str]]) -> str:
+        # Gemini SDK-hoz egyszerű, determinisztikus prompt stringet állítunk össze.
+        parts: list[str] = []
+        for m in messages:
+            role = (m.get("role") or "user").upper()
+            content = m.get("content") or ""
+            parts.append(f"{role}: {content}")
+        return "\n\n".join(parts).strip()
+
     def chat(self, messages: Iterable[Mapping[str, str]]) -> str:
+        # Gemini (google-genai) útvonal – a user által kért integráció.
+        if (config.LLM_PROVIDER or "").lower() == "gemini":
+            if not self.api_key:
+                raise LLMNotConfigured("Missing LLM_API_KEY environment variable")
+            try:
+                from google import genai
+
+                client = genai.Client(api_key=self.api_key)
+                prompt = self._as_prompt(messages)
+                response = client.models.generate_content(
+                    model=self.model,
+                    contents=prompt,
+                )
+                return (getattr(response, "text", None) or "").strip()
+            except LLMNotConfigured:
+                raise
+            except Exception as exc:  # noqa: BLE001
+                raise RuntimeError(f"LLM request failed (gemini): {exc}") from exc
+
+        # OpenAI-kompatibilis HTTP útvonal (ha más providert használsz)
         payload = {
             "model": self.model,
             "messages": list(messages),

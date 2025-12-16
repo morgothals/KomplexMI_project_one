@@ -1,11 +1,7 @@
 # app/__init__.py
-from flask import Flask
-
-
 def create_app():
-    app = Flask(__name__)
+    # A projektben a dashboard a `dashboard2.py` modulban van egyben (Flask app instance-szel).
+    # Itt csak visszaadjuk azt, hogy `python -m app.run_dashboard` működjön.
+    from .dashboard2 import app as dashboard_app
 
-    from .dashboard import bp as dashboard_bp
-    app.register_blueprint(dashboard_bp)
-
-    return app
+    return dashboard_app

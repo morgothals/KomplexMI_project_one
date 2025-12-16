@@ -208,12 +208,28 @@ def update_binance_history_1h(symbol=SYMBOL, interval="1h") -> pd.DataFrame:
 
 # ---------- Összefésülés: Kaggle + Binance -> market_data_full ----------
 
-def build_market_data_full():
-    kaggle_1h = load_kaggle_bitcoin_1h()
+def build_market_data_full() -> pd.DataFrame:
+    """
+    Kaggle + Binance 1H adatból előállítja a MARKET_DATA_FULL_CSV-t.
+
+    Robusztus viselkedés:
+    - Ha a Kaggle fájl hiányzik/hibás, akkor is frissíti a Binance history-t,
+      és market_data_full.csv-t Binance-only alapon állít elő.
+    """
+
+    try:
+        kaggle_1h = load_kaggle_bitcoin_1h()
+    except Exception as e:
+        print(f"Kaggle betöltés hiba ({e}) – folytatjuk Binance-only módban.")
+        kaggle_1h = pd.DataFrame()
+
     binance_1h = update_binance_history_1h()
 
-    # összevont index: Kaggle + Binance
-    combined = pd.concat([kaggle_1h, binance_1h])
+    if kaggle_1h is not None and not kaggle_1h.empty:
+        combined = pd.concat([kaggle_1h, binance_1h])
+    else:
+        combined = binance_1h
+
     combined = combined.sort_index()
     # duplák eltávolítása – Binance adat legyen előnyben az átfedésben
     combined = combined[~combined.index.duplicated(keep="last")]
@@ -222,6 +238,7 @@ def build_market_data_full():
     MARKET_DATA_FULL_CSV.parent.mkdir(exist_ok=True, parents=True)
     combined.to_csv(MARKET_DATA_FULL_CSV, index_label="timestamp")
     print(f"Mentve: {MARKET_DATA_FULL_CSV}")
+    return combined
 
 
 if __name__ == "__main__":

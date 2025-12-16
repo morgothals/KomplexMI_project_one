@@ -14,3 +14,4 @@ lxml
 flask
 plotly
 flask_cors>=4.1.2
+google-genai

@@ -528,3 +528,34 @@ Betenni és átnevezni bitcoin_kaggle.csv -ra
    * rövid távú (1H, 1m),
    * hangulat,
    * **valamint a hosszútávú BTC trend görbe szórássávval** 2012-től 2030-ig.
+
+
+---
+
+
+.env létrehozása
+   aminek tartalma:
+
+# --- LLM beállítások ---
+
+# Ide tedd a saját API kulcsod (NE commitold publikus repo-ba)
+
+LLM_API_KEY=AIzaSyDVd19jLjYObrn402pja8PkzaaPU89zd98
+
+# OpenAI-kompatibilis endpoint (alapértelmezett: Gemini OpenAI-compat)
+
+LLM_API_BASE=<https://generativelanguage.googleapis.com/v1beta/openai>
+
+# Model név (Gemini esetén például)
+
+LLM_MODEL=gemini-2.5-flash
+
+# Provider (csak jelölés / UI-hoz)
+
+LLM_PROVIDER=gemini
+
+# Generálási paraméterek
+
+LLM_MAX_TOKENS=500
+LLM_TEMPERATURE=0.3
+
