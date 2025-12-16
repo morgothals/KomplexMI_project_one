@@ -28,6 +28,7 @@
             LLM frissítés
           </button>
         </div>
+        <div class="text-xs text-slate-400" id="llm_status"></div>
         <div class="text-sm text-slate-300 space-y-1">
           <div>
             <span class="text-xs text-slate-400">Alap jelzés:</span>
@@ -150,6 +151,31 @@
     let sentimentChart = null;
     let longCurveChart = null;
     let lastAdjusted = null;
+    let refreshTick = 0;
+    let llmStatusClearAtTick = null;
+
+    const LLM_STORAGE_KEY = "crypto_ai_last_adjusted";
+
+    function setLLMStatus(text, clearAfterTicks = null) {
+      const el = document.getElementById("llm_status");
+      if (!el) return;
+      el.textContent = text || "";
+      llmStatusClearAtTick = clearAfterTicks != null ? (refreshTick + clearAfterTicks) : null;
+    }
+
+    function setLLMButtonDisabled(disabled, seconds = 0) {
+      const btn = document.getElementById("llm_refresh_btn");
+      if (!btn) return;
+      btn.disabled = disabled;
+      btn.classList.toggle("opacity-50", disabled);
+      btn.classList.toggle("cursor-not-allowed", disabled);
+      if (disabled && seconds > 0) {
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.classList.remove("opacity-50", "cursor-not-allowed");
+        }, seconds * 1000);
+      }
+    }
 
     async function fetchState() {
       const resp = await fetch("/api/state");
@@ -157,6 +183,7 @@
     }
 
     async function fetchAdjusted(forceLLM = false) {
+      // Biztonság/UX: ezt a hívást csak gombnyomáskor használjuk.
       const url = forceLLM
         ? "/api/llm/adjusted_forecast?force_llm=1"
         : "/api/llm/adjusted_forecast";
@@ -537,6 +564,12 @@
 
       lastAdjusted = adjustedPayload;
 
+      try {
+        localStorage.setItem(LLM_STORAGE_KEY, JSON.stringify(adjustedPayload));
+      } catch (_) {
+        // ignore storage errors
+      }
+
       const baseSignal = document.getElementById("base_signal");
       const llmSignal = document.getElementById("llm_signal");
       const llmChange = document.getElementById("llm_change");
@@ -596,21 +629,34 @@
 
     async function refresh() {
       try {
-        const [state, adjustedPayload] = await Promise.all([
-          fetchState(),
-          fetchAdjusted(false),
-        ]);
+        refreshTick += 1;
+        const state = await fetchState();
         upsertCharts(state);
         updateInfoPanels(state);
         updateSummaryPanel(state);
         updateNewsPanel(state);
-        updateAdjustedPanel(adjustedPayload);
+
+        // Az LLM panel maradjon "pinned": ne hívjunk API-t automatikusan.
+        if (llmStatusClearAtTick != null && refreshTick >= llmStatusClearAtTick) {
+          setLLMStatus("", null);
+        }
       } catch (e) {
         console.error(e);
       }
     }
 
     // Első betöltéskor:
+    try {
+      const cached = localStorage.getItem(LLM_STORAGE_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed && typeof parsed === "object") {
+          updateAdjustedPanel(parsed);
+        }
+      }
+    } catch (_) {
+      // ignore
+    }
     refresh();
     // 60 másodpercenként frissítés:
     setInterval(refresh, 60000);
@@ -620,11 +666,17 @@
       .addEventListener("submit", handleChatSubmit);
 
     document.getElementById("llm_refresh_btn").addEventListener("click", async () => {
+      // Cooldown: ne lehessen spam-elni a külső API-t.
+      setLLMButtonDisabled(true, 15);
+      setLLMStatus("LLM frissítés fut...", null);
       try {
         const adjustedPayload = await fetchAdjusted(true);
         updateAdjustedPanel(adjustedPayload);
+        // Üzenet eltűnik ~4 automatikus refresh után (kb 4 perc)
+        setLLMStatus("LLM frissítve. (Az üzenet hamarosan eltűnik)", 4);
       } catch (e) {
         console.error(e);
+        setLLMStatus("LLM frissítés hiba (lásd console).", 4);
       }
     });
   </script>
